@@ -105,6 +105,8 @@ public class Map implements IMap {
         }
 
         UnorderedListADT<IDivision> result = new ArrayUnorderedList<>();
+
+        return result;
     }
 
     @Override

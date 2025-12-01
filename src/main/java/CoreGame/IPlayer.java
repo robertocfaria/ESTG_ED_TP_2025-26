@@ -1,22 +1,25 @@
 package CoreGame;
 
+import Map.IDivision;
+
 public interface IPlayer {
 
-    public String getName();
+    void move();
 
-    public  int getStunned();
+    String getName();
 
-    public void addStunnedRound(int numberOfRounds);
+    int getStunned();
 
-    public int getExtraRounds();
+    void addStunnedRound(int numberOfRounds);
 
-    public void addExtraRound(int numberOfRounds);
+    int getExtraRounds();
 
-    public boolean isRealPlayer();
+    void addExtraRound(int numberOfRounds);
 
-    /**
-     * TODO: FALTA ADICIONAR METODOS RELACIONADOS COM A POSIÇÃO
-     */
+    boolean isRealPlayer();
 
+    void setDivision(IDivision division);
+
+    IDivision getDivision();
 
 }

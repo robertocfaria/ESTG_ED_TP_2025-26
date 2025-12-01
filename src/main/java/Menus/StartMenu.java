@@ -1,5 +1,6 @@
 package Menus;
 
+import CoreGame.GameManager;
 import Reader.*;
 
 public class StartMenu {
@@ -14,8 +15,11 @@ public class StartMenu {
             opcao = reader.readInt(0, 4, "Opcao: ");
             switch (opcao) {
                 case 1:
-
+                    //aqui temos de gerar um novo mapa random
+                    GameManager game = new GameManager();
+                    game.startGame();
                 case 2:
+                    //pedir ao utilizador para introduzir o tamanho do mapa.
 
                 case 3:
 
