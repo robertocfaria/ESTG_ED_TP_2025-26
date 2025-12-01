@@ -1,6 +1,6 @@
 package Map;
 
-import java.util.List;
+import Structures.Interfaces.UnorderedListADT;
 
 /**
  * Represents a graph-based map of the maze, where vertices correspond to divisions
@@ -47,7 +47,7 @@ public interface IMap {
      * @param vertex the division whose neighbors are to be retrieved
      * @return a list of adjacent divisions
      */
-    List<IDivision> getAdjacentDivisions(IDivision vertex);
+    UnorderedListADT<IDivision> getAdjacentDivisions(IDivision vertex);
 
     /**
      * Checks whether the map contains no divisions.
