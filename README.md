@@ -15,16 +15,18 @@ However, moving alone does not guarantee progress — each location may impose a
 
 ## Room Types & Challenges
 ### Lever Rooms
-  - Some rooms contain mechanical levers.
-  - The player must attempt to activate the lever.
+- Some rooms contain mechanical levers.
+- The player must attempt to activate the lever.
+- A correct activation unlocks a blocked passage.
+- An incorrect choice keeps the passage locked, forcing the player to try again on a future turn.
 
 ### Riddle Rooms
-   - These rooms challenge players with logic questions loaded from an external JSON file.
+- These rooms challenge players with logic questions loaded from an external JSON file.
 
 ### The JSON file includes:
-   - multiple questions
-   - possible answers
-   - one correct answer for each question
+- multiple questions
+- possible answers
+- one correct answer for each question
 
 ### Rules:
 A question is chosen randomly.
@@ -32,7 +34,6 @@ A question can only repeat after all have been used at least once.
 Correct answers let the player proceed, wrong answers require them to retry on a future turn.
 
 ## Corridor Events
-
 Some corridors contain random events that trigger when a player crosses them. These events add unpredictability and strategic depth.
 
 ### Possible effects include:
@@ -61,7 +62,3 @@ The game relies on:
  ## How to Run
 
 (You may fill this in when your implementation is complete)
-
-A correct activation unlocks a blocked passage.
-
-An incorrect choice keeps the passage locked, forcing the player to try again on a future turn.
