@@ -1,10 +1,16 @@
 package Map;
 
+import Structures.Interfaces.NetworkADT;
 import Structures.Interfaces.UnorderedListADT;
 
-public interface IMap<T extends IDivision> {
+public interface IMap<T extends IDivision> extends NetworkADT<T> {
 
-    void addDivision(T vertex);
+    void addEdge(T vertex1, T vertex2, IHallway weight);
+
+    UnorderedListADT<T> getAdjacentVertex(T vertex);
+
+    IHallway getEdge(T vertex1, T vertex2);
+    /**void addDivision(T vertex);
 
     void removeDivision(T vertex);
 
@@ -22,5 +28,5 @@ public interface IMap<T extends IDivision> {
 
     int size();
 
-    String toString();
+    String toString();*/
 }
