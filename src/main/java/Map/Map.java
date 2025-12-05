@@ -1,6 +1,9 @@
 package Map;
 
 import Exceptions.NotSupportedOperation;
+import Interfaces.IDivision;
+import Interfaces.IHallway;
+import Interfaces.IMap;
 import Structures.Exceptions.ElementNotFoundException;
 import Structures.Exceptions.EmptyCollectionException;
 import Structures.Interfaces.UnorderedListADT;
