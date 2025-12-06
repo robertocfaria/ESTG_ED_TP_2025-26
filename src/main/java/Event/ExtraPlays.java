@@ -10,8 +10,8 @@ public class ExtraPlays extends Event {
     }
 
     @Override
-    public void apply() {
-        System.out.println(EXTRA_PLAYS + "extra plays to " + this.player.getName());
+    public void apply(String description) {
+        System.out.println(description);
 
         player.addExtraRound(EXTRA_PLAYS);
     }

@@ -1,9 +1,10 @@
 package Interfaces;
 
 import CoreGame.IPlayer;
+import Structures.Interfaces.UnorderedListADT;
 
 public interface IEvent {
-    void apply();
+    void apply(String description);
 
     IPlayer getPlayer();
 }

@@ -12,8 +12,8 @@ public class SwapTwoPlayers extends Event {
     }
 
     @Override
-    public void apply() {
-        System.out.printf("Swaping %s and %s positions\n", player.getName(), this.player2.getName());
+    public void apply(String description) {
+        System.out.printf(description);
 
         IDivision pos2 = this.player2.getDivision();
         this.player2.setDivision(player.getDivision());

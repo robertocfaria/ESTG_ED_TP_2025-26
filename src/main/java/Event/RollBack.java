@@ -9,8 +9,8 @@ public class RollBack extends Event {
     }
 
     @Override
-    public void apply() {
-        System.out.println("Rolling back to the last position!!");
+    public void apply(String description) {
+        System.out.println(description);
 
         //Report lastPos = this.player.getLastMove(); método para fazer peek() do relatorio, deve ficar guardado que ele foi para tras
 
