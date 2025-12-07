@@ -1,25 +1,21 @@
 package Event;
 
 import CoreGame.IPlayer;
+import Exceptions.InvalidPlayersCountException;
 import Interfaces.IDivision;
 import Interfaces.IEvent;
+import Structures.Interfaces.ListADT;
 import Structures.Interfaces.UnorderedListADT;
 
 import static Event.StunnedPlays.RAND;
 
 public class ShuffleAllPlayers implements IEvent {
-    UnorderedListADT<IPlayer> players;
 
-    public ShuffleAllPlayers(UnorderedListADT<IPlayer> players) {
-        if (players == null) {
-            throw new IllegalArgumentException("List of players is null");
+    @Override
+    public void apply(ListADT<IPlayer> players) throws InvalidPlayersCountException {
+        if (players.isEmpty()) {
+            throw new InvalidPlayersCountException("ShuffleAllPlayers event requires at least 1 player");
         }
-
-        this.players = players;
-    }
-
-    public void apply(String description) {
-        System.out.println(description);
 
         IDivision[] playersDivision = new IDivision[players.size()];
 
@@ -41,10 +37,7 @@ public class ShuffleAllPlayers implements IEvent {
         for (IPlayer player : players) {
             player.setDivision(playersDivision[index++]);
         }
-    }
 
-    @Override
-    public IPlayer getPlayer() {
-        return this.players.first();
+        System.out.println("All players have swaped positions randomly");
     }
 }
