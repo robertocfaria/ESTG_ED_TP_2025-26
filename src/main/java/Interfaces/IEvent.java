@@ -1,10 +1,8 @@
 package Interfaces;
 
 import CoreGame.IPlayer;
-import Structures.Interfaces.UnorderedListADT;
+import Structures.Interfaces.ListADT;
 
 public interface IEvent {
-    void apply(String description);
-
-    IPlayer getPlayer();
+    void apply(ListADT<IPlayer> players);
 }

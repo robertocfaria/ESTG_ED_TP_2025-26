@@ -1,19 +1,24 @@
 package Event;
 
 import CoreGame.IPlayer;
+import Exceptions.InvalidPlayersCountException;
+import Interfaces.IEvent;
 import Report.Report;
+import Structures.Interfaces.ListADT;
 
-public class RollBack extends Event {
-    public RollBack(IPlayer player) {
-        super(player);
-    }
+public class RollBack implements IEvent {
 
     @Override
-    public void apply(String description) {
-        System.out.println(description);
+    public void apply(ListADT<IPlayer> players) throws InvalidPlayersCountException {
+        if (players.size() != 1) {
+            throw new InvalidPlayersCountException("RollBack event applies only to 1 player at a time");
+        }
 
-        //Report lastPos = this.player.getLastMove(); método para fazer peek() do relatorio, deve ficar guardado que ele foi para tras
+        IPlayer player = players.first();
 
-        //this.player.setDivision(lastPos.getPosition());
+        Report lastPos = player.getLastMove();
+        player.setDivision(lastPos.getPosition());
+
+        System.out.println(player.getName() + " is now at the previous position");
     }
 }
