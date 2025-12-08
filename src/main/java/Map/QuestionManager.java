@@ -1,34 +1,77 @@
 package Map;
 
-import Structures.List.ArrayList;
 import Structures.List.ArrayUnorderedList;
-
-
-
+import Structures.Queue.LinkedQueue;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-
+import java.util.Iterator;
+import java.util.Random;
 
 public class QuestionManager {
-
     private ArrayUnorderedList<Question> questions;
-
+    private LinkedQueue<Question> queueQuestions;
 
     public QuestionManager() {
-        //this.questions = new ArrayUnorderedList<>();
+        this.questions = new ArrayUnorderedList<>();
+        this.queueQuestions = new LinkedQueue<>();
         importQuestions();
+        setQueue();
+    }
+
+    public void setQueue() {
+        shuffleQuestions();
+
+        this.queueQuestions = new LinkedQueue<>();
+        for (Question question : this.questions) {
+            queueQuestions.enqueue(question);
+        }
+
+        this.questions = new ArrayUnorderedList<>();
+    }
+
+    private void shuffleQuestions() {
+        if(this.questions.isEmpty()) {
+            return;
+        }
+
+        int size = questions.size();
+        Question[] tempQuestions = new Question[size];
+
+        Iterator<Question> it = this.questions.iterator();
+        int i = 0;
+        while (it.hasNext()) {
+            tempQuestions[i] = it.next();
+            i++;
+        }
+
+        Random rand = new Random();
+        for (i = size - 1; i > 0; i--) {
+            int index = rand.nextInt(i + 1);
+            Question temp = tempQuestions[index];
+            tempQuestions[index] = tempQuestions[i];
+            tempQuestions[i] = temp;
+        }
+
+        this.questions = new ArrayUnorderedList<>();
+        for (Question q : tempQuestions) {
+            this.questions.addToRear(q);
+        }
     }
 
     public Question getQuestion() {
+        if(queueQuestions.isEmpty()){
+            setQueue();
+        }
 
-
-        return null;
+        try{
+            Question tempQuestion = queueQuestions.dequeue();
+            questions.addToRear(tempQuestion);
+            return tempQuestion;
+        }catch (Exception e) {
+            return null;
+        }
     }
-
-    //baralhar perguntas
-    //se criar qeue
-    //
 
     private void importQuestions() {
         try {
@@ -100,7 +143,6 @@ public class QuestionManager {
 
             index = endCorrect;
         }
-
         return list;
     }
 }

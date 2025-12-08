@@ -34,7 +34,7 @@ public class StartMenu {
         System.out.println("| 1 - Novo Jogo -> Mapa Random");
         System.out.println("| 2 - Novo Jogo -> Crie o seu Mapa");
         System.out.println("| 3 - Novo Jogo -> Escolha o Mapa");
-        System.out.println("| 4 - Carregar jogo por acabar");
+        System.out.println("| 4 - Carregar jogo por acabar ou ver resultados de jogo terminado");
         System.out.println("| 0 - Sair");
         System.out.println("|----------------------------------------------------------------");
     }

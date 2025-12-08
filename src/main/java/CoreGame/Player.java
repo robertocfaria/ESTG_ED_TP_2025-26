@@ -1,7 +1,9 @@
 package CoreGame;
 
+import Event.Event;
 import Map.IDivision;
 import Map.IMap;
+import Structures.Stack.ArrayStack;
 
 
 public abstract class Player implements IPlayer{
@@ -10,7 +12,7 @@ public abstract class Player implements IPlayer{
     protected int stunned;
     protected int extraRound;
     protected boolean realPlayer;
-    //protected ArrayStack<> movementsHistory; TODO aqui temos de criar um "Evento para guardar o movimento que o jogador fez"
+    protected ArrayStack<Event> movementsHistory;
     protected IDivision division;
 
 
@@ -24,7 +26,7 @@ public abstract class Player implements IPlayer{
         this.extraRound = 0;
         this.realPlayer = true;
         this.division = null;
-        //TODO movementsHistory = new stack<>
+        this.movementsHistory = null;
     }
 
     /**
@@ -37,7 +39,7 @@ public abstract class Player implements IPlayer{
         this.extraRound = 0;
         this.realPlayer = true;
         this.division = null;
-        //TODO movementsHistory = new stack<>
+        this.movementsHistory = null;
     }
 
     @Override

@@ -11,13 +11,15 @@ public class GameManager {
     private IPlayer winnerPlayer;
     private IMap maze;
     private int turn;
+    private boolean finished;
 
-    //aqui temos de receber o mapa
-    public GameManager() {
+
+    public GameManager(IMap maze) {
         this.players = new ArrayUnorderedList<IPlayer>();
         this.winnerPlayer = null;
         this.maze = maze;
         this.turn = 1;
+        this.finished = false;
     }
 
     public void startGame() {
@@ -63,7 +65,7 @@ public class GameManager {
         Reader reader = new Reader();
 
         System.out.println("Escolha quantos jogadores vai adicionar. Pode adicionar ate 10");
-        System.out.println(" jogadores reais e 5 jogadores automaticos (BOTS).");
+        System.out.println("jogadores reais e 5 jogadores automaticos (BOTS).");
 
         int realPlayers = reader.readInt(1,10,"Quantos jogadores reais (1 a 10): ");
         for(int i = 0; i < realPlayers; i++) {
@@ -80,17 +82,6 @@ public class GameManager {
     }
 
     private void setInitialPlayerDivisions() {}
-
-    private void swapPlayerDivision(IPlayer p1, IPlayer p2) {
-        IDivision tempDivision = p2.getDivision();
-        p2.setDivision(p1.getDivision());
-        p1.setDivision(tempDivision);
-        //TODO adicionar um evento para bloquear retroceder - quando voltar atras
-    }
-
-    private void shuffleAllPlayersDivision() {
-
-    }
 
     private boolean isWinner(IPlayer player) {
         //TODO - fazer este metodo

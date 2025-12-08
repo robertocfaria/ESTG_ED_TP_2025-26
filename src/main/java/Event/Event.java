@@ -13,7 +13,7 @@ public abstract class Event implements IEvent {
         this.player = player;
     }
 
-    @Override
+    //@Override
     public IPlayer getPlayer() {
         return this.player;
     }
