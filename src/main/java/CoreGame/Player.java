@@ -1,40 +1,87 @@
 package CoreGame;
 
-public class Player implements IPlayer{
-    private String name;
-    //private Division position;
-    private int stunned;
-    private int extraRound;
-    private boolean realPlayer;
-    //private Stack<> movementsHistory;
+import Event.Event;
+import Map.IDivision;
+import Map.IMap;
+import Structures.Stack.ArrayStack;
 
 
-    public Player() {
+public abstract class Player implements IPlayer{
+    protected static int botNumber = 1;
+    protected String name;
+    protected int stunned;
+    protected int extraRound;
+    protected boolean realPlayer;
+    protected ArrayStack<Event> movementsHistory;
+    protected IDivision division;
 
+
+    /**
+     * Este construtor cria um jogador Real novo.
+     * @param name  Nome do Jogador
+     */
+    public Player(String name) {
+        this.name = name;
+        this.stunned = 0;
+        this.extraRound = 0;
+        this.realPlayer = true;
+        this.division = null;
+        this.movementsHistory = null;
     }
 
+    /**
+     * Este construtor cria um jogador automático. Usa a variável estatica para definir o número"
+     */
+    public Player() {
+        this.name = "BOT" + botNumber;
+        botNumber++;
+        this.stunned = 0;
+        this.extraRound = 0;
+        this.realPlayer = true;
+        this.division = null;
+        this.movementsHistory = null;
+    }
 
+    @Override
+    public abstract void move(IMap maze);
+
+    @Override
     public String getName() {
         return this.name;
     }
 
+    @Override
     public int getStunned() {
         return this.stunned;
     }
 
+    @Override
     public void addStunnedRound(int numberOfRounds) {
         this.stunned = numberOfRounds;
     }
 
+    @Override
     public int getExtraRounds() {
         return this.extraRound;
     }
 
+    @Override
     public void addExtraRound(int numberOfRounds) {
         this.extraRound = numberOfRounds;
     }
 
+    @Override
     public boolean isRealPlayer(){
         return realPlayer;
+    }
+
+    @Override
+    public void setDivision(IDivision division) {
+        this.division = division;
+    }
+
+    @Override
+    public IDivision getDivision() {
+        return this.division;
     }
 }

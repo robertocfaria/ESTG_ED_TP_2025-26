@@ -2,14 +2,17 @@ package Event;
 
 import CoreGame.IPlayer;
 import Exceptions.InvalidPlayersCountException;
-import Interfaces.IDivision;
+import Map.IDivision;
 import Interfaces.IEvent;
 import Structures.Interfaces.ListADT;
 import Structures.Interfaces.UnorderedListADT;
 
-import static Event.StunnedPlays.RAND;
+import java.util.Random;
+
 
 public class ShuffleAllPlayers implements IEvent {
+    private Random rand = new Random();
+
 
     @Override
     public void apply(ListADT<IPlayer> players) throws InvalidPlayersCountException {
@@ -26,7 +29,7 @@ public class ShuffleAllPlayers implements IEvent {
 
         IDivision temp;
         for (int i = 0; i < playersDivision.length; i++) {
-            index = RAND.nextInt(i + 1);
+            index = rand.nextInt(i + 1);
 
             temp = playersDivision[index];
             playersDivision[index] = playersDivision[i];
