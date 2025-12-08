@@ -32,7 +32,7 @@ public class QuestionManager {
 
     private void importQuestions() {
         try {
-            String jsonContent = readFile("C:\\Users\\rcris\\Desktop\\LEI\\2ANO\\ED\\Teste\\src\\questions.json");
+            String jsonContent = readFile("questions.json");
             this.questions = parseJsonToArrayList(jsonContent);
         } catch (Exception e) {
             System.err.println("Erro ao carregar questões: " + e.getMessage());
