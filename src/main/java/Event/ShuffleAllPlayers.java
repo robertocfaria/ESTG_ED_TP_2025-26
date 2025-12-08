@@ -2,7 +2,7 @@ package Event;
 
 import CoreGame.IPlayer;
 import Exceptions.InvalidPlayersCountException;
-import Interfaces.IDivision;
+import Map.IDivision;
 import Interfaces.IEvent;
 import Structures.Interfaces.ListADT;
 import Structures.Interfaces.UnorderedListADT;
