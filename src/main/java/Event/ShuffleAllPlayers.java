@@ -26,7 +26,6 @@ public class ShuffleAllPlayers implements IEvent {
 
         IDivision temp;
         for (int i = 0; i < playersDivision.length; i++) {
-            index = rand.nextInt(i + 1);
             index = this.rand.nextInt(i + 1);
 
             temp = playersDivision[index];

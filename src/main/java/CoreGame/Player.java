@@ -1,6 +1,5 @@
 package CoreGame;
 
-import Event.Event;
 import Interfaces.IMap;
 import Interfaces.IDivision;
 import Interfaces.IPlayer;
