@@ -1,7 +1,6 @@
 package Report;
 
 import Interfaces.IEvent;
-import Interfaces.IDivision;
 
 public class Report {
     IDivision position; // sala para a qual o jogador se moveu
