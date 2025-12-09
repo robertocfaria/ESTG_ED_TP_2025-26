@@ -1,4 +1,4 @@
 package Map;
 
-public class GoalDivision extends Division{
+public abstract class GoalDivision extends Division{
 }

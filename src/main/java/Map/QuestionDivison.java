@@ -1,6 +1,6 @@
 package Map;
 
-public class QuestionDivison extends Division{
+public abstract class QuestionDivison extends Division{
 
     private static QuestionManager questions;
 
