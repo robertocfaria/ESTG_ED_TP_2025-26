@@ -1,5 +1,6 @@
 package Event;
 
+import Interfaces.IDivision;
 import Interfaces.IPlayer;
 import Exceptions.InvalidPlayersCountException;
 import Interfaces.IEvent;
@@ -16,9 +17,9 @@ public class RollBack implements IEvent {
 
         IPlayer player = players.first();
 
-        Report lastPos = player.getLastDivision();
+        IDivision lastPos = player.getLastDivision();
 
-        player.setDivision(lastPos.getPosition());
+        player.setDivision(lastPos);
 
         System.out.println(player.getName() + " is now at the previous position");
     }

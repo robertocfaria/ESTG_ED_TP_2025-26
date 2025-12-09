@@ -26,4 +26,9 @@ public class Hallway implements IHallway {
 
         return event;
     }
+
+    @Override
+    public String toString() {
+        return "Hallway";
+    }
 }

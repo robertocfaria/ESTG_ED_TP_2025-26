@@ -31,4 +31,9 @@ public class LeverDivision implements IDivision {
 
         return chosenLever.getDivision();
     }
+
+    @Override
+    public String toString() {
+        return "Alavanca";
+    }
 }
