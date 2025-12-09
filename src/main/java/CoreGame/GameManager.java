@@ -1,7 +1,6 @@
 package CoreGame;
 
-import Map.IDivision;
-import Map.IMap;
+import Interfaces.IMap;
 import Reader.Reader;
 import Structures.List.ArrayUnorderedList;
 import Util.Utils;

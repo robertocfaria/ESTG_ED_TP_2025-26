@@ -1,7 +1,7 @@
 package CoreGame;
 
-import Map.IDivision;
-import Map.IMap;
+import Interfaces.IDivision;
+import Interfaces.IMap;
 
 public interface IPlayer {
 

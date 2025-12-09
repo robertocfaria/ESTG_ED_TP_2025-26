@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Reader {
-    public int readInt(int minOption, int maxOption, String message) {
+    public static int readInt(int minOption, int maxOption, String message) {
         try {
             BufferedReader reader = new BufferedReader(
                     new InputStreamReader(System.in)
@@ -30,7 +30,7 @@ public class Reader {
         return -1;
     }
 
-    public String readString(String message) {
+    public static String readString(String message) {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.print(message);
         try {

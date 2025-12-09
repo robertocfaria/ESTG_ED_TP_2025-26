@@ -1,6 +1,6 @@
 package CoreGame;
 
-import Map.IMap;
+import Interfaces.IMap;
 
 public class BotPlayer extends Player{
 

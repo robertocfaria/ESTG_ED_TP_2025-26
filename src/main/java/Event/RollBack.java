@@ -16,9 +16,12 @@ public class RollBack implements IEvent {
 
         IPlayer player = players.first();
 
+        /*
         Report lastPos = player.getLastMove();
+
         player.setDivision(lastPos.getPosition());
 
         System.out.println(player.getName() + " is now at the previous position");
+        */
     }
 }
