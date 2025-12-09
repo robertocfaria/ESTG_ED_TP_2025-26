@@ -14,7 +14,7 @@ public class Hallway implements IHallway {
     @Override
     public IEvent getEvent(IPlayer player) {
         IEvent event = EVENTS.getRandomEvent();
-        IEvent playerLastEvent = player.getLastEvent();
+       /** IEvent playerLastEvent = player.getLastEvent();
 
         if (event instanceof RollBack) {
             if (playerLastEvent instanceof SwapTwoPlayers || playerLastEvent instanceof ShuffleAllPlayers) {
@@ -23,6 +23,7 @@ public class Hallway implements IHallway {
                 } while (event instanceof RollBack);
             }
         }
+        */
 
         return event;
     }

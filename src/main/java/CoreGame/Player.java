@@ -1,5 +1,6 @@
 package CoreGame;
 
+import Interfaces.IEvent;
 import Interfaces.IMap;
 import Interfaces.IDivision;
 import Interfaces.IPlayer;
@@ -12,7 +13,7 @@ public abstract class Player implements IPlayer {
     protected int stunned;
     protected int extraRound;
     protected boolean realPlayer;
-    protected ArrayStack<Event> movementsHistory;
+    protected ArrayStack<IEvent> movementsHistory;
     protected IDivision division;
 
 
