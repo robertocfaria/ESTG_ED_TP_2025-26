@@ -1,8 +1,9 @@
-package Lever;
+package Map;
 
 import Interfaces.IDivision;
 import Interfaces.ILever;
 import Interfaces.IMap;
+import Lever.Lever;
 import NewSctructures.ArrayUnorderedListWithGet;
 import NewSctructures.UnorderedListWithGetADT;
 import Reader.Reader;
