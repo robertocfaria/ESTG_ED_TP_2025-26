@@ -1,58 +1,33 @@
 package Lever;
 
+import Interfaces.IDivision;
 import Interfaces.ILever;
-import Interfaces.ILeverDivision;
+import Interfaces.IMap;
+import NewSctructures.ArrayUnorderedListWithGet;
+import NewSctructures.UnorderedListWithGetADT;
 import Reader.Reader;
-import Structures.Exceptions.EmptyCollectionException;
-import Structures.List.ArrayUnorderedList;
 
-public class LeverDivision implements ILeverDivision {
-    private ArrayUnorderedList<ILever> levers;
-    private boolean isCorrectLever;
+public class LeverDivision implements IDivision {
+    private UnorderedListWithGetADT<IDivision> adjacentDivision;
+    private UnorderedListWithGetADT<ILever> levers;
 
     public LeverDivision() {
-        this.levers = new ArrayUnorderedList<>();
+        this.adjacentDivision = new ArrayUnorderedListWithGet<>();
+        this.levers = new ArrayUnorderedListWithGet<>();
     }
 
     @Override
-    public void applyChallenge() {
-        if (this.levers.isEmpty()) {
-            throw new EmptyCollectionException("All levers have been activated");
-        }
+    public IDivision getNewChosenDivision(IMap maze) {
+        this.adjacentDivision = maze.getAdjacentVertex(this);
 
-        for (ILever lever : this.levers) {
-            System.out.print(lever);
+        for (int i = 0; i < this.adjacentDivision.size() * 2; i++) { // metade sao alavancas normais, outras retornam null
+            ILever lever = new Lever(this.adjacentDivision.get(i), i);
+            this.levers.addToRear(lever);
         }
 
         int choice = Reader.readInt(1, this.levers.size(), "Escolha a alavanca a puxar:");
-        ILever chosenLever = this.levers.first(); //trocar por um getIndex
+        ILever chosenLever = this.levers.get(choice - 1);
 
-        if (chosenLever != null) {
-            this.isCorrectLever = chosenLever.unlocksHallway();
-        } else {
-            System.out.println("A alavanca escolhida já foi ativada");
-        }
-
-        this.levers.remove(chosenLever);
-    }
-
-    @Override
-    public boolean answeredCorrectly() {
-        return this.isCorrectLever;
-    }
-
-    @Override
-    public void setMiniumNumberOfLevers(int quantity) throws IllegalArgumentException {
-        if (quantity < 1) {
-            throw new IllegalArgumentException("A lever must be applied to a division with 1 or plus hallways");
-        }
-
-        for (int i = 0; i < quantity; i++) {
-            this.levers.addToRear(new Lever(i + 1, true));
-        }
-
-        for (int i = quantity; i < quantity + 3; i++) {
-            this.levers.addToRear(new Lever(i + 1, false));
-        }
+        return chosenLever.getDivision();
     }
 }

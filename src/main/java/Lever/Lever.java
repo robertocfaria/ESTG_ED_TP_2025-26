@@ -1,24 +1,24 @@
 package Lever;
 
+import Interfaces.IDivision;
 import Interfaces.ILever;
 
 public class Lever implements ILever {
+    private IDivision division;
     private int id;
-    private boolean unlocksHallway;
 
-    public Lever(int id, boolean unlocksHallway) {
+    public Lever(IDivision division, int id) {
+        this.division = division;
         this.id = id;
-        this.unlocksHallway = unlocksHallway;
     }
 
-    @Override
     public int getId() {
         return this.id;
     }
 
     @Override
-    public boolean unlocksHallway() {
-        return this.unlocksHallway;
+    public IDivision getDivision() {
+        return null;
     }
 
     @Override

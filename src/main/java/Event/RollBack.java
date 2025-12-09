@@ -1,9 +1,8 @@
 package Event;
 
-import CoreGame.IPlayer;
+import Interfaces.IPlayer;
 import Exceptions.InvalidPlayersCountException;
 import Interfaces.IEvent;
-import Report.Report;
 import Structures.Interfaces.ListADT;
 
 public class RollBack implements IEvent {

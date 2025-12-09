@@ -1,10 +1,7 @@
 package Event;
 
-import CoreGame.IPlayer;
+import Interfaces.IPlayer;
 import Interfaces.IEvent;
-import Structures.Interfaces.UnorderedListADT;
-import Structures.List.ArrayUnorderedList;
-import Structures.List.DoubleLinkedUnorderedList;
 
 public abstract class Event implements IEvent {
     protected IPlayer player;

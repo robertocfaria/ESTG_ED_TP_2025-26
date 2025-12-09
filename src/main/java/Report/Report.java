@@ -1,10 +1,11 @@
 package Report;
 
+import Interfaces.IDivision;
 import Interfaces.IEvent;
 
 public class Report {
-    IDivision position; // sala para a qual o jogador se moveu
-    IEvent event;       // evento que aconteceu ao se mover para a sala
+    IDivision position;
+    IEvent event;
 
     public Report(IDivision position, IEvent event) {
         this.position = position;

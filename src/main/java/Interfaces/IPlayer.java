@@ -1,6 +1,4 @@
-package CoreGame;
-
-import Interfaces.IMap;
+package Interfaces;
 
 public interface IPlayer {
 

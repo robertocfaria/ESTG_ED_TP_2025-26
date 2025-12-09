@@ -1,6 +1,6 @@
 package Event;
 
-import CoreGame.IPlayer;
+import Interfaces.IPlayer;
 import Exceptions.InvalidPlayersCountException;
 import Interfaces.IEvent;
 import Structures.Interfaces.ListADT;

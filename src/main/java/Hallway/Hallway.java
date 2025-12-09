@@ -1,6 +1,5 @@
 package Hallway;
 
-import CoreGame.IPlayer;
 import Event.*;
 import Interfaces.IEvent;
 import Interfaces.IHallway;

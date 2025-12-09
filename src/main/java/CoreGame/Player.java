@@ -2,11 +2,12 @@ package CoreGame;
 
 import Event.Event;
 import Interfaces.IMap;
-import Map.IDivision;
+import Interfaces.IDivision;
+import Interfaces.IPlayer;
 import Structures.Stack.ArrayStack;
 
 
-public abstract class Player implements IPlayer{
+public abstract class Player implements IPlayer {
     protected static int botNumber = 1;
     protected String name;
     protected int stunned;

@@ -1,8 +1,11 @@
 package Map;
 
 import Exceptions.NotSupportedOperation;
+import Interfaces.IDivision;
 import Interfaces.IHallway;
 import Interfaces.IMap;
+import NewSctructures.ArrayUnorderedListWithGet;
+import NewSctructures.UnorderedListWithGetADT;
 import Structures.Exceptions.ElementNotFoundException;
 import Structures.Exceptions.EmptyCollectionException;
 import Structures.Interfaces.UnorderedListADT;
@@ -20,28 +23,21 @@ public class Map implements IMap {
     private int count;
 
     public Map() {
-
-
-
-
         this.vertices = new IDivision[DEFAULT_CAPACITY];
         this.adjMatrix = new IHallway[DEFAULT_CAPACITY][DEFAULT_CAPACITY];
         this.count = 0;
     }
 
     public Map(int capacity) {
-        //TODO Logica da crialação da matriz
-
         this.vertices = new IDivision[capacity];
         this.adjMatrix = new IHallway[capacity][capacity];
         this.count = 0;
     }
 
-    /*TODO Miguel
     private void expandCapacity() {
         int newCapacity = this.count * INCREASE_FACTOR;
 
-        expandedVertices =  new Object[newCapacity];
+        IDivision[] expandedVertices =  new IDivision[newCapacity];
         IHallway[][] expandedAdjMatrix = new IHallway[newCapacity][newCapacity];
 
         for (int i = 0; i < this.count; i++) {
@@ -57,17 +53,16 @@ public class Map implements IMap {
         this.adjMatrix = expandedAdjMatrix;
     }
 
+    /*
     TODO metodo para scar a division
     TODO metodo para saber quais sao as inicia - iniciar a matriz e verificar as conexoes para ver qual sao as extremidades
-
-
-     */
+    */
 
     private boolean isValidIndex(int i) {
         return 0 <= i && i < this.count;
     }
 
-    private int getIndex(T vertex) {
+    private int getIndex(IDivision vertex) {
         for (int i = 0; i < this.count; i++) {
             if (this.vertices[i].equals(vertex)) {
                 return i;
@@ -92,7 +87,7 @@ public class Map implements IMap {
     }
 
     @Override
-    public void addVertex(T vertex) {
+    public void addVertex(IDivision vertex) {
         if (this.size() == this.vertices.length) {
             this.expandCapacity();
         }
@@ -103,7 +98,7 @@ public class Map implements IMap {
     }
 
     @Override
-    public void removeVertex(T vertex) throws EmptyCollectionException, ElementNotFoundException {
+    public void removeVertex(IDivision vertex) throws EmptyCollectionException, ElementNotFoundException {
         if (this.isEmpty()) {
             throw new EmptyCollectionException("Graph hasn't divisions to be remove");
         }
@@ -120,22 +115,22 @@ public class Map implements IMap {
     }
 
     @Override
-    public void addEdge(T t, T t1) throws NotSupportedOperation {
+    public void addEdge(IDivision t, IDivision t1) throws NotSupportedOperation {
         throw new NotSupportedOperation("This operation can't be done in this graph");
     }
 
     @Override
-    public void addEdge(T t, T t1, double v) throws NotSupportedOperation {
+    public void addEdge(IDivision t, IDivision t1, double v) throws NotSupportedOperation {
         throw new NotSupportedOperation("This operation can't be done in this graph");
     }
 
     @Override
-    public void removeEdge(T vertex1, T vertex2) {
+    public void removeEdge(IDivision vertex1, IDivision vertex2) {
         this.removeEdge(this.getIndex(vertex1), this.getIndex(vertex2));
     }
 
     @Override
-    public double shortestPathWeight(T startVertex, T targetVertex) {
+    public double shortestPathWeight(IDivision startVertex, IDivision targetVertex) {
        /** int start = getIndex(startVertex);
         int target = getIndex(targetVertex);
 
@@ -186,12 +181,12 @@ public class Map implements IMap {
     }
 
     @Override
-    public Iterator iteratorBFS(T startVertex) {
+    public Iterator iteratorBFS(IDivision startVertex) {
         int startIndex = this.getIndex(startVertex);
 
         int x;
         LinkedQueue<Integer> traversalQueue = new LinkedQueue<>();
-        ArrayUnorderedList<T> resultList = new ArrayUnorderedList<>();
+        ArrayUnorderedList<IDivision> resultList = new ArrayUnorderedList<>();
 
         if (!this.isValidIndex(startIndex)) {
             return resultList.iterator();
@@ -218,14 +213,14 @@ public class Map implements IMap {
     }
 
     @Override
-    public Iterator iteratorDFS(T startVertex) {
+    public Iterator iteratorDFS(IDivision startVertex) {
         int startIndex = this.getIndex(startVertex);
 
         int x;
         boolean found;
 
         LinkedStack<Integer> traversalStack = new LinkedStack<>();
-        ArrayUnorderedList<T> resultList = new ArrayUnorderedList<>();
+        ArrayUnorderedList<IDivision> resultList = new ArrayUnorderedList<>();
         boolean[] visited = new boolean[this.count];
 
         if (!this.isValidIndex(startIndex)) {
@@ -258,11 +253,11 @@ public class Map implements IMap {
     }
 
     @Override
-    public Iterator iteratorShortestPath(T startVertex, T targetVertex) {
+    public Iterator iteratorShortestPath(IDivision startVertex, IDivision targetVertex) {
         int startIndex = getIndex(startVertex);
         int targetIndex = getIndex(targetVertex);
 
-        ArrayUnorderedList<T> resultList = new ArrayUnorderedList<>();
+        ArrayUnorderedList<IDivision> resultList = new ArrayUnorderedList<>();
 
         if (!isValidIndex(startIndex) || !isValidIndex(targetIndex)) {
             return resultList.iterator();
@@ -317,12 +312,12 @@ public class Map implements IMap {
     }
 
     @Override
-    public void addEdge(T vertex1, T vertex2, IHallway weight) {
+    public void addEdge(IDivision vertex1, IDivision vertex2, IHallway weight) {
         this.addEdge(this.getIndex(vertex1), this.getIndex(vertex2), weight);
     }
 
     @Override
-    public IHallway getEdge(T vertex1, T vertex2) throws ElementNotFoundException {
+    public IHallway getEdge(IDivision vertex1, IDivision vertex2) throws ElementNotFoundException {
         int i = this.getIndex(vertex1);
         int j = this.getIndex(vertex2);
 
@@ -334,14 +329,14 @@ public class Map implements IMap {
     }
 
     @Override
-    public UnorderedListADT<T> getAdjacentVertex(T vertex) throws ElementNotFoundException {
+    public UnorderedListWithGetADT<IDivision> getAdjacentVertex(IDivision vertex) throws ElementNotFoundException {
         int index = this.getIndex(vertex);
 
         if (index == -1) {
             throw new ElementNotFoundException("Division not found");
         }
 
-        UnorderedListADT<T> result = new ArrayUnorderedList<>();
+        UnorderedListWithGetADT<IDivision> result = new ArrayUnorderedListWithGet<>();
 
         for (int i = 0; i < this.count; i++) {
             if (i != index && (this.adjMatrix[i][index] != null || this.adjMatrix[index][i] != null)) {

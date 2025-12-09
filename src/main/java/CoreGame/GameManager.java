@@ -1,6 +1,7 @@
 package CoreGame;
 
 import Interfaces.IMap;
+import Interfaces.IPlayer;
 import Reader.Reader;
 import Structures.List.ArrayUnorderedList;
 import Util.Utils;
