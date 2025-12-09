@@ -3,7 +3,7 @@ package Interfaces;
 import Structures.Interfaces.NetworkADT;
 import Structures.Interfaces.UnorderedListADT;
 
-public interface IMap<T extends IDivision> extends NetworkADT<T> {
+public interface IMap<T> extends NetworkADT<T> {
 
     void addEdge(T vertex1, T vertex2, IHallway weight);
 

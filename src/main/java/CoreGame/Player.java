@@ -1,8 +1,8 @@
 package CoreGame;
 
 import Event.Event;
-import Interfaces.IDivision;
 import Interfaces.IMap;
+import Map.IDivision;
 import Structures.Stack.ArrayStack;
 
 

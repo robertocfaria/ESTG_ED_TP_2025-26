@@ -1,7 +1,6 @@
 package Map;
 
 import Exceptions.NotSupportedOperation;
-import Interfaces.IDivision;
 import Interfaces.IHallway;
 import Interfaces.IMap;
 import Structures.Exceptions.ElementNotFoundException;
@@ -13,23 +12,36 @@ import Structures.Stack.LinkedStack;
 
 import java.util.Iterator;
 
-public class Map<T extends IDivision> implements IMap<T> {
+public class Map implements IMap {
     public static final int INCREASE_FACTOR = 2;
     public static final int DEFAULT_CAPACITY = 20;
     private IHallway[][] adjMatrix;
-    private T[] vertices;
+    private IDivision[] vertices;
     private int count;
 
     public Map() {
-        this.vertices = (T[]) new IDivision[DEFAULT_CAPACITY];
+
+
+
+
+        this.vertices = new IDivision[DEFAULT_CAPACITY];
         this.adjMatrix = new IHallway[DEFAULT_CAPACITY][DEFAULT_CAPACITY];
         this.count = 0;
     }
 
+    public Map(int capacity) {
+        //TODO Logica da crialação da matriz
+
+        this.vertices = new IDivision[capacity];
+        this.adjMatrix = new IHallway[capacity][capacity];
+        this.count = 0;
+    }
+
+    /*TODO Miguel
     private void expandCapacity() {
         int newCapacity = this.count * INCREASE_FACTOR;
 
-        T[] expandedVertices = (T[]) new Object[newCapacity];
+        expandedVertices =  new Object[newCapacity];
         IHallway[][] expandedAdjMatrix = new IHallway[newCapacity][newCapacity];
 
         for (int i = 0; i < this.count; i++) {
@@ -44,6 +56,12 @@ public class Map<T extends IDivision> implements IMap<T> {
         }
         this.adjMatrix = expandedAdjMatrix;
     }
+
+    TODO metodo para scar a division
+    TODO metodo para saber quais sao as inicia - iniciar a matriz e verificar as conexoes para ver qual sao as extremidades
+
+
+     */
 
     private boolean isValidIndex(int i) {
         return 0 <= i && i < this.count;

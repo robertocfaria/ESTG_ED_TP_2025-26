@@ -1,6 +1,5 @@
 package CoreGame;
 
-import Interfaces.IDivision;
 import Interfaces.IMap;
 import Structures.Exceptions.ElementNotFoundException;
 import Structures.Interfaces.UnorderedListADT;

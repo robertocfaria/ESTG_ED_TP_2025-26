@@ -19,7 +19,7 @@ public class QuestionManager {
         setQueue();
     }
 
-    public void setQueue() {
+    private void setQueue() {
         shuffleQuestions();
 
         this.queueQuestions = new LinkedQueue<>();

@@ -1,6 +1,5 @@
 package CoreGame;
 
-import Interfaces.IDivision;
 import Interfaces.IMap;
 
 public interface IPlayer {
