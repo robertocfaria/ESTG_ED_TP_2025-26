@@ -1,5 +1,5 @@
 package Interfaces;
 
 public interface IHallway {
-    IEvent getRandomEvent();
+    IEvent getEvent(IPlayer player);
 }

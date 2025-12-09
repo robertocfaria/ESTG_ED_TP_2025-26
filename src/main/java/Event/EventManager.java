@@ -1,16 +1,13 @@
-package Hallway;
+package Event;
 
-import Event.*;
 import Interfaces.IEvent;
-import Interfaces.IHallway;
 
 import java.util.Random;
 
-public class Hallway implements IHallway {
+public class EventManager {
     private Class[] events = new Class[]{ExtraPlays.class, RollBack.class, ShuffleAllPlayers.class, StunnedPlays.class, SwapTwoPlayers.class};
     private Random rand = new Random();
 
-    @Override
     public IEvent getRandomEvent() {
         Class randEvent = this.events[this.rand.nextInt(events.length)];
 

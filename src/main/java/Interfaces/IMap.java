@@ -1,9 +1,7 @@
 package Interfaces;
 
-import NewSctructures.ArrayUnorderedListWithGet;
 import NewSctructures.UnorderedListWithGetADT;
 import Structures.Interfaces.NetworkADT;
-import Structures.Interfaces.UnorderedListADT;
 
 public interface IMap extends NetworkADT<IDivision> {
 
@@ -12,4 +10,6 @@ public interface IMap extends NetworkADT<IDivision> {
     UnorderedListWithGetADT<IDivision> getAdjacentVertex(IDivision vertex);
 
     IHallway getEdge(IDivision vertex1, IDivision vertex2);
+
+    UnorderedListWithGetADT<IDivision> getInitialVertexes();
 }

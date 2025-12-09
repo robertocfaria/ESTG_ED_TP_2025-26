@@ -87,6 +87,26 @@ public class Map implements IMap {
     }
 
     @Override
+    public UnorderedListWithGetADT<IDivision> getInitialVertexes() {
+        UnorderedListWithGetADT<IDivision> result = new ArrayUnorderedListWithGet<>();
+
+        int connections = 0;
+        for (int i = 0; i < this.count; i++) {
+            for (int j = 0; j < this.count; j++) {
+                if (this.adjMatrix[i][j] != null) {
+                    connections++;
+                }
+            }
+
+            if (connections == 1) {
+                result.addToRear(this.vertices[i]);
+            }
+        }
+
+        return result;
+    }
+
+    @Override
     public void addVertex(IDivision vertex) {
         if (this.size() == this.vertices.length) {
             this.expandCapacity();
