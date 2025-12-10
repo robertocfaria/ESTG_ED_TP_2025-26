@@ -1,22 +1,36 @@
 package Menus;
 
+import CoreGame.GameManager;
+import Map.Map;
 import Reader.*;
+
+import java.util.Random;
 
 public class StartMenu {
 
     public static void menu() {
-        int opcao = 0;
-        Reader reader = new Reader();
+        int opcao = 0, tamanho = 0;
+        GameManager game;
 
+        Reader reader = new Reader();
 
         do {
             displayMenu();
             opcao = reader.readInt(0, 4, "Opcao: ");
             switch (opcao) {
                 case 1:
-
+                    Random random = new Random();
+                    tamanho = random.nextInt(90) + 10;
+                    game = new GameManager(new Map(tamanho));
+                    System.out.println("A iniciar o jogo...");
+                    game.startGame();
+                    break;
                 case 2:
-
+                    tamanho = reader.readInt(10, 90, "Insira o numero de desafios que pretende (10 a 90): ");
+                    game = new GameManager(new Map(tamanho));
+                    System.out.println("A iniciar o jogo...");
+                    game.startGame();
+                    break;
                 case 3:
 
                 default:

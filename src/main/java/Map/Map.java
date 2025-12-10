@@ -1,6 +1,7 @@
 package Map;
 
 import Exceptions.NotSupportedOperation;
+import Importers.DivisionNames;
 import Interfaces.IDivision;
 import Interfaces.IHallway;
 import Interfaces.IMap;
@@ -8,12 +9,12 @@ import NewSctructures.ArrayUnorderedListWithGet;
 import NewSctructures.UnorderedListWithGetADT;
 import Structures.Exceptions.ElementNotFoundException;
 import Structures.Exceptions.EmptyCollectionException;
-import Structures.Interfaces.UnorderedListADT;
 import Structures.List.ArrayUnorderedList;
 import Structures.Queue.LinkedQueue;
 import Structures.Stack.LinkedStack;
 
 import java.util.Iterator;
+import java.util.Random;
 
 public class Map implements IMap {
     public static final int INCREASE_FACTOR = 2;
@@ -26,12 +27,58 @@ public class Map implements IMap {
         this.vertices = new IDivision[DEFAULT_CAPACITY];
         this.adjMatrix = new IHallway[DEFAULT_CAPACITY][DEFAULT_CAPACITY];
         this.count = 0;
+        generateDivisions(DEFAULT_CAPACITY);
+
+
     }
 
     public Map(int capacity) {
         this.vertices = new IDivision[capacity];
         this.adjMatrix = new IHallway[capacity][capacity];
         this.count = 0;
+        generateDivisions(capacity);
+
+    }
+
+    private void generateDivisions(int numberOfDivisions) {
+        java.util.Random rand = new java.util.Random();
+        LinkedQueue<String> divisionNames = getDivisionNames();
+
+        for (int i = 0; i < numberOfDivisions; i++) {
+            IDivision newDivision;
+            if (rand.nextBoolean()) {
+                newDivision = new QuestionDivision(divisionNames.dequeue());
+            } else {
+                newDivision = new LeverDivision(divisionNames.dequeue());
+            }
+            addVertex(newDivision);
+        }
+    }
+
+    private LinkedQueue<String> getDivisionNames() {
+        ArrayUnorderedList<String> divisionNames = DivisionNames.importNames("src/main/resources/DivisionNames.json");
+        String[] shuffledNames = new String[divisionNames.size()];
+        int count = 0;
+
+        for (String name : divisionNames) {
+            shuffledNames[count++] = name;
+        }
+
+        Random rand = new Random();
+        for (int i = shuffledNames.length - 1; i > 0; i--) {
+            int index = rand.nextInt(i + 1);
+
+            String temp = shuffledNames[index];
+            shuffledNames[index] = shuffledNames[i];
+            shuffledNames[i] = temp;
+        }
+
+        LinkedQueue<String> nameQueue = new LinkedQueue<>();
+        for (String name : shuffledNames) {
+            nameQueue.enqueue(name);
+        }
+
+        return nameQueue;
     }
 
     private void expandCapacity() {

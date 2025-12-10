@@ -8,13 +8,20 @@ import NewSctructures.ArrayUnorderedListWithGet;
 import NewSctructures.UnorderedListWithGetADT;
 import Reader.Reader;
 
-public class LeverDivision implements IDivision {
+public class LeverDivision extends Division {
     private UnorderedListWithGetADT<IDivision> adjacentDivision;
     private UnorderedListWithGetADT<ILever> levers;
 
-    public LeverDivision() {
+    public LeverDivision(String name) {
+        super(name);
         this.adjacentDivision = new ArrayUnorderedListWithGet<>();
         this.levers = new ArrayUnorderedListWithGet<>();
+
+    }
+
+    @Override
+    public IDivision getComportament() {
+        return null;
     }
 
     @Override

@@ -7,4 +7,6 @@ public interface IDivision {
      * A partir do @param maze ele obtem as salas adjecentes, mostrandos as opções ao jogador
      */
     IDivision getNewChosenDivision(IMap maze);
+
+    IDivision getComportament();
 }

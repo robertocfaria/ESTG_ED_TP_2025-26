@@ -75,7 +75,7 @@ public class QuestionManager {
 
     private void importQuestions() {
         try {
-            String jsonContent = readFile("questions.json");
+            String jsonContent = readFile("src/main/resources/Questions.json");
             this.questions = parseJsonToArrayList(jsonContent);
         } catch (Exception e) {
             System.err.println("Erro ao carregar questões: " + e.getMessage());
