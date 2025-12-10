@@ -66,6 +66,96 @@ public class GameVisuals {
     }
 
     /**
+     * Mostra visualmente o evento ExtraPlays.
+     */
+    public static void showExtraPlaysEvent(String playerName, int amount) {
+        System.out.println();
+        printLine("+", "=", "+"); // Destaque forte
+        printCenteredLine("E V E N T O  E S P E C I A L");
+        printLine("|", "-", "|");
+        printCenteredLine("EXTRA JOGADAS");
+        printCenteredLine("");
+        printCenteredLine("O jogador " + playerName.toUpperCase());
+        printCenteredLine("recebe +" + amount + " jogadas!");
+        printCenteredLine("");
+        printLine("+", "=", "+");
+        System.out.println();
+    }
+
+    /**
+     * Mostra visualmente o evento RollBack.
+     */
+    public static void showRollBackEvent(String playerName, String divisionName) {
+        System.out.println();
+        printLine("+", "=", "+"); // Moldura forte para eventos
+        printCenteredLine("E V E N T O  E S P E C I A L");
+        printLine("|", "-", "|");
+        printCenteredLine("R O L L B A C K");
+        printCenteredLine("");
+        printCenteredLine("O jogador " + playerName.toUpperCase());
+        printCenteredLine("foi movido de volta para:");
+        printCenteredLine(divisionName.toUpperCase());
+        printCenteredLine("");
+        printLine("+", "=", "+");
+        System.out.println();
+    }
+
+    /**
+     * Mostra visualmente o evento ShuffleAllPlayers.
+     */
+    public static void showShuffleAllPlayersEvent() {
+        System.out.println();
+        printLine("+", "=", "+"); // Destaque forte para evento global
+        printCenteredLine("E V E N T O  E S P E C I A L");
+        printLine("|", "-", "|");
+        printCenteredLine("S H U F F L E  A L L");
+        printCenteredLine("");
+        printCenteredLine("As posicoes de todos os jogadores");
+        printCenteredLine("foram baralhadas!");
+        printCenteredLine("");
+        printLine("+", "=", "+");
+        System.out.println();
+    }
+
+    /**
+     * Mostra visualmente o evento StunnedPlays.
+     */
+    public static void showStunnedPlaysEvent(String playerName, int amount) {
+        System.out.println();
+        printLine("+", "=", "+"); // Moldura forte para eventos
+        printCenteredLine("E V E N T O  E S P E C I A L");
+        printLine("|", "-", "|");
+        printCenteredLine("S T U N N E D");
+        printCenteredLine("");
+        printCenteredLine("O jogador " + playerName.toUpperCase());
+        printCenteredLine("ficou atordoado por " + amount + " ronda(s)!");
+        printCenteredLine("");
+        printLine("+", "=", "+");
+        System.out.println();
+    }
+
+    /**
+     * Mostra visualmente o evento SwapTwoPlayers.
+     */
+    public static void showSwapTwoPlayersEvent(String player1, String player2) {
+        System.out.println();
+        printLine("+", "=", "+"); // Moldura forte para evento de impacto
+        printCenteredLine("E V E N T O  E S P E C I A L");
+        printLine("|", "-", "|");
+        printCenteredLine("S W A P  P O S I C O E S");
+        printCenteredLine("");
+        printCenteredLine("Os jogadores:");
+        printCenteredLine(player1.toUpperCase());
+        printCenteredLine("e");
+        printCenteredLine(player2.toUpperCase());
+        printCenteredLine("trocarao de posicao!");
+        printCenteredLine("");
+        printLine("+", "=", "+");
+        System.out.println();
+    }
+
+
+    /**
      * Mostra o ecrã de Game Over.
      */
     public static void showGameOver() {

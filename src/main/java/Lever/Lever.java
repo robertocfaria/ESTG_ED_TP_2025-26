@@ -18,7 +18,7 @@ public class Lever implements ILever {
 
     @Override
     public IDivision getDivision() {
-        return null;
+        return this.division;
     }
 
     @Override

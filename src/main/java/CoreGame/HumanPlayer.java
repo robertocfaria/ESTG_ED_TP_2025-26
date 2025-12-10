@@ -1,12 +1,14 @@
 package CoreGame;
 
-import Interfaces.IDivision;
-import Interfaces.IHallway;
-import Interfaces.IMap;
+import Interfaces.*;
 import Structures.Exceptions.ElementNotFoundException;
+import Structures.Interfaces.ListADT;
 import Structures.Interfaces.UnorderedListADT;
+import Structures.List.ArrayUnorderedList;
+import Structures.List.DoubleLinkedUnorderedList;
+import Util.Utils;
 
-public class HumanPlayer extends Player{
+public class HumanPlayer extends Player {
 
     public HumanPlayer(String name) {
         super(name);
@@ -19,9 +21,13 @@ public class HumanPlayer extends Player{
 
         nextPos = currentPos.getComportament(maze);
 
-        if(nextPos != currentPos) {
-            IHallway event = maze.getEdge(currentPos,nextPos);
-            event.getEvent(this);
+        if (nextPos != currentPos) {
+            IHallway hallway = maze.getEdge(currentPos, nextPos);
+            IEvent event = hallway.getEvent(this);
+
+            event.apply(this); // o jogador tem de escolher com qual jogador quer trocar
+            Utils.waitEnter();
+
             setDivision(nextPos);
         }
 

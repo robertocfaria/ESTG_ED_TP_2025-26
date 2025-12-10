@@ -5,10 +5,12 @@ import Importers.DivisionNames;
 import Interfaces.IDivision;
 import Interfaces.IHallway;
 import Interfaces.IMap;
+import Interfaces.IPlayer;
 import NewSctructures.ArrayUnorderedListWithGet;
 import NewSctructures.UnorderedListWithGetADT;
 import Structures.Exceptions.ElementNotFoundException;
 import Structures.Exceptions.EmptyCollectionException;
+import Structures.Interfaces.ListADT;
 import Structures.List.ArrayUnorderedList;
 import Structures.Queue.LinkedQueue;
 import Structures.Stack.LinkedStack;
@@ -18,27 +20,27 @@ import java.util.Random;
 
 public class Map implements IMap {
     public static final int INCREASE_FACTOR = 2;
-    public static final int DEFAULT_CAPACITY = 20;
     private IHallway[][] adjMatrix;
     private IDivision[] vertices;
     private int count;
+    private Random rand = new Random();
 
-    public Map(int capacity) {
+    public Map(int capacity, ListADT<IPlayer> players) {
         this.vertices = new IDivision[capacity];
         this.adjMatrix = new IHallway[capacity][capacity];
         this.count = 0;
+
         generateDivisions(capacity);
-        generateConnections();
+        generateConnections(players);
         defineGoalDivision();
     }
 
     private void generateDivisions(int numberOfDivisions) {
-        java.util.Random rand = new java.util.Random();
         LinkedQueue<String> divisionNames = getDivisionNames();
 
         for (int i = 0; i < numberOfDivisions; i++) {
             IDivision newDivision;
-            if (rand.nextBoolean()) {
+            if (this.rand.nextBoolean()) {
                 newDivision = new QuestionDivision(divisionNames.dequeue());
             } else {
                 newDivision = new LeverDivision(divisionNames.dequeue());
@@ -73,7 +75,7 @@ public class Map implements IMap {
         return nameQueue;
     }
 
-    private void generateConnections() {
+    private void generateConnections(ListADT<IPlayer> players) {
         // Probabilidade baixa para não encher o mapa de linhas
         double density = 0.2;
 
@@ -83,7 +85,7 @@ public class Map implements IMap {
 
         // 1. Criar o caminho principal (Espinha Dorsal)
         for (int i = 0; i < this.count - 1; i++) {
-            IHallway hallway = new Hallway();
+            IHallway hallway = new Hallway(players);
             // Podes adicionar: hallway.setAttributes(1); // Custo normal
             this.addEdge(i, i + 1, hallway);
         }
@@ -96,7 +98,7 @@ public class Map implements IMap {
 
             for (int j = i + 2; j < limit; j++) {
                 if (Math.random() < density) {
-                    IHallway randomHallway = new Hallway();
+                    IHallway randomHallway = new Hallway(players);
                     // Podes adicionar: randomHallway.setAttributes(5); // Atalhos podem ser mais "custosos"
                     this.addEdge(i, j, randomHallway);
                 }
@@ -107,7 +109,7 @@ public class Map implements IMap {
     private void expandCapacity() {
         int newCapacity = this.count * INCREASE_FACTOR;
 
-        IDivision[] expandedVertices =  new IDivision[newCapacity];
+        IDivision[] expandedVertices = new IDivision[newCapacity];
         IHallway[][] expandedAdjMatrix = new IHallway[newCapacity][newCapacity];
 
         for (int i = 0; i < this.count; i++) {
@@ -215,13 +217,9 @@ public class Map implements IMap {
         }
     }
 
-    public IDivision getInitial() {
-        return vertices[0];
-    }
-
     @Override
-    public UnorderedListWithGetADT<IDivision> getInitialVertexes() {
-        UnorderedListWithGetADT<IDivision> result = new ArrayUnorderedListWithGet<>();
+    public IDivision getRandomInitialDivision() {
+        ArrayUnorderedListWithGet<IDivision> result = new ArrayUnorderedListWithGet<>();
 
         int connections = 0;
         for (int i = 0; i < this.count; i++) {
@@ -231,12 +229,13 @@ public class Map implements IMap {
                 }
             }
 
-            if (connections == 1) {
+            if (connections <= 2) {
                 result.addToRear(this.vertices[i]);
             }
         }
 
-        return result;
+        int randIndex = this.rand.nextInt(result.size());
+        return result.get(randIndex);
     }
 
     @Override
@@ -284,53 +283,53 @@ public class Map implements IMap {
 
     @Override
     public double shortestPathWeight(IDivision startVertex, IDivision targetVertex) {
-       /** int start = getIndex(startVertex);
-        int target = getIndex(targetVertex);
+        /** int start = getIndex(startVertex);
+         int target = getIndex(targetVertex);
 
-        if (start == -1 || target == -1) {
-            return -1;
-        }
+         if (start == -1 || target == -1) {
+         return -1;
+         }
 
-        int n = this.count;
-        double[] dist = new double[n];
-        boolean[] visited = new boolean[n];
+         int n = this.count;
+         double[] dist = new double[n];
+         boolean[] visited = new boolean[n];
 
-        for (int i = 0; i < n; i++) {
-            dist[i] = Double.POSITIVE_INFINITY;
-        }
-        dist[start] = 0.0;
+         for (int i = 0; i < n; i++) {
+         dist[i] = Double.POSITIVE_INFINITY;
+         }
+         dist[start] = 0.0;
 
-        for (int count = 0; count < n - 1; count++) {
-            int u = -1;
-            double minDist = Double.POSITIVE_INFINITY;
+         for (int count = 0; count < n - 1; count++) {
+         int u = -1;
+         double minDist = Double.POSITIVE_INFINITY;
 
-            for (int v = 0; v < n; v++) {
-                if (!visited[v] && dist[v] < minDist) {
-                    minDist = dist[v];
-                    u = v;
-                }
-            }
+         for (int v = 0; v < n; v++) {
+         if (!visited[v] && dist[v] < minDist) {
+         minDist = dist[v];
+         u = v;
+         }
+         }
 
-            if (u == -1) break;
-            if (u == target) break;
+         if (u == -1) break;
+         if (u == target) break;
 
-            visited[u] = true;
+         visited[u] = true;
 
-            for (int v = 0; v < n; v++) {
-                double weight = adjMatrix[u][v];
+         for (int v = 0; v < n; v++) {
+         double weight = adjMatrix[u][v];
 
-                if (weight != -1 && !visited[v]) {
-                    double newDist = dist[u] + weight;
+         if (weight != -1 && !visited[v]) {
+         double newDist = dist[u] + weight;
 
-                    if (newDist < dist[v]) {
-                        dist[v] = newDist;
-                    }
-                }
-            }
-        }
+         if (newDist < dist[v]) {
+         dist[v] = newDist;
+         }
+         }
+         }
+         }
 
-        return dist[target] == Double.POSITIVE_INFINITY ? -1 : dist[target];*/
-       return 0;
+         return dist[target] == Double.POSITIVE_INFINITY ? -1 : dist[target];*/
+        return 0;
     }
 
     @Override

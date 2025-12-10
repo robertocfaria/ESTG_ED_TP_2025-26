@@ -7,29 +7,28 @@ import Reader.*;
 import java.util.Random;
 
 public class StartMenu {
+    public static Random rand = new Random();
 
     public static void menu() {
-        int opcao = 0, tamanho = 0;
+        int opcao;
+        int tamanho;
         GameManager game;
-
-        Reader reader = new Reader();
 
         do {
             displayMenu();
-            opcao = reader.readInt(0, 4, "Opcao: ");
+            opcao = Reader.readInt(0, 4, "Opcao: ");
             switch (opcao) {
                 case 1:
-                    Random random = new Random();
-                    tamanho = random.nextInt(90) + 10;
-                    game = new GameManager(new Map(tamanho));
+                    game = new GameManager();
+                    tamanho = rand.nextInt(90) + 10;
                     System.out.println("A iniciar o jogo...");
-                    game.startGame();
+                    game.startGame(new Map(tamanho, game.getPlayers()));
                     break;
                 case 2:
-                    tamanho = reader.readInt(10, 90, "Insira o numero de desafios que pretende (10 a 90): ");
-                    game = new GameManager(new Map(tamanho));
+                    game = new GameManager();
+                    tamanho = Reader.readInt(10, 90, "Insira o numero de desafios que pretende (10 a 90): ");
                     System.out.println("A iniciar o jogo...");
-                    game.startGame();
+                    game.startGame(new Map(tamanho, game.getPlayers()));
                     break;
                 case 3:
 
