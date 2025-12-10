@@ -1,6 +1,7 @@
 package CoreGame;
 
-import Interfaces.IMap;
+import Interfaces.IDivision;
+import Map.Map;
 import Interfaces.IPlayer;
 import Reader.Reader;
 import Structures.List.ArrayUnorderedList;
@@ -9,12 +10,12 @@ import Util.Utils;
 public class GameManager {
     private ArrayUnorderedList<IPlayer> players;
     private IPlayer winnerPlayer;
-    private IMap maze;
+    private Map maze;
     private int turn;
     private boolean finished;
 
 
-    public GameManager(IMap maze) {
+    public GameManager(Map maze) {
         this.players = new ArrayUnorderedList<IPlayer>();
         this.winnerPlayer = null;
         this.maze = maze;
@@ -26,7 +27,6 @@ public class GameManager {
         boolean gameRunning = true;
 
         addPlayers();
-        setInitialPlayerDivisions();
 
         while (gameRunning) {
             turn();
@@ -69,19 +69,18 @@ public class GameManager {
 
         int realPlayers = reader.readInt(1,10,"Quantos jogadores reais (1 a 10): ");
         for(int i = 0; i < realPlayers; i++) {
-            players.addToRear(new HumanPlayer(reader.readString("Nome: ")));
+            IDivision d = maze.getInitial();
+            players.addToRear(new HumanPlayer(reader.readString("Nome: "), d));
         }
 
         int botPlayers = reader.readInt(0,10,"Quantos BOTS (0 a 5): ");
         for(int i = 0; i < botPlayers; i++) {
-            players.addToRear(new BotPlayer());
+            players.addToRear(new BotPlayer(maze.getInitial()));
         }
         if(botPlayers > 0) {
             System.out.println("BOT(s) adicionados com sucesso!");
         }
     }
-
-    private void setInitialPlayerDivisions() {}
 
     private boolean isWinner(IPlayer player) {
         //TODO - fazer este metodo

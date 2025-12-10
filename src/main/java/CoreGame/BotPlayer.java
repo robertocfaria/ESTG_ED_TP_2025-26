@@ -1,11 +1,12 @@
 package CoreGame;
 
+import Interfaces.IDivision;
 import Interfaces.IMap;
 
 public class BotPlayer extends Player{
 
-    public BotPlayer(){
-        super();
+    public BotPlayer(IDivision initial){
+        super(initial);
     }
 
     @Override

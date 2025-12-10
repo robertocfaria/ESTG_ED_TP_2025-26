@@ -23,21 +23,13 @@ public class Map implements IMap {
     private IDivision[] vertices;
     private int count;
 
-    public Map() {
-        this.vertices = new IDivision[DEFAULT_CAPACITY];
-        this.adjMatrix = new IHallway[DEFAULT_CAPACITY][DEFAULT_CAPACITY];
-        this.count = 0;
-        generateDivisions(DEFAULT_CAPACITY);
-
-
-    }
-
     public Map(int capacity) {
         this.vertices = new IDivision[capacity];
         this.adjMatrix = new IHallway[capacity][capacity];
         this.count = 0;
         generateDivisions(capacity);
-
+        generateConnections();
+        defineGoalDivision();
     }
 
     private void generateDivisions(int numberOfDivisions) {
@@ -81,6 +73,37 @@ public class Map implements IMap {
         return nameQueue;
     }
 
+    private void generateConnections() {
+        // Probabilidade baixa para não encher o mapa de linhas
+        double density = 0.2;
+
+        // ALCANCE MÁXIMO DO ATALHO
+        // A sala 0 só poderá ligar no máximo até à 3 ou 4. Nunca à 9.
+        int jumpLimit = 3;
+
+        // 1. Criar o caminho principal (Espinha Dorsal)
+        for (int i = 0; i < this.count - 1; i++) {
+            IHallway hallway = new Hallway();
+            // Podes adicionar: hallway.setAttributes(1); // Custo normal
+            this.addEdge(i, i + 1, hallway);
+        }
+
+        // 2. Criar atalhos CURTOS
+        for (int i = 0; i < this.count; i++) {
+            // O segredo está aqui: o limite NÃO é 'this.count'.
+            // É o índice atual + o salto máximo.
+            int limit = Math.min(this.count, i + jumpLimit + 1);
+
+            for (int j = i + 2; j < limit; j++) {
+                if (Math.random() < density) {
+                    IHallway randomHallway = new Hallway();
+                    // Podes adicionar: randomHallway.setAttributes(5); // Atalhos podem ser mais "custosos"
+                    this.addEdge(i, j, randomHallway);
+                }
+            }
+        }
+    }
+
     private void expandCapacity() {
         int newCapacity = this.count * INCREASE_FACTOR;
 
@@ -99,6 +122,68 @@ public class Map implements IMap {
         }
         this.adjMatrix = expandedAdjMatrix;
     }
+
+    /**
+     * Dificuldade acrescida, pois usa o caminho mais longo para criar a sala Goal
+     */
+    private void defineGoalDivision() {
+        int[] distances = calculateDistancesFromStart();
+
+        int furthestIndex = -1;
+        int maxDistance = -1;
+
+        for (int i = 1; i < this.count; i++) {
+            if (distances[i] > maxDistance) {
+                maxDistance = distances[i];
+                furthestIndex = i;
+            }
+        }
+        if (furthestIndex == -1) {
+            furthestIndex = this.count - 1;
+        }
+
+        String goalName = "Sala do Tesouro";
+
+        IDivision goalDivision = new GoalDivision(goalName);
+        this.vertices[furthestIndex] = goalDivision;
+
+        // Debug (Opcional): Para veres na consola onde ficou o objetivo
+        System.out.println("Objetivo colocado no índice: " + furthestIndex + " (Distância: " + maxDistance + ")");
+    }
+
+    private int[] calculateDistancesFromStart() {
+        int[] distances = new int[this.count];
+        boolean[] visited = new boolean[this.count];
+
+        // Inicializar distâncias
+        for (int i = 0; i < this.count; i++) {
+            distances[i] = -1; // -1 significa inalcançável
+            visited[i] = false;
+        }
+
+        // Configurar o início (índice 0)
+        LinkedQueue<Integer> queue = new LinkedQueue<>();
+        queue.enqueue(0);
+        visited[0] = true;
+        distances[0] = 0;
+
+        // BFS Loop
+        while (!queue.isEmpty()) {
+            int current = queue.dequeue();
+
+            for (int neighbor = 0; neighbor < this.count; neighbor++) {
+                // Se existe ligação e ainda não foi visitado
+                if (adjMatrix[current][neighbor] != null && !visited[neighbor]) {
+                    visited[neighbor] = true;
+                    distances[neighbor] = distances[current] + 1; // A distância é a do anterior + 1
+                    queue.enqueue(neighbor);
+                }
+            }
+        }
+
+        return distances;
+    }
+
 
     /*
     TODO metodo para scar a division
@@ -131,6 +216,10 @@ public class Map implements IMap {
             this.adjMatrix[i][j] = edge;
             this.adjMatrix[j][i] = edge;
         }
+    }
+
+    public IDivision getInitial() {
+        return vertices[0];
     }
 
     @Override

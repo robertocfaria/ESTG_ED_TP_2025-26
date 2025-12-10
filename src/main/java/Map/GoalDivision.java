@@ -1,11 +1,17 @@
 package Map;
 
 import Interfaces.IDivision;
+import Interfaces.IMap;
 
-public abstract class GoalDivision extends Division{
+public class GoalDivision extends Division{
 
     public GoalDivision(String name) {
         super(name);
+    }
+
+    @Override
+    public IDivision getNewChosenDivision(IMap maze) {
+        return null;
     }
 
     @Override

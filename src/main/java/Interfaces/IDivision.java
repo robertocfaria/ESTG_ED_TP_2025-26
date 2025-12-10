@@ -8,5 +8,7 @@ public interface IDivision {
      */
     IDivision getNewChosenDivision(IMap maze);
 
+    String getName();
+
     IDivision getComportament();
 }
