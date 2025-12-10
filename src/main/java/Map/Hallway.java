@@ -1,29 +1,41 @@
 package Map;
 
 import Event.*;
+import Exceptions.InvalidPlayersCountException;
 import Interfaces.IEvent;
 import Interfaces.IHallway;
 import Interfaces.IPlayer;
+import Structures.Interfaces.ListADT;
 
 public class Hallway implements IHallway {
     private static EventManager EVENTS = new EventManager();
+    private ListADT<IPlayer> players;
 
-    /**
-     * o evento de voltar casa atras só funciona até à posicao em que os jogadores trocaram de posicoes
-     * */
+    public Hallway(ListADT<IPlayer> players) {
+        this.players = players;
+    }
+
     @Override
     public IEvent getEvent(IPlayer player) {
-        IEvent event = EVENTS.getRandomEvent();
-       /** IEvent playerLastEvent = player.getLastEvent();
+        IEvent event = EVENTS.getRandomEvent(this.players);
+        IEvent playerLastEvent = player.getLastEvent();
 
-        if (event instanceof RollBack) {
-            if (playerLastEvent instanceof SwapTwoPlayers || playerLastEvent instanceof ShuffleAllPlayers) {
-                do {
-                    event = EVENTS.getRandomEvent();
-                } while (event instanceof RollBack);
+        if (playerLastEvent != null) { // significa que é a primeira jogada
+            if (event instanceof RollBack) {
+                if (playerLastEvent instanceof SwapTwoPlayers || playerLastEvent instanceof ShuffleAllPlayers) {
+                    do {
+                        event = EVENTS.getRandomEvent(this.players);
+                    } while (event instanceof RollBack);
+                }
             }
         }
-        */
+
+
+        if (this.players.size() < 2) {
+            while (event instanceof SwapTwoPlayers) {
+                event = EVENTS.getRandomEvent(this.players);
+            }
+        }
 
         return event;
     }

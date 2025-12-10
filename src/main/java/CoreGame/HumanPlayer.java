@@ -1,11 +1,9 @@
 package CoreGame;
 
-import Interfaces.IDivision;
-import Interfaces.IMap;
-import Structures.Exceptions.ElementNotFoundException;
-import Structures.Interfaces.UnorderedListADT;
+import Interfaces.*;
+import Util.Utils;
 
-public class HumanPlayer extends Player{
+public class HumanPlayer extends Player {
 
     public HumanPlayer(String name) {
         super(name);
@@ -14,19 +12,21 @@ public class HumanPlayer extends Player{
     @Override
     public void move(IMap maze) {
         IDivision currentPos = getDivision();
+        IDivision nextPos;
 
-        try{
-            UnorderedListADT<IDivision> adjacentPositions = maze.getAdjacentVertex(currentPos);
-        } catch (ElementNotFoundException e) {
-            System.out.println("Erro: A divisão do jogador não existe no mapa.");
+        nextPos = currentPos.getComportment(maze);
+
+        if (nextPos != currentPos) {
+            IHallway hallway = maze.getEdge(currentPos, nextPos);
+            IEvent event = hallway.getEvent(this);
+
+            divisionsHistory.push(currentPos);
+            setDivision(nextPos);
+
+            event.apply(this, isRealPlayer());
+            movementsHistory.push(event);
+
+            Utils.waitEnter();
         }
-
-        System.out.println("Está na Divisão XPTO" );
-
-
-
-
-
-
     }
 }

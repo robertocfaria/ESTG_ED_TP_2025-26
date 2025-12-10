@@ -11,5 +11,5 @@ public interface IMap extends NetworkADT<IDivision> {
 
     IHallway getEdge(IDivision vertex1, IDivision vertex2);
 
-    UnorderedListWithGetADT<IDivision> getInitialVertexes();
+    IDivision getRandomInitialDivision();
 }

@@ -20,4 +20,7 @@ public interface IPlayer {
 
     IDivision getDivision();
 
+    IEvent getLastEvent();
+
+    IDivision getLastDivision();
 }

@@ -1,43 +1,112 @@
 package Map;
 
 import Exceptions.NotSupportedOperation;
+import Importers.DivisionNames;
 import Interfaces.IDivision;
 import Interfaces.IHallway;
 import Interfaces.IMap;
+import Interfaces.IPlayer;
 import NewSctructures.ArrayUnorderedListWithGet;
 import NewSctructures.UnorderedListWithGetADT;
 import Structures.Exceptions.ElementNotFoundException;
 import Structures.Exceptions.EmptyCollectionException;
-import Structures.Interfaces.UnorderedListADT;
+import Structures.Interfaces.ListADT;
 import Structures.List.ArrayUnorderedList;
 import Structures.Queue.LinkedQueue;
 import Structures.Stack.LinkedStack;
 
 import java.util.Iterator;
+import java.util.Random;
 
 public class Map implements IMap {
     public static final int INCREASE_FACTOR = 2;
-    public static final int DEFAULT_CAPACITY = 20;
     private IHallway[][] adjMatrix;
     private IDivision[] vertices;
     private int count;
+    private Random rand = new Random();
 
-    public Map() {
-        this.vertices = new IDivision[DEFAULT_CAPACITY];
-        this.adjMatrix = new IHallway[DEFAULT_CAPACITY][DEFAULT_CAPACITY];
-        this.count = 0;
-    }
-
-    public Map(int capacity) {
+    public Map(int capacity, IHallway hallway) {
         this.vertices = new IDivision[capacity];
         this.adjMatrix = new IHallway[capacity][capacity];
         this.count = 0;
+
+        generateDivisions(capacity);
+        generateConnections(hallway);
+        defineGoalDivision();
+    }
+
+    private void generateDivisions(int numberOfDivisions) {
+        LinkedQueue<String> divisionNames = getDivisionNames();
+
+        for (int i = 0; i < numberOfDivisions; i++) {
+            IDivision newDivision;
+            if (this.rand.nextBoolean()) {
+                newDivision = new QuestionDivision(divisionNames.dequeue());
+            } else {
+                newDivision = new LeverDivision(divisionNames.dequeue());
+            }
+            addVertex(newDivision);
+        }
+    }
+
+    private LinkedQueue<String> getDivisionNames() {
+        ArrayUnorderedList<String> divisionNames = DivisionNames.importNames("src/main/resources/DivisionNames.json");
+        String[] shuffledNames = new String[divisionNames.size()];
+        int count = 0;
+
+        for (String name : divisionNames) {
+            shuffledNames[count++] = name;
+        }
+
+        Random rand = new Random();
+        for (int i = shuffledNames.length - 1; i > 0; i--) {
+            int index = rand.nextInt(i + 1);
+
+            String temp = shuffledNames[index];
+            shuffledNames[index] = shuffledNames[i];
+            shuffledNames[i] = temp;
+        }
+
+        LinkedQueue<String> nameQueue = new LinkedQueue<>();
+        for (String name : shuffledNames) {
+            nameQueue.enqueue(name);
+        }
+
+        return nameQueue;
+    }
+
+    private void generateConnections(IHallway hallway) {
+        // Probabilidade baixa para não encher o mapa de linhas
+        double density = 0.2;
+
+        // ALCANCE MÁXIMO DO ATALHO
+        // A sala 0 só poderá ligar no máximo até à 3 ou 4. Nunca à 9.
+        int jumpLimit = 3;
+
+        // 1. Criar o caminho principal (Espinha Dorsal)
+        for (int i = 0; i < this.count - 1; i++) {
+            // Podes adicionar: hallway.setAttributes(1); // Custo normal
+            this.addEdge(i, i + 1, hallway);
+        }
+
+        // 2. Criar atalhos CURTOS
+        for (int i = 0; i < this.count; i++) {
+            // O segredo está aqui: o limite NÃO é 'this.count'.
+            // É o índice atual + o salto máximo.
+            int limit = Math.min(this.count, i + jumpLimit + 1);
+
+            for (int j = i + 2; j < limit; j++) {
+                if (Math.random() < density) {
+                    this.addEdge(i, j, hallway);
+                }
+            }
+        }
     }
 
     private void expandCapacity() {
         int newCapacity = this.count * INCREASE_FACTOR;
 
-        IDivision[] expandedVertices =  new IDivision[newCapacity];
+        IDivision[] expandedVertices = new IDivision[newCapacity];
         IHallway[][] expandedAdjMatrix = new IHallway[newCapacity][newCapacity];
 
         for (int i = 0; i < this.count; i++) {
@@ -52,6 +121,65 @@ public class Map implements IMap {
         }
         this.adjMatrix = expandedAdjMatrix;
     }
+
+    /**
+     * Dificuldade acrescida, pois usa o caminho mais longo para criar a sala Goal
+     */
+    private void defineGoalDivision() {
+        int[] distances = calculateDistancesFromStart();
+
+        int furthestIndex = -1;
+        int maxDistance = -1;
+
+        for (int i = 1; i < this.count; i++) {
+            if (distances[i] > maxDistance) {
+                maxDistance = distances[i];
+                furthestIndex = i;
+            }
+        }
+        if (furthestIndex == -1) {
+            furthestIndex = this.count - 1;
+        }
+
+        String goalName = "Sala do Tesouro";
+
+        IDivision goalDivision = new GoalDivision(goalName);
+        this.vertices[furthestIndex] = goalDivision;
+    }
+
+    private int[] calculateDistancesFromStart() {
+        int[] distances = new int[this.count];
+        boolean[] visited = new boolean[this.count];
+
+        // Inicializar distâncias
+        for (int i = 0; i < this.count; i++) {
+            distances[i] = -1; // -1 significa inalcançável
+            visited[i] = false;
+        }
+
+        // Configurar o início (índice 0)
+        LinkedQueue<Integer> queue = new LinkedQueue<>();
+        queue.enqueue(0);
+        visited[0] = true;
+        distances[0] = 0;
+
+        // BFS Loop
+        while (!queue.isEmpty()) {
+            int current = queue.dequeue();
+
+            for (int neighbor = 0; neighbor < this.count; neighbor++) {
+                // Se existe ligação e ainda não foi visitado
+                if (adjMatrix[current][neighbor] != null && !visited[neighbor]) {
+                    visited[neighbor] = true;
+                    distances[neighbor] = distances[current] + 1; // A distância é a do anterior + 1
+                    queue.enqueue(neighbor);
+                }
+            }
+        }
+
+        return distances;
+    }
+
 
     /*
     TODO metodo para scar a division
@@ -87,8 +215,8 @@ public class Map implements IMap {
     }
 
     @Override
-    public UnorderedListWithGetADT<IDivision> getInitialVertexes() {
-        UnorderedListWithGetADT<IDivision> result = new ArrayUnorderedListWithGet<>();
+    public IDivision getRandomInitialDivision() {
+        ArrayUnorderedListWithGet<IDivision> result = new ArrayUnorderedListWithGet<>();
 
         int connections = 0;
         for (int i = 0; i < this.count; i++) {
@@ -98,12 +226,13 @@ public class Map implements IMap {
                 }
             }
 
-            if (connections == 1) {
+            if (connections <= 2) {
                 result.addToRear(this.vertices[i]);
             }
         }
 
-        return result;
+        int randIndex = this.rand.nextInt(result.size());
+        return result.get(randIndex);
     }
 
     @Override
@@ -151,53 +280,53 @@ public class Map implements IMap {
 
     @Override
     public double shortestPathWeight(IDivision startVertex, IDivision targetVertex) {
-       /** int start = getIndex(startVertex);
-        int target = getIndex(targetVertex);
+        /** int start = getIndex(startVertex);
+         int target = getIndex(targetVertex);
 
-        if (start == -1 || target == -1) {
-            return -1;
-        }
+         if (start == -1 || target == -1) {
+         return -1;
+         }
 
-        int n = this.count;
-        double[] dist = new double[n];
-        boolean[] visited = new boolean[n];
+         int n = this.count;
+         double[] dist = new double[n];
+         boolean[] visited = new boolean[n];
 
-        for (int i = 0; i < n; i++) {
-            dist[i] = Double.POSITIVE_INFINITY;
-        }
-        dist[start] = 0.0;
+         for (int i = 0; i < n; i++) {
+         dist[i] = Double.POSITIVE_INFINITY;
+         }
+         dist[start] = 0.0;
 
-        for (int count = 0; count < n - 1; count++) {
-            int u = -1;
-            double minDist = Double.POSITIVE_INFINITY;
+         for (int count = 0; count < n - 1; count++) {
+         int u = -1;
+         double minDist = Double.POSITIVE_INFINITY;
 
-            for (int v = 0; v < n; v++) {
-                if (!visited[v] && dist[v] < minDist) {
-                    minDist = dist[v];
-                    u = v;
-                }
-            }
+         for (int v = 0; v < n; v++) {
+         if (!visited[v] && dist[v] < minDist) {
+         minDist = dist[v];
+         u = v;
+         }
+         }
 
-            if (u == -1) break;
-            if (u == target) break;
+         if (u == -1) break;
+         if (u == target) break;
 
-            visited[u] = true;
+         visited[u] = true;
 
-            for (int v = 0; v < n; v++) {
-                double weight = adjMatrix[u][v];
+         for (int v = 0; v < n; v++) {
+         double weight = adjMatrix[u][v];
 
-                if (weight != -1 && !visited[v]) {
-                    double newDist = dist[u] + weight;
+         if (weight != -1 && !visited[v]) {
+         double newDist = dist[u] + weight;
 
-                    if (newDist < dist[v]) {
-                        dist[v] = newDist;
-                    }
-                }
-            }
-        }
+         if (newDist < dist[v]) {
+         dist[v] = newDist;
+         }
+         }
+         }
+         }
 
-        return dist[target] == Double.POSITIVE_INFINITY ? -1 : dist[target];*/
-       return 0;
+         return dist[target] == Double.POSITIVE_INFINITY ? -1 : dist[target];*/
+        return 0;
     }
 
     @Override

@@ -1,32 +1,35 @@
 package CoreGame;
 
-import Interfaces.IMap;
+import Interfaces.IHallway;
+import Map.*;
 import Interfaces.IPlayer;
+import Menus.GameVisuals;
 import Reader.Reader;
+import Structures.Interfaces.ListADT;
 import Structures.List.ArrayUnorderedList;
 import Util.Utils;
 
 public class GameManager {
     private ArrayUnorderedList<IPlayer> players;
     private IPlayer winnerPlayer;
-    private IMap maze;
+    private Map maze;
     private int turn;
     private boolean finished;
 
-
-    public GameManager(IMap maze) {
-        this.players = new ArrayUnorderedList<IPlayer>();
+    public GameManager() {
+        this.players = new ArrayUnorderedList<>();
         this.winnerPlayer = null;
-        this.maze = maze;
         this.turn = 1;
         this.finished = false;
-    }
-
-    public void startGame() {
-        boolean gameRunning = true;
 
         addPlayers();
-        setInitialPlayerDivisions();
+    }
+
+    public void startGame(Map maze) {
+        this.maze = maze;
+        this.setInitialPosition();
+
+        boolean gameRunning = true;
 
         while (gameRunning) {
             turn();
@@ -35,8 +38,6 @@ public class GameManager {
             }
         }
 
-
-
         System.out.println("Jogo Terminado!");
         System.out.println("Parabens " + winnerPlayer.getName() + " pela Vitoria");
         Utils.waitEnter();
@@ -44,15 +45,15 @@ public class GameManager {
     }
 
     private void turn() {
-        System.out.println("Inicio da Ronda: " + this.turn);
+        GameVisuals.showRoundSeparator(this.turn);
 
         for (IPlayer currentPlayer : players) {
-            System.out.println("Vez do jogador: " + currentPlayer.getName());
+            GameVisuals.showPlayerTurn(currentPlayer.getName());
 
             currentPlayer.move(maze);
 
-            if(isWinner(currentPlayer)) {
-                System.out.println("Temos um vencedor!");
+            if (isWinner(currentPlayer)) {
+                GameVisuals.showVictory(currentPlayer.getName());
                 return;
             }
         }
@@ -62,32 +63,42 @@ public class GameManager {
     }
 
     private void addPlayers() {
-        Reader reader = new Reader();
+        String nameTemp;
 
-        System.out.println("Escolha quantos jogadores vai adicionar. Pode adicionar ate 10");
-        System.out.println("jogadores reais e 5 jogadores automaticos (BOTS).");
+        GameVisuals.showPlayerConfigHeader();
+        int realPlayers = Reader.readInt(1, 10, "Quantos jogadores reais (1 a 10): ");
+        for (int i = 0; i < realPlayers; i++) {
+            nameTemp = Reader.readString("Nome do Jogador " + (i + 1) + " : ");
+            players.addToRear(new HumanPlayer(nameTemp));
 
-        int realPlayers = reader.readInt(1,10,"Quantos jogadores reais (1 a 10): ");
-        for(int i = 0; i < realPlayers; i++) {
-            players.addToRear(new HumanPlayer(reader.readString("Nome: ")));
+            GameVisuals.showPlayerAdded(nameTemp, i + 1);
+            GameVisuals.showNextPlayerSeparator();
         }
 
-        int botPlayers = reader.readInt(0,10,"Quantos BOTS (0 a 5): ");
-        for(int i = 0; i < botPlayers; i++) {
+        int botPlayers = Reader.readInt(0, 10, "Quantos BOTS (0 a 5): ");
+        for (int i = 0; i < botPlayers; i++) {
             players.addToRear(new BotPlayer());
         }
-        if(botPlayers > 0) {
+        if (botPlayers > 0) {
             System.out.println("BOT(s) adicionados com sucesso!");
         }
     }
 
-    private void setInitialPlayerDivisions() {}
-
-    private boolean isWinner(IPlayer player) {
-        //TODO - fazer este metodo
-
-        this.winnerPlayer = player;
-        return true;
+    private void setInitialPosition() {
+        for (IPlayer player : players) {
+            player.setDivision(maze.getRandomInitialDivision());
+        }
     }
 
+    private boolean isWinner(IPlayer player) {
+        if (player.getDivision() instanceof GoalDivision) {
+            this.winnerPlayer = player;
+            return true;
+        }
+        return false;
+    }
+
+    public ListADT<IPlayer> getPlayers() {
+        return this.players;
+    }
 }

@@ -4,24 +4,30 @@ import Interfaces.IDivision;
 import Interfaces.IPlayer;
 import Exceptions.InvalidPlayersCountException;
 import Interfaces.IEvent;
+import Menus.GameVisuals;
 import Structures.Interfaces.ListADT;
 
 import java.util.Random;
 
 public class ShuffleAllPlayers implements IEvent {
     private Random rand = new Random();
+    private ListADT<IPlayer> players;
+
+    public ShuffleAllPlayers(ListADT<IPlayer> players) {
+        this.players = players;
+    }
 
     @Override
-    public void apply(ListADT<IPlayer> players) throws InvalidPlayersCountException {
-        if (players.isEmpty()) {
+    public void apply(IPlayer player, boolean isRealPlayer) throws InvalidPlayersCountException {
+        if (this.players.isEmpty()) {
             throw new InvalidPlayersCountException("ShuffleAllPlayers event requires at least 1 player");
         }
 
-        IDivision[] playersDivision = new IDivision[players.size()];
+        IDivision[] playersDivision = new IDivision[this.players.size()];
 
         int index = 0;
-        for (IPlayer player : players) {
-            playersDivision[index++] = player.getDivision();
+        for (IPlayer p : this.players) {
+            playersDivision[index++] = p.getDivision();
         }
 
         IDivision temp;
@@ -34,10 +40,10 @@ public class ShuffleAllPlayers implements IEvent {
         }
 
         index = 0;
-        for (IPlayer player : players) {
-           player.setDivision(playersDivision[index++]);
+        for (IPlayer p2 : this.players) {
+           p2.setDivision(playersDivision[index++]);
         }
 
-        System.out.println("All players have swaped positions randomly");
+        GameVisuals.showShuffleAllPlayersEvent(isRealPlayer);
     }
 }
