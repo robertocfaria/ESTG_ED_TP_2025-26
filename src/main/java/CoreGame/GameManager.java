@@ -1,8 +1,7 @@
 package CoreGame;
 
-import Interfaces.IDivision;
-import Map.Map;
-import Map.GoalDivision;
+import Interfaces.IHallway;
+import Map.*;
 import Interfaces.IPlayer;
 import Menus.GameVisuals;
 import Reader.Reader;

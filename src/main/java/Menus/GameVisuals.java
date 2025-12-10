@@ -1,5 +1,7 @@
 package Menus;
 
+import Interfaces.IPlayer;
+
 public class GameVisuals {
 
     // Largura padrão para as caixas de texto
@@ -68,9 +70,13 @@ public class GameVisuals {
     /**
      * Mostra visualmente o evento ExtraPlays.
      */
-    public static void showExtraPlaysEvent(String playerName, int amount) {
+    public static void showExtraPlaysEvent(String playerName, int amount, boolean isRealPlayer) {
+        if (!isRealPlayer) {
+            return;
+        }
+
         System.out.println();
-        printLine("+", "=", "+"); // Destaque forte
+        printLine("+", "=", "+");
         printCenteredLine("E V E N T O  E S P E C I A L");
         printLine("|", "-", "|");
         printCenteredLine("EXTRA JOGADAS");
@@ -85,9 +91,13 @@ public class GameVisuals {
     /**
      * Mostra visualmente o evento RollBack.
      */
-    public static void showRollBackEvent(String playerName, String divisionName) {
+    public static void showRollBackEvent(String playerName, String divisionName, boolean isRealPlayer) {
+        if (!isRealPlayer) {
+            return;
+        }
+
         System.out.println();
-        printLine("+", "=", "+"); // Moldura forte para eventos
+        printLine("+", "=", "+");
         printCenteredLine("E V E N T O  E S P E C I A L");
         printLine("|", "-", "|");
         printCenteredLine("R O L L B A C K");
@@ -103,9 +113,13 @@ public class GameVisuals {
     /**
      * Mostra visualmente o evento ShuffleAllPlayers.
      */
-    public static void showShuffleAllPlayersEvent() {
+    public static void showShuffleAllPlayersEvent(boolean isRealPlayer) {
+        if (!isRealPlayer) {
+            return;
+        }
+
         System.out.println();
-        printLine("+", "=", "+"); // Destaque forte para evento global
+        printLine("+", "=", "+");
         printCenteredLine("E V E N T O  E S P E C I A L");
         printLine("|", "-", "|");
         printCenteredLine("S H U F F L E  A L L");
@@ -120,9 +134,13 @@ public class GameVisuals {
     /**
      * Mostra visualmente o evento StunnedPlays.
      */
-    public static void showStunnedPlaysEvent(String playerName, int amount) {
+    public static void showStunnedPlaysEvent(String playerName, int amount, boolean isRealPlayer) {
+        if (!isRealPlayer) {
+            return;
+        }
+
         System.out.println();
-        printLine("+", "=", "+"); // Moldura forte para eventos
+        printLine("+", "=", "+");
         printCenteredLine("E V E N T O  E S P E C I A L");
         printLine("|", "-", "|");
         printCenteredLine("S T U N N E D");
@@ -134,12 +152,42 @@ public class GameVisuals {
         System.out.println();
     }
 
+
+    /**
+     * Mostra visualmente a lista de jogadores para troca,
+     * com cada opcao centrada na moldura.
+     */
+    public static void showSwapChoiceMenu(IPlayer[] players) {
+        System.out.println();
+        printLine("+", "=", "+");
+        printCenteredLine("T R O C A  D E  P O S I C O E S");
+        printLine("|", "-", "|");
+        printCenteredLine("Selecione o jogador para trocar:");
+        printCenteredLine("");
+
+        for (int i = 0; i < players.length; i++) {
+            if (players[i] != null) {
+                String option = (i + 1) + ") " + players[i].getName();
+                printCenteredLine(option);
+            }
+        }
+
+        printCenteredLine("");
+        printLine("+", "=", "+");
+        System.out.println();
+    }
+
+
     /**
      * Mostra visualmente o evento SwapTwoPlayers.
      */
-    public static void showSwapTwoPlayersEvent(String player1, String player2) {
+    public static void showSwapTwoPlayersEvent(String player1, String player2, boolean isRealPlayer) {
+        if (!isRealPlayer) {
+            return;
+        }
+
         System.out.println();
-        printLine("+", "=", "+"); // Moldura forte para evento de impacto
+        printLine("+", "=", "+");
         printCenteredLine("E V E N T O  E S P E C I A L");
         printLine("|", "-", "|");
         printCenteredLine("S W A P  P O S I C O E S");

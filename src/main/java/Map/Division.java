@@ -17,5 +17,5 @@ public abstract class Division implements IDivision {
     public String getName() { return this.name; }
 
     @Override
-    public abstract IDivision getComportament(IMap maze);
+    public abstract IDivision getComportment(IMap maze);
 }

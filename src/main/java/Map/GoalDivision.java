@@ -10,7 +10,7 @@ public class GoalDivision extends Division{
     }
 
     @Override
-    public IDivision getComportament(IMap maze) {
+    public IDivision getComportment(IMap maze) {
         System.out.println("Parabéns! GANHASTE!");
         return null;
     }

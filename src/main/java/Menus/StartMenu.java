@@ -1,7 +1,8 @@
 package Menus;
 
 import CoreGame.GameManager;
-import Map.Map;
+import Interfaces.IHallway;
+import Map.*;
 import Reader.*;
 
 import java.util.Random;
@@ -13,6 +14,7 @@ public class StartMenu {
         int opcao;
         int tamanho;
         GameManager game;
+        IHallway hallway;
 
         do {
             displayMenu();
@@ -21,14 +23,18 @@ public class StartMenu {
                 case 1:
                     game = new GameManager();
                     tamanho = rand.nextInt(90) + 10;
+                    hallway = new Hallway(game.getPlayers());
+
                     System.out.println("A iniciar o jogo...");
-                    game.startGame(new Map(tamanho, game.getPlayers()));
+                    game.startGame(new Map(tamanho, hallway));
                     break;
                 case 2:
                     game = new GameManager();
                     tamanho = Reader.readInt(10, 90, "Insira o numero de desafios que pretende (10 a 90): ");
+                    hallway = new Hallway(game.getPlayers());
+
                     System.out.println("A iniciar o jogo...");
-                    game.startGame(new Map(tamanho, game.getPlayers()));
+                    game.startGame(new Map(tamanho, hallway));
                     break;
                 case 3:
 

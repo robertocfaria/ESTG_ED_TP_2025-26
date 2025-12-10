@@ -18,7 +18,7 @@ public class ShuffleAllPlayers implements IEvent {
     }
 
     @Override
-    public void apply(IPlayer player) throws InvalidPlayersCountException {
+    public void apply(IPlayer player, boolean isRealPlayer) throws InvalidPlayersCountException {
         if (this.players.isEmpty()) {
             throw new InvalidPlayersCountException("ShuffleAllPlayers event requires at least 1 player");
         }
@@ -44,6 +44,6 @@ public class ShuffleAllPlayers implements IEvent {
            p2.setDivision(playersDivision[index++]);
         }
 
-        GameVisuals.showShuffleAllPlayersEvent();
+        GameVisuals.showShuffleAllPlayersEvent(isRealPlayer);
     }
 }

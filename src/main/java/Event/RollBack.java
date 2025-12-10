@@ -9,11 +9,11 @@ import Menus.GameVisuals;
 public class RollBack implements IEvent {
 
     @Override
-    public void apply(IPlayer player) throws InvalidPlayersCountException {
-        //IDivision lastPos = player.getLastDivision();
+    public void apply(IPlayer player, boolean isRealPlayer) throws InvalidPlayersCountException {
+        IDivision lastPos = player.getLastDivision();
 
-       // player.setDivision(lastPos);
+        player.setDivision(lastPos);
 
-        GameVisuals.showRollBackEvent(player.getName(), "lastPos.getName()");
+        GameVisuals.showRollBackEvent(player.getName(), lastPos.getName(), isRealPlayer);
     }
 }

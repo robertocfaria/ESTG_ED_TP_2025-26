@@ -14,12 +14,14 @@ public abstract class Player implements IPlayer {
     protected int extraRound;
     protected boolean realPlayer;
     protected ArrayStack<IEvent> movementsHistory;
+    protected ArrayStack<IDivision> divisionsHistory;
     protected IDivision division;
 
 
     /**
      * Este construtor cria um jogador Real novo.
-     * @param name  Nome do Jogador
+     *
+     * @param name Nome do Jogador
      */
     public Player(String name) {
         this.name = name;
@@ -27,7 +29,8 @@ public abstract class Player implements IPlayer {
         this.extraRound = 0;
         this.realPlayer = true;
         this.division = null;
-        this.movementsHistory = null;
+        this.movementsHistory = new ArrayStack<>();
+        this.divisionsHistory = new ArrayStack<>();
     }
 
     /**
@@ -40,7 +43,8 @@ public abstract class Player implements IPlayer {
         this.extraRound = 0;
         this.realPlayer = true;
         this.division = null;
-        this.movementsHistory = null;
+        this.movementsHistory = new ArrayStack<>();
+        this.divisionsHistory = new ArrayStack<>();
     }
 
     @Override
@@ -72,7 +76,7 @@ public abstract class Player implements IPlayer {
     }
 
     @Override
-    public boolean isRealPlayer(){
+    public boolean isRealPlayer() {
         return realPlayer;
     }
 
@@ -84,5 +88,23 @@ public abstract class Player implements IPlayer {
     @Override
     public IDivision getDivision() {
         return this.division;
+    }
+
+    @Override
+    public IEvent getLastEvent() {
+        if (this.movementsHistory.isEmpty()) {
+            return null;
+        }
+
+        return this.movementsHistory.peek();
+    }
+
+    @Override
+    public IDivision getLastDivision() {
+        if (this.divisionsHistory.isEmpty()) {
+            return null;
+        }
+
+        return this.divisionsHistory.peek();
     }
 }

@@ -18,7 +18,7 @@ public class LeverDivision extends Division {
     }
 
     @Override
-    public IDivision getComportament(IMap maze) {
+    public IDivision getComportment(IMap maze) {
         System.out.println(this);
         int neighborsCount;
         int choice;

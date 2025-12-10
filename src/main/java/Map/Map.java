@@ -25,13 +25,13 @@ public class Map implements IMap {
     private int count;
     private Random rand = new Random();
 
-    public Map(int capacity, ListADT<IPlayer> players) {
+    public Map(int capacity, IHallway hallway) {
         this.vertices = new IDivision[capacity];
         this.adjMatrix = new IHallway[capacity][capacity];
         this.count = 0;
 
         generateDivisions(capacity);
-        generateConnections(players);
+        generateConnections(hallway);
         defineGoalDivision();
     }
 
@@ -75,7 +75,7 @@ public class Map implements IMap {
         return nameQueue;
     }
 
-    private void generateConnections(ListADT<IPlayer> players) {
+    private void generateConnections(IHallway hallway) {
         // Probabilidade baixa para não encher o mapa de linhas
         double density = 0.2;
 
@@ -85,7 +85,6 @@ public class Map implements IMap {
 
         // 1. Criar o caminho principal (Espinha Dorsal)
         for (int i = 0; i < this.count - 1; i++) {
-            IHallway hallway = new Hallway(players);
             // Podes adicionar: hallway.setAttributes(1); // Custo normal
             this.addEdge(i, i + 1, hallway);
         }
@@ -98,9 +97,7 @@ public class Map implements IMap {
 
             for (int j = i + 2; j < limit; j++) {
                 if (Math.random() < density) {
-                    IHallway randomHallway = new Hallway(players);
-                    // Podes adicionar: randomHallway.setAttributes(5); // Atalhos podem ser mais "custosos"
-                    this.addEdge(i, j, randomHallway);
+                    this.addEdge(i, j, hallway);
                 }
             }
         }
