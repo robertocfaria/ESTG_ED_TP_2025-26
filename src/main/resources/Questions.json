@@ -1,7 +1,7 @@
 {
   "questions": [
     {
-      "question": "Qual é a capital de Portugal?",
+      "question": "Qual e a capital de Portugal?",
       "options": ["Porto", "Lisboa", "Coimbra", "Faro"],
       "correct_index": 1
     },
@@ -11,33 +11,33 @@
       "correct_index": 2
     },
     {
-      "question": "Qual é o maior oceano do planeta Terra?",
-      "options": ["Atlântico", "Índico", "Pacífico", "Ártico"],
+      "question": "Qual e o maior oceano do planeta Terra?",
+      "options": ["Atlantico", "Indico", "Pacifico", "Artico"],
       "correct_index": 2
     },
     {
-      "question": "Quem escreveu 'Os Lusíadas'?",
-      "options": ["Fernando Pessoa", "Luís de Camões", "José Saramago", "Eça de Queirós"],
+      "question": "Quem escreveu 'Os Lusiadas'?",
+      "options": ["Fernando Pessoa", "Luis de Camoes", "Jose Saramago", "Eca de Queiros"],
       "correct_index": 1
     },
     {
-      "question": "Qual é o símbolo químico da água?",
+      "question": "Qual e o simbolo quimico da agua?",
       "options": ["H2O", "CO2", "O2", "NaCl"],
       "correct_index": 0
     },
     {
-      "question": "Em que ano ocorreu a Revolução dos Cravos em Portugal?",
+      "question": "Em que ano ocorreu a Revolucao dos Cravos em Portugal?",
       "options": ["1970", "1974", "1986", "1910"],
       "correct_index": 1
     },
     {
-      "question": "Qual é o planeta mais próximo do Sol?",
-      "options": ["Vénus", "Marte", "Mercúrio", "Júpiter"],
+      "question": "Qual e o planeta mais proximo do Sol?",
+      "options": ["Venus", "Marte", "Mercurio", "Jupiter"],
       "correct_index": 2
     },
     {
-      "question": "Qual é a cidade conhecida como a 'Veneza de Portugal'?",
-      "options": ["Aveiro", "Braga", "Viseu", "Setúbal"],
+      "question": "Qual e a cidade conhecida como a 'Veneza de Portugal'?",
+      "options": ["Aveiro", "Braga", "Viseu", "Setubal"],
       "correct_index": 0
     },
     {
@@ -51,53 +51,53 @@
       "correct_index": 2
     },
     {
-      "question": "Qual é o rio que atravessa a cidade do Porto?",
+      "question": "Qual e o rio que atravessa a cidade do Porto?",
       "options": ["Tejo", "Douro", "Mondego", "Guadiana"],
       "correct_index": 1
     },
     {
-      "question": "Qual é a moeda oficial do Reino Unido?",
-      "options": ["Euro", "Dólar", "Libra Esterlina", "Franco"],
+      "question": "Qual e a moeda oficial do Reino Unido?",
+      "options": ["Euro", "Dolar", "Libra Esterlina", "Franco"],
       "correct_index": 2
     },
     {
-      "question": "Quem foi o único Prémio Nobel da Literatura português (até 2024)?",
-      "options": ["José Saramago", "Lobo Antunes", "Sophia de Mello Breyner", "Fernando Pessoa"],
+      "question": "Quem foi o unico Premio Nobel da Literatura portugues (ate 2024)?",
+      "options": ["Jose Saramago", "Lobo Antunes", "Sophia de Mello Breyner", "Fernando Pessoa"],
       "correct_index": 0
     },
     {
-      "question": "Qual é o animal terrestre mais rápido do mundo?",
-      "options": ["Leão", "Cavalo", "Chita (Guepardo)", "Gazela"],
+      "question": "Qual e o animal terrestre mais rapido do mundo?",
+      "options": ["Leao", "Cavalo", "Chita (Guepardo)", "Gazela"],
       "correct_index": 2
     },
     {
       "question": "Em que continente se situa o deserto do Saara?",
-      "options": ["Ásia", "América do Sul", "África", "Austrália"],
+      "options": ["Asia", "America do Sul", "Africa", "Australia"],
       "correct_index": 2
     },
     {
-      "question": "Qual é o ponto mais alto de Portugal Continental?",
-      "options": ["Pico", "Serra da Estrela", "Serra do Gerês", "Fóia"],
+      "question": "Qual e o ponto mais alto de Portugal Continental?",
+      "options": ["Pico", "Serra da Estrela", "Serra do Geres", "Foia"],
       "correct_index": 1
     },
     {
-      "question": "Quem descobriu o caminho marítimo para a Índia?",
-      "options": ["Pedro Álvares Cabral", "Vasco da Gama", "Cristóvão Colombo", "Bartolomeu Dias"],
+      "question": "Quem descobriu o caminho maritimo para a India?",
+      "options": ["Pedro Alvares Cabral", "Vasco da Gama", "Cristovao Colombo", "Bartolomeu Dias"],
       "correct_index": 1
     },
     {
-      "question": "Qual é a capital do Brasil?",
-      "options": ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"],
+      "question": "Qual e a capital do Brasil?",
+      "options": ["Rio de Janeiro", "Sao Paulo", "Brasilia", "Salvador"],
       "correct_index": 2
     },
     {
-      "question": "Quantos anéis tem o símbolo dos Jogos Olímpicos?",
+      "question": "Quantos aneis tem o simbolo dos Jogos Olimpicos?",
       "options": ["4", "5", "6", "7"],
       "correct_index": 1
     },
     {
-      "question": "Qual é o ingrediente principal de um Pastel de Nata?",
-      "options": ["Chocolate", "Gema de ovo", "Maçã", "Amêndoa"],
+      "question": "Qual e o ingrediente principal de um Pastel de Nata?",
+      "options": ["Chocolate", "Gema de ovo", "Maca", "Amendoa"],
       "correct_index": 1
     },
     {
@@ -106,13 +106,13 @@
       "correct_index": 1
     },
     {
-      "question": "Qual é o maior país do mundo em área?",
-      "options": ["China", "EUA", "Rússia", "Canadá"],
+      "question": "Qual e o maior pais do mundo em area?",
+      "options": ["China", "EUA", "Russia", "Canada"],
       "correct_index": 2
     },
     {
-      "question": "Qual destas fadistas é considerada a 'Rainha do Fado'?",
-      "options": ["Mariza", "Ana Moura", "Amália Rodrigues", "Cuca Roseta"],
+      "question": "Qual destas fadistas e considerada a 'Rainha do Fado'?",
+      "options": ["Mariza", "Ana Moura", "Amalia Rodrigues", "Cuca Roseta"],
       "correct_index": 2
     },
     {
@@ -126,8 +126,8 @@
       "correct_index": 2
     },
     {
-      "question": "Qual é a ponte famosa que liga Lisboa a Almada?",
-      "options": ["Ponte Vasco da Gama", "Ponte 25 de Abril", "Ponte Arrábida", "Ponte D. Luís I"],
+      "question": "Qual e a ponte famosa que liga Lisboa a Almada?",
+      "options": ["Ponte Vasco da Gama", "Ponte 25 de Abril", "Ponte Arrabida", "Ponte D. Luis I"],
       "correct_index": 1
     },
     {
@@ -136,23 +136,23 @@
       "correct_index": 2
     },
     {
-      "question": "Qual é a temperatura de ebulição da água ao nível do mar?",
-      "options": ["90°C", "100°C", "110°C", "120°C"],
+      "question": "Qual e a temperatura de ebulicao da agua ao nivel do mar?",
+      "options": ["90C", "100C", "110C", "120C"],
       "correct_index": 1
     },
     {
-      "question": "Qual destas regiões é famosa pelo vinho generoso?",
+      "question": "Qual destas regioes e famosa pelo vinho generoso?",
       "options": ["Algarve", "Douro", "Minho", "Ribatejo"],
       "correct_index": 1
     },
     {
-      "question": "Qual é o mineral mais duro da natureza?",
+      "question": "Qual e o mineral mais duro da natureza?",
       "options": ["Ouro", "Ferro", "Diamante", "Quartzo"],
       "correct_index": 2
     },
     {
-      "question": "Em que país se situa a Torre Eiffel?",
-      "options": ["Itália", "Alemanha", "França", "Espanha"],
+      "question": "Em que pais se situa a Torre Eiffel?",
+      "options": ["Italia", "Alemanha", "Franca", "Espanha"],
       "correct_index": 2
     },
     {
@@ -166,38 +166,38 @@
       "correct_index": 1
     },
     {
-      "question": "Qual é a cor que resulta da mistura de azul com amarelo?",
+      "question": "Qual e a cor que resulta da mistura de azul com amarelo?",
       "options": ["Verde", "Roxo", "Laranja", "Castanho"],
       "correct_index": 0
     },
     {
-      "question": "Qual é o arquipélago português formado por 9 ilhas?",
-      "options": ["Madeira", "Açores", "Berlengas", "Cabo Verde"],
+      "question": "Qual e o arquipelago portugues formado por 9 ilhas?",
+      "options": ["Madeira", "Acores", "Berlengas", "Cabo Verde"],
       "correct_index": 1
     },
     {
-      "question": "Em informática, o que é um 'bug'?",
-      "options": ["Um vírus", "Uma falha ou erro", "Um componente de hardware", "Um tipo de ecrã"],
+      "question": "Em informatica, o que e um 'bug'?",
+      "options": ["Um virus", "Uma falha ou erro", "Um componente de hardware", "Um tipo de ecra"],
       "correct_index": 1
     },
     {
-      "question": "Qual é o instrumento musical típico do Fado de Coimbra?",
-      "options": ["Guitarra Portuguesa", "Acordeão", "Piano", "Bateria"],
+      "question": "Qual e o instrumento musical tipico do Fado de Coimbra?",
+      "options": ["Guitarra Portuguesa", "Acordeao", "Piano", "Bateria"],
       "correct_index": 0
     },
     {
-      "question": "Qual é a capital dos Estados Unidos da América?",
+      "question": "Qual e a capital dos Estados Unidos da America?",
       "options": ["Nova Iorque", "Los Angeles", "Washington D.C.", "Chicago"],
       "correct_index": 2
     },
     {
-      "question": "O que medimos com um termómetro?",
-      "options": ["Velocidade", "Temperatura", "Peso", "Distância"],
+      "question": "O que medimos com um termometro?",
+      "options": ["Velocidade", "Temperatura", "Peso", "Distancia"],
       "correct_index": 1
     },
     {
-      "question": "Qual destes é um prato típico do Porto?",
-      "options": ["Leitão à Bairrada", "Francesinha", "Carne de Porco à Alentejana", "Sopa da Pedra"],
+      "question": "Qual destes e um prato tipico do Porto?",
+      "options": ["Leitao a Bairrada", "Francesinha", "Carne de Porco a Alentejana", "Sopa da Pedra"],
       "correct_index": 1
     }
   ]

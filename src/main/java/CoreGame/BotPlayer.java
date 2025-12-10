@@ -5,8 +5,8 @@ import Interfaces.IMap;
 
 public class BotPlayer extends Player{
 
-    public BotPlayer(IDivision initial){
-        super(initial);
+    public BotPlayer(){
+        super();
     }
 
     @Override

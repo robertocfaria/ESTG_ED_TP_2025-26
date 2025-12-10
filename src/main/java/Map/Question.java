@@ -23,23 +23,11 @@ public class Question {
     public String toString() {
         StringBuilder sb = new StringBuilder();
 
-        sb.append("Pergunta: ");
-        sb.append(question);
-        sb.append("\n");
-        sb.append("--Opcoes--");
-        sb.append("\n");
-        sb.append("1. - ");
-        sb.append(options[0]);
-        sb.append("\n");
-        sb.append("2. - ");
-        sb.append(options[1]);
-        sb.append("\n");
-        sb.append("3. - ");
-        sb.append(options[2]);
-        sb.append("\n");
-        sb.append("4. - ");
-        sb.append(options[3]);
-        sb.append("\n");
+        sb.append(question).append("\n");
+        sb.append("--- Opcoes ---\n");
+        for (int i = 0; i < options.length; i++) {
+            sb.append(i + 1).append(". ").append(options[i]).append("\n");
+        }
 
         return sb.toString();
     }

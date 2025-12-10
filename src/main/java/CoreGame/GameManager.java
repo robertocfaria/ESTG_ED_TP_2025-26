@@ -2,7 +2,9 @@ package CoreGame;
 
 import Interfaces.IDivision;
 import Map.Map;
+import Map.GoalDivision;
 import Interfaces.IPlayer;
+import Menus.GameVisuals;
 import Reader.Reader;
 import Structures.List.ArrayUnorderedList;
 import Util.Utils;
@@ -27,15 +29,12 @@ public class GameManager {
         boolean gameRunning = true;
 
         addPlayers();
-
         while (gameRunning) {
             turn();
             if (winnerPlayer != null) {
                 gameRunning = false;
             }
         }
-
-
 
         System.out.println("Jogo Terminado!");
         System.out.println("Parabens " + winnerPlayer.getName() + " pela Vitoria");
@@ -44,49 +43,61 @@ public class GameManager {
     }
 
     private void turn() {
-        System.out.println("Inicio da Ronda: " + this.turn);
+        GameVisuals.showRoundSeparator(this.turn);
 
         for (IPlayer currentPlayer : players) {
-            System.out.println("Vez do jogador: " + currentPlayer.getName());
+            GameVisuals.showPlayerTurn(currentPlayer.getName());
 
             currentPlayer.move(maze);
 
             if(isWinner(currentPlayer)) {
-                System.out.println("Temos um vencedor!");
+                GameVisuals.showVictory(currentPlayer.getName());
                 return;
             }
         }
 
         System.out.println("Fim da Ronda: " + this.turn);
         turn++;
+
+
     }
 
     private void addPlayers() {
         Reader reader = new Reader();
+        String nameTemp;
 
-        System.out.println("Escolha quantos jogadores vai adicionar. Pode adicionar ate 10");
-        System.out.println("jogadores reais e 5 jogadores automaticos (BOTS).");
-
+        GameVisuals.showPlayerConfigHeader();
         int realPlayers = reader.readInt(1,10,"Quantos jogadores reais (1 a 10): ");
         for(int i = 0; i < realPlayers; i++) {
-            IDivision d = maze.getInitial();
-            players.addToRear(new HumanPlayer(reader.readString("Nome: "), d));
+            nameTemp = reader.readString("Nome do Jogador " + (i+1) + " : ");
+            players.addToRear(new HumanPlayer(nameTemp));
+            GameVisuals.showPlayerAdded(nameTemp, i+1);
+            GameVisuals.showNextPlayerSeparator();
         }
 
         int botPlayers = reader.readInt(0,10,"Quantos BOTS (0 a 5): ");
         for(int i = 0; i < botPlayers; i++) {
-            players.addToRear(new BotPlayer(maze.getInitial()));
+            players.addToRear(new BotPlayer());
         }
         if(botPlayers > 0) {
             System.out.println("BOT(s) adicionados com sucesso!");
         }
+
+        setInitialPosition();
+    }
+
+    private void setInitialPosition(){
+        for (IPlayer player : players) {
+            player.setDivision(maze.getInitial());
+        }
     }
 
     private boolean isWinner(IPlayer player) {
-        //TODO - fazer este metodo
-
-        this.winnerPlayer = player;
-        return true;
+        if(player.getDivision() instanceof GoalDivision) {
+            this.winnerPlayer = player;
+            return true;
+        }
+        return false;
     }
 
 }

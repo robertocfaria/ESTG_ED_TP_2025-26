@@ -10,12 +10,7 @@ public class GoalDivision extends Division{
     }
 
     @Override
-    public IDivision getNewChosenDivision(IMap maze) {
-        return null;
-    }
-
-    @Override
-    public IDivision getComportament() {
+    public IDivision getComportament(IMap maze) {
         System.out.println("Parabéns! GANHASTE!");
         return null;
     }

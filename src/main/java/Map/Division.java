@@ -1,6 +1,7 @@
 package Map;
 
 import Interfaces.IDivision;
+import Interfaces.IMap;
 
 public abstract class Division implements IDivision {
 
@@ -16,5 +17,5 @@ public abstract class Division implements IDivision {
     public String getName() { return this.name; }
 
     @Override
-    public abstract IDivision getComportament();
+    public abstract IDivision getComportament(IMap maze);
 }

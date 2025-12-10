@@ -21,7 +21,7 @@ public abstract class Player implements IPlayer {
      * Este construtor cria um jogador Real novo.
      * @param name  Nome do Jogador
      */
-    public Player(String name, IDivision division) {
+    public Player(String name) {
         this.name = name;
         this.stunned = 0;
         this.extraRound = 0;
@@ -33,7 +33,7 @@ public abstract class Player implements IPlayer {
     /**
      * Este construtor cria um jogador automático. Usa a variável estatica para definir o número"
      */
-    public Player(IDivision division) {
+    public Player() {
         this.name = "BOT" + botNumber;
         botNumber++;
         this.stunned = 0;

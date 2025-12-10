@@ -7,36 +7,74 @@ import Lever.Lever;
 import NewSctructures.ArrayUnorderedListWithGet;
 import NewSctructures.UnorderedListWithGetADT;
 import Reader.Reader;
+import Structures.Interfaces.UnorderedListADT;
+import Structures.List.ArrayUnorderedList;
+import Util.Utils;
+
+import java.util.Random;
 
 public class LeverDivision extends Division {
-    private UnorderedListWithGetADT<IDivision> adjacentDivision;
-    private UnorderedListWithGetADT<ILever> levers;
+    private UnorderedListADT<ILever> myLevers;
 
     public LeverDivision(String name) {
         super(name);
-        this.adjacentDivision = new ArrayUnorderedListWithGet<>();
-        this.levers = new ArrayUnorderedListWithGet<>();
-
     }
 
     @Override
-    public IDivision getComportament() {
-        return null;
-    }
+    public IDivision getComportament(IMap maze) {
+        System.out.println(toString());
+        if (this.myLevers == null || this.myLevers.isEmpty()) {
+            this.myLevers = new ArrayUnorderedList<>();
+            try {
+                //aqui saca as divisoes adjacentes e cria um array com o dobro do tamanho
+                UnorderedListADT<IDivision> neighbors = maze.getAdjacentVertex(this);
+                int realCount = neighbors.size();
+                IDivision[] tempArray = new IDivision[realCount * 2];
+                for (int i = 0; i < realCount; i++) {
+                    tempArray[i] = neighbors.removeFirst();
+                }
+                //as posicoes que sobram ficam a null
+                for (int i = realCount; i < tempArray.length; i++) {
+                    tempArray[i] = null;
+                }
 
-    @Override
-    public IDivision getNewChosenDivision(IMap maze) {
-        this.adjacentDivision = maze.getAdjacentVertex(this);
+                // Fisher-Yates baeralha
+                Random rand = new Random();
+                for (int i = tempArray.length - 1; i > 0; i--) {
+                    int index = rand.nextInt(i + 1);
+                    // Troca
+                    IDivision temp = tempArray[index];
+                    tempArray[index] = tempArray[i];
+                    tempArray[i] = temp;
+                }
+                System.out.println("Existem " + tempArray.length + " alavancas nesta sala.");
 
-        for (int i = 0; i < this.adjacentDivision.size() * 2; i++) { // metade sao alavancas normais, outras retornam null
-            ILever lever = new Lever(this.adjacentDivision.get(i), i);
-            this.levers.addToRear(lever);
+                for (int i = 0; i < tempArray.length; i++) {
+                    System.out.println((i + 1) + ". Puxar a Alavanca " + (i + 1));
+                }
+
+                int choice = Reader.readInt(1, (tempArray.length+1), "Qual alavanca queres puxar? ");
+
+                IDivision destination = tempArray[choice-1];
+
+                if (destination == null) {
+                    System.out.println("CLACK!... Nada acontece. Parece que esta alavanca está partida.");
+                    Utils.waitEnter();
+                    return this; // O jogador fica na mesma sala
+                } else {
+                    System.out.println("RUMBLE!... Uma passagem secreta abre-se!");
+                    System.out.println("Estas a caminho sa seguinte sala: " + destination.getName());
+                    Utils.waitEnter();
+
+                    return destination; // O jogador move-se
+                }
+
+            } catch (Exception e) {
+                System.out.println("Erro ao gerar alavancas: " + e.getMessage());
+                return this;
+            }
         }
-
-        int choice = Reader.readInt(1, this.levers.size(), "Escolha a alavanca a puxar:");
-        ILever chosenLever = this.levers.get(choice - 1);
-
-        return chosenLever.getDivision();
+        return this;
     }
 
     @Override

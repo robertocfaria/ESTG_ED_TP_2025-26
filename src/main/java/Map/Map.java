@@ -146,9 +146,6 @@ public class Map implements IMap {
 
         IDivision goalDivision = new GoalDivision(goalName);
         this.vertices[furthestIndex] = goalDivision;
-
-        // Debug (Opcional): Para veres na consola onde ficou o objetivo
-        System.out.println("Objetivo colocado no índice: " + furthestIndex + " (Distância: " + maxDistance + ")");
     }
 
     private int[] calculateDistancesFromStart() {
