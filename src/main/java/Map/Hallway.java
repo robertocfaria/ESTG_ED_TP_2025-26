@@ -11,7 +11,8 @@ public class Hallway implements IHallway {
     private static EventManager EVENTS = new EventManager();
     private ListADT<IPlayer> players;
 
-    public Hallway(ListADT<IPlayer> players) {
+    @Override
+    public void setPlayers(ListADT<IPlayer> players) {
         this.players = players;
     }
 

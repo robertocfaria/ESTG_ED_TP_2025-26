@@ -147,7 +147,6 @@ public class Player implements IPlayer {
                     }
 
                     System.out.println("Como acertaste, podes continuar a jogar!");
-                    //Utils.waitEnter();
 
                 } catch (Exception e) {
                     System.out.println("Erro crítico ao mover: " + e.getMessage());

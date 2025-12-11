@@ -24,15 +24,21 @@ public class Map implements IMap {
     private IDivision[] vertices;
     private int count;
     private Random rand = new Random();
+    private IHallway hallway;
 
-    public Map(int capacity, IHallway hallway) {
+    public Map(int capacity) {
         this.vertices = new IDivision[capacity];
         this.adjMatrix = new IHallway[capacity][capacity];
+        this.hallway = new Hallway();
         this.count = 0;
 
         generateDivisions(capacity);
-        generateConnections(hallway);
+        generateConnections(this.hallway);
         defineGoalDivision();
+    }
+
+    public void setHallwayPlayers(ListADT<IPlayer> players) {
+        this.hallway.setPlayers(players);
     }
 
     private void generateDivisions(int numberOfDivisions) {
@@ -179,12 +185,6 @@ public class Map implements IMap {
 
         return distances;
     }
-
-
-    /*
-    TODO metodo para scar a division
-    TODO metodo para saber quais sao as inicia - iniciar a matriz e verificar as conexoes para ver qual sao as extremidades
-    */
 
     private boolean isValidIndex(int i) {
         return 0 <= i && i < this.count;

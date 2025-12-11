@@ -15,6 +15,7 @@ public class StartMenu {
         int tamanho;
         GameManager game;
         IHallway hallway;
+        Map maze;
 
         do {
             displayMenu();
@@ -23,18 +24,20 @@ public class StartMenu {
                 case 1:
                     game = new GameManager();
                     tamanho = rand.nextInt(90) + 10;
-                    hallway = new Hallway(game.getPlayers());
 
                     System.out.println("A iniciar o jogo...");
-                    game.startGame(new Map(tamanho, hallway));
+                    maze = new Map(tamanho);
+                    //aqui guarda a matriz
+                    game.startGame(maze);
                     break;
                 case 2:
                     game = new GameManager();
                     tamanho = Reader.readInt(10, 90, "Insira o numero de desafios que pretende (10 a 90): ");
-                    hallway = new Hallway(game.getPlayers());
 
                     System.out.println("A iniciar o jogo...");
-                    game.startGame(new Map(tamanho, hallway));
+                    maze = new Map(tamanho);
+                    //aqui guarda a matriz
+                    game.startGame(maze);
                     break;
                 case 3:
 
@@ -53,7 +56,7 @@ public class StartMenu {
         System.out.println("| 1 - Novo Jogo -> Mapa Random");
         System.out.println("| 2 - Novo Jogo -> Crie o seu Mapa");
         System.out.println("| 3 - Novo Jogo -> Escolha o Mapa");
-        System.out.println("| 4 - Carregar jogo por acabar ou ver resultados de jogo terminado");
+        System.out.println("| 4 - Ver resultados de jogo terminados");
         System.out.println("| 0 - Sair");
         System.out.println("|----------------------------------------------------------------");
     }

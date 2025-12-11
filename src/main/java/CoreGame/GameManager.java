@@ -21,14 +21,15 @@ public class GameManager {
         this.winnerPlayer = null;
         this.turn = 1;
         this.finished = false;
-
-        addPlayers();
     }
 
     public void startGame(Map maze) {
         this.maze = maze;
+        addPlayers();
+        maze.setHallwayPlayers(players);
         this.setInitialPosition();
         boolean gameRunning = true;
+
         while (gameRunning) {
             turn();
             if (winnerPlayer != null) {
@@ -48,6 +49,7 @@ public class GameManager {
             GameVisuals.showPlayerTurn(currentPlayer.getName());
 
             currentPlayer.move(maze);
+
 
             if (isWinner(currentPlayer)) {
                 GameVisuals.showVictory(currentPlayer.getName());
@@ -72,13 +74,17 @@ public class GameManager {
             GameVisuals.showNextPlayerSeparator();
         }
 
-        int botPlayers = Reader.readInt(0, 10, "Quantos BOTS (0 a 5): ");
+        int botPlayers = Reader.readInt(0, 5, "Quantos BOTS (0 a 5): ");
         for (int i = 0; i < botPlayers; i++) {
             players.addToRear(new Player());
         }
         if (botPlayers > 0) {
             System.out.println("BOT(s) adicionados com sucesso!");
         }
+
+        //verifica se tem pelo menos 1 jogador
+
+
     }
 
     private void setInitialPosition() {
