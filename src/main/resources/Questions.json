@@ -1,204 +1,154 @@
 {
   "questions": [
     {
-      "question": "Qual e a capital de Portugal?",
-      "options": ["Porto", "Lisboa", "Coimbra", "Faro"],
-      "correct_index": 1
-    },
-    {
-      "question": "Quem foi o primeiro rei de Portugal?",
-      "options": ["D. Dinis", "D. Manuel I", "D. Afonso Henriques", "D. Sancho I"],
+      "question": "Qual e a capital da Australia?",
+      "options": ["Sydney", "Melbourne", "Camberra", "Brisbane"],
       "correct_index": 2
     },
     {
-      "question": "Qual e o maior oceano do planeta Terra?",
-      "options": ["Atlantico", "Indico", "Pacifico", "Artico"],
-      "correct_index": 2
-    },
-    {
-      "question": "Quem escreveu 'Os Lusiadas'?",
-      "options": ["Fernando Pessoa", "Luis de Camoes", "Jose Saramago", "Eca de Queiros"],
+      "question": "Quem foi o primeiro Presidente da Republica Portuguesa eleito (nao provisorio)?",
+      "options": ["Teofilo Braga", "Manuel de Arriaga", "Bernardino Machado", "Sidonio Pais"],
       "correct_index": 1
     },
     {
-      "question": "Qual e o simbolo quimico da agua?",
-      "options": ["H2O", "CO2", "O2", "NaCl"],
+      "question": "Em que cidade foi assinado o tratado que instituiu a Uniao Europeia em 1992?",
+      "options": ["Roma", "Bruxelas", "Maastricht", "Estrasburgo"],
+      "correct_index": 2
+    },
+    {
+      "question": "Qual e a distancia oficial de uma maratona?",
+      "options": ["40 km", "41.195 km", "42.195 km", "45 km"],
+      "correct_index": 2
+    },
+    {
+      "question": "Quem escreveu o romance 'O Ano da Morte de Ricardo Reis'?",
+      "options": ["Jose Saramago", "Antonio Lobo Antunes", "Eca de Queiros", "Fernando Pessoa"],
       "correct_index": 0
     },
     {
-      "question": "Em que ano ocorreu a Revolucao dos Cravos em Portugal?",
-      "options": ["1970", "1974", "1986", "1910"],
-      "correct_index": 1
-    },
-    {
-      "question": "Qual e o planeta mais proximo do Sol?",
-      "options": ["Venus", "Marte", "Mercurio", "Jupiter"],
+      "question": "Qual e o maior pais de Africa em extensao territorial?",
+      "options": ["Sudao", "Republica Democratica do Congo", "Argelia", "Libia"],
       "correct_index": 2
     },
     {
-      "question": "Qual e a cidade conhecida como a 'Veneza de Portugal'?",
-      "options": ["Aveiro", "Braga", "Viseu", "Setubal"],
+      "question": "Quantos jogadores de campo (excluindo suplentes) tem uma equipa de Andebol?",
+      "options": ["5", "6", "7", "11"],
+      "correct_index": 2
+    },
+    {
+      "question": "Qual destes arquitetos portugueses venceu o Premio Pritzker em 2011?",
+      "options": ["Alvaro Siza Vieira", "Eduardo Souto de Moura", "Carrilho da Graca", "Tomas Taveira"],
+      "correct_index": 1
+    },
+    {
+      "question": "Em que ano Portugal aderiu a Comunidade Economica Europeia (atual UE)?",
+      "options": ["1974", "1986", "1992", "2002"],
+      "correct_index": 1
+    },
+    {
+      "question": "Qual e o rio mais extenso que corre exclusivamente em territorio portugues?",
+      "options": ["Tejo", "Douro", "Guadiana", "Mondego"],
+      "correct_index": 3
+    },
+    {
+      "question": "Quem pintou a obra-prima 'Guernica'?",
+      "options": ["Salvador Dali", "Pablo Picasso", "Joan Miro", "Diego Velazquez"],
+      "correct_index": 1
+    },
+    {
+      "question": "Qual destes paises nao faz parte da NATO (OTAN)?",
+      "options": ["Noruega", "Turquia", "Suica", "Portugal"],
+      "correct_index": 2
+    },
+    {
+      "question": "Em que desporto se utiliza o termo 'Checkmate'?",
+      "options": ["Tenis", "Xadrez", "Esgrima", "Golfe"],
+      "correct_index": 1
+    },
+    {
+      "question": "Qual e a montanha mais alta do mundo (acima do nivel do mar)?",
+      "options": ["K2", "Monte Branco", "Everest", "Kilimanjaro"],
+      "correct_index": 2
+    },
+    {
+      "question": "Quem era o Primeiro-Ministro do Reino Unido aquando da vitoria na Segunda Guerra Mundial?",
+      "options": ["Neville Chamberlain", "Clement Attlee", "Winston Churchill", "Margaret Thatcher"],
+      "correct_index": 2
+    },
+    {
+      "question": "Qual e o nome do estuario onde desagua o Rio Tejo?",
+      "options": ["Mar da Palha", "Ria de Aveiro", "Ria Formosa", "Lagoa de Obidos"],
       "correct_index": 0
     },
     {
-      "question": "Quantos ossos tem, aproximadamente, o corpo humano adulto?",
-      "options": ["156", "206", "306", "106"],
+      "question": "Em que ano caiu o Muro de Berlim?",
+      "options": ["1987", "1989", "1991", "1990"],
       "correct_index": 1
     },
     {
-      "question": "Quem pintou a 'Mona Lisa'?",
-      "options": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
+      "question": "Qual destas operas foi composta por Wolfgang Amadeus Mozart?",
+      "options": ["A Traviata", "Carmen", "A Flauta Magica", "O Barbeiro de Sevilha"],
       "correct_index": 2
     },
     {
-      "question": "Qual e o rio que atravessa a cidade do Porto?",
-      "options": ["Tejo", "Douro", "Mondego", "Guadiana"],
+      "question": "Qual selecao venceu o primeiro Campeonato do Mundo de Futebol em 1930?",
+      "options": ["Brasil", "Uruguai", "Italia", "Alemanha"],
       "correct_index": 1
     },
     {
-      "question": "Qual e a moeda oficial do Reino Unido?",
-      "options": ["Euro", "Dolar", "Libra Esterlina", "Franco"],
+      "question": "Que elemento quimico tem o simbolo 'Fe'?",
+      "options": ["Fluor", "Fosforo", "Ferro", "Francium"],
       "correct_index": 2
     },
     {
-      "question": "Quem foi o unico Premio Nobel da Literatura portugues (ate 2024)?",
-      "options": ["Jose Saramago", "Lobo Antunes", "Sophia de Mello Breyner", "Fernando Pessoa"],
+      "question": "Onde se localiza a sede das Nacoes Unidas (ONU)?",
+      "options": ["Genebra", "Bruxelas", "Nova Iorque", "Haia"],
+      "correct_index": 2
+    },
+    {
+      "question": "Qual e o canal que liga o Mar Mediterraneo ao Mar Vermelho?",
+      "options": ["Canal do Panama", "Canal de Suez", "Canal de Corinto", "Canal da Mancha"],
+      "correct_index": 1
+    },
+    {
+      "question": "Quem foi a primeira mulher a exercer o cargo de Primeiro-Ministro em Portugal?",
+      "options": ["Manuela Ferreira Leite", "Maria de Lourdes Pintasilgo", "Assuncao Cristas", "Catarina Martins"],
+      "correct_index": 1
+    },
+    {
+      "question": "Qual e o planeta do Sistema Solar conhecido pelos seus aneis visiveis?",
+      "options": ["Jupiter", "Urano", "Saturno", "Neptuno"],
+      "correct_index": 2
+    },
+    {
+      "question": "Em que cidade se realizaram os Jogos Olimpicos de 1992?",
+      "options": ["Barcelona", "Seul", "Atlanta", "Atenas"],
       "correct_index": 0
     },
     {
-      "question": "Qual e o animal terrestre mais rapido do mundo?",
-      "options": ["Leao", "Cavalo", "Chita (Guepardo)", "Gazela"],
-      "correct_index": 2
-    },
-    {
-      "question": "Em que continente se situa o deserto do Saara?",
-      "options": ["Asia", "America do Sul", "Africa", "Australia"],
-      "correct_index": 2
-    },
-    {
-      "question": "Qual e o ponto mais alto de Portugal Continental?",
-      "options": ["Pico", "Serra da Estrela", "Serra do Geres", "Foia"],
+      "question": "Qual destes estilos artisticos e caracterizado pelo uso de formas geometricas?",
+      "options": ["Impressionismo", "Cubismo", "Romantismo", "Barroco"],
       "correct_index": 1
     },
     {
-      "question": "Quem descobriu o caminho maritimo para a India?",
-      "options": ["Pedro Alvares Cabral", "Vasco da Gama", "Cristovao Colombo", "Bartolomeu Dias"],
+      "question": "A Peninsula da Crimeia e um territorio disputado entre que paises?",
+      "options": ["Russia e Georgia", "Russia e Ucrania", "Polonia e Bielorrussia", "Armenia e Azerbaijao"],
       "correct_index": 1
     },
     {
-      "question": "Qual e a capital do Brasil?",
-      "options": ["Rio de Janeiro", "Sao Paulo", "Brasilia", "Salvador"],
-      "correct_index": 2
+      "question": "Qual e a capital do Canada?",
+      "options": ["Toronto", "Montreal", "Vancouver", "Otava"],
+      "correct_index": 3
     },
     {
-      "question": "Quantos aneis tem o simbolo dos Jogos Olimpicos?",
-      "options": ["4", "5", "6", "7"],
-      "correct_index": 1
-    },
-    {
-      "question": "Qual e o ingrediente principal de um Pastel de Nata?",
-      "options": ["Chocolate", "Gema de ovo", "Maca", "Amendoa"],
-      "correct_index": 1
-    },
-    {
-      "question": "Em que ano acabou a Segunda Guerra Mundial?",
-      "options": ["1939", "1945", "1918", "1950"],
-      "correct_index": 1
-    },
-    {
-      "question": "Qual e o maior pais do mundo em area?",
-      "options": ["China", "EUA", "Russia", "Canada"],
-      "correct_index": 2
-    },
-    {
-      "question": "Qual destas fadistas e considerada a 'Rainha do Fado'?",
-      "options": ["Mariza", "Ana Moura", "Amalia Rodrigues", "Cuca Roseta"],
-      "correct_index": 2
-    },
-    {
-      "question": "O que significa a sigla 'WWW' na internet?",
-      "options": ["World Wide Web", "World Web Wide", "Web World Wide", "Wide World Web"],
+      "question": "Quem escreveu a 'Divina Comedia'?",
+      "options": ["Dante Alighieri", "Maquiavel", "Petrarca", "Bocaccio"],
       "correct_index": 0
     },
     {
-      "question": "Quantos dias tem um ano bissexto?",
-      "options": ["364", "365", "366", "367"],
+      "question": "Em Ciclismo, qual e a cor da camisola do lider da Volta a Franca?",
+      "options": ["Rosa", "Vermelha", "Amarela", "Verde"],
       "correct_index": 2
-    },
-    {
-      "question": "Qual e a ponte famosa que liga Lisboa a Almada?",
-      "options": ["Ponte Vasco da Gama", "Ponte 25 de Abril", "Ponte Arrabida", "Ponte D. Luis I"],
-      "correct_index": 1
-    },
-    {
-      "question": "Quem escreveu a saga 'Harry Potter'?",
-      "options": ["J.R.R. Tolkien", "George R.R. Martin", "J.K. Rowling", "Stephen King"],
-      "correct_index": 2
-    },
-    {
-      "question": "Qual e a temperatura de ebulicao da agua ao nivel do mar?",
-      "options": ["90C", "100C", "110C", "120C"],
-      "correct_index": 1
-    },
-    {
-      "question": "Qual destas regioes e famosa pelo vinho generoso?",
-      "options": ["Algarve", "Douro", "Minho", "Ribatejo"],
-      "correct_index": 1
-    },
-    {
-      "question": "Qual e o mineral mais duro da natureza?",
-      "options": ["Ouro", "Ferro", "Diamante", "Quartzo"],
-      "correct_index": 2
-    },
-    {
-      "question": "Em que pais se situa a Torre Eiffel?",
-      "options": ["Italia", "Alemanha", "Franca", "Espanha"],
-      "correct_index": 2
-    },
-    {
-      "question": "Qual era a moeda de Portugal antes do Euro?",
-      "options": ["Peso", "Cruzeiro", "Escudo", "Real"],
-      "correct_index": 2
-    },
-    {
-      "question": "Quem foi o primeiro homem a pisar a Lua?",
-      "options": ["Yuri Gagarin", "Neil Armstrong", "Buzz Aldrin", "Michael Collins"],
-      "correct_index": 1
-    },
-    {
-      "question": "Qual e a cor que resulta da mistura de azul com amarelo?",
-      "options": ["Verde", "Roxo", "Laranja", "Castanho"],
-      "correct_index": 0
-    },
-    {
-      "question": "Qual e o arquipelago portugues formado por 9 ilhas?",
-      "options": ["Madeira", "Acores", "Berlengas", "Cabo Verde"],
-      "correct_index": 1
-    },
-    {
-      "question": "Em informatica, o que e um 'bug'?",
-      "options": ["Um virus", "Uma falha ou erro", "Um componente de hardware", "Um tipo de ecra"],
-      "correct_index": 1
-    },
-    {
-      "question": "Qual e o instrumento musical tipico do Fado de Coimbra?",
-      "options": ["Guitarra Portuguesa", "Acordeao", "Piano", "Bateria"],
-      "correct_index": 0
-    },
-    {
-      "question": "Qual e a capital dos Estados Unidos da America?",
-      "options": ["Nova Iorque", "Los Angeles", "Washington D.C.", "Chicago"],
-      "correct_index": 2
-    },
-    {
-      "question": "O que medimos com um termometro?",
-      "options": ["Velocidade", "Temperatura", "Peso", "Distancia"],
-      "correct_index": 1
-    },
-    {
-      "question": "Qual destes e um prato tipico do Porto?",
-      "options": ["Leitao a Bairrada", "Francesinha", "Carne de Porco a Alentejana", "Sopa da Pedra"],
-      "correct_index": 1
     }
   ]
 }

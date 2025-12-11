@@ -12,7 +12,7 @@ public interface IPlayer {
 
     int getExtraRounds();
 
-    void addExtraRound(int numberOfRounds);
+    void setExtraRound(int numberOfRounds);
 
     boolean isRealPlayer();
 

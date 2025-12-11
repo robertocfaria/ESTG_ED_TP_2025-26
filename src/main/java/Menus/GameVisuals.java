@@ -57,7 +57,7 @@ public class GameVisuals {
     public static void showVictory(String playerName) {
         System.out.println();
         printLine("+", "=", "+"); // Usa '=' para destacar mais
-        printCenteredLine("* * * V I T O R I A  * * *"); // Sem acentos para segurança
+        printCenteredLine("* * * V I T O R I A  * * *");
         printLine("|", "-", "|");
         printCenteredLine("");
         printCenteredLine("PARABENS " + playerName.toUpperCase() + "!");
@@ -76,15 +76,15 @@ public class GameVisuals {
         }
 
         System.out.println();
-        printLine("+", "=", "+");
+        printLine("+", "-", "+");
         printCenteredLine("E V E N T O  E S P E C I A L");
-        printLine("|", "-", "|");
+        printLine("+", "-", "+");
         printCenteredLine("EXTRA JOGADAS");
         printCenteredLine("");
         printCenteredLine("O jogador " + playerName.toUpperCase());
         printCenteredLine("recebe +" + amount + " jogadas!");
         printCenteredLine("");
-        printLine("+", "=", "+");
+        printLine("+", "-", "+");
         System.out.println();
     }
 

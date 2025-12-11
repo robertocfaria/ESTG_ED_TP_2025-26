@@ -3,5 +3,5 @@ package Interfaces;
 public interface IDivision {
     String getName();
 
-    IDivision getComportment(IMap maze);
+    IDivision getComportament(IMap maze, IPlayer player);
 }

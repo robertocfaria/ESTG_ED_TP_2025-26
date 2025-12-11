@@ -1,13 +1,11 @@
 package CoreGame;
 
-import Interfaces.IEvent;
-import Interfaces.IMap;
-import Interfaces.IDivision;
-import Interfaces.IPlayer;
+import Interfaces.*;
 import Structures.Stack.ArrayStack;
+import Util.Utils;
 
 
-public abstract class Player implements IPlayer {
+public class Player implements IPlayer {
     protected static int botNumber = 1;
     protected String name;
     protected int stunned;
@@ -16,7 +14,8 @@ public abstract class Player implements IPlayer {
     protected ArrayStack<IEvent> movementsHistory;
     protected ArrayStack<IDivision> divisionsHistory;
     protected IDivision division;
-
+    protected int numberDivisonsAvancedRound;
+    protected ArrayStack<String> nameDivisionsAvancedRound;
 
     /**
      * Este construtor cria um jogador Real novo.
@@ -41,14 +40,11 @@ public abstract class Player implements IPlayer {
         botNumber++;
         this.stunned = 0;
         this.extraRound = 0;
-        this.realPlayer = true;
+        this.realPlayer = false;
         this.division = null;
         this.movementsHistory = new ArrayStack<>();
         this.divisionsHistory = new ArrayStack<>();
     }
-
-    @Override
-    public abstract void move(IMap maze);
 
     @Override
     public String getName() {
@@ -71,7 +67,7 @@ public abstract class Player implements IPlayer {
     }
 
     @Override
-    public void addExtraRound(int numberOfRounds) {
+    public void setExtraRound(int numberOfRounds) {
         this.extraRound = numberOfRounds;
     }
 
@@ -106,5 +102,72 @@ public abstract class Player implements IPlayer {
         }
 
         return this.divisionsHistory.peek();
+    }
+
+    @Override
+    public void move(IMap maze) {
+
+        if (getStunned() > 0) {
+            System.out.println(">>> Estas atordoado e perdes esta vez! <<<");
+            addStunnedRound(getStunned() - 1);
+            Utils.waitEnter();
+            return;
+        }
+
+        boolean isTurnActive = true;
+        int movesInThisTurn = 0;
+
+        while (isTurnActive) {
+            IDivision currentPos = getDivision();
+
+            IDivision nextPos = currentPos.getComportament(maze, this);
+            if (nextPos != null && !nextPos.equals(currentPos)) {
+                try {
+                    IHallway hallway = maze.getEdge(currentPos, nextPos);
+                    IEvent event = hallway.getEvent(this);
+
+                    divisionsHistory.push(currentPos);
+                    setDivision(nextPos);
+                    movesInThisTurn++;
+
+                    System.out.println(">>> SUCESSO! Avançaste para: " + nextPos.getName());
+
+                    // Aplicar Evento do Corredor
+                    if (event != null) {
+                        System.out.println("Encontraste um evento no corredor!");
+                        event.apply(this, isRealPlayer());
+
+                        // globalHistory.push(new HistoryEntry(event));
+                        movementsHistory.push(event); // Se ainda usares a stack antiga
+                    }
+
+                    if (getStunned() > 0) {
+                        System.out.println("!!! O evento deixou-te ATORDOADO! A tua vez acabou. !!!");
+                        isTurnActive = false;
+                    }
+
+                    System.out.println("Como acertaste, podes continuar a jogar!");
+                    //Utils.waitEnter();
+
+                } catch (Exception e) {
+                    System.out.println("Erro crítico ao mover: " + e.getMessage());
+                    isTurnActive = false;
+                }
+            }
+
+            else {
+                System.out.println(">>> FALHASTE O DESAFIO! <<<");
+                if (getExtraRounds() > 0) {
+                    System.out.println("MAS ESPERA! Tens " + getExtraRounds() + " Jogada(s) Extra!");
+                    System.out.println("Gastaste uma para tentar novamente.");
+                    setExtraRound(getExtraRounds() - 1);
+                    //Utils.waitEnter();
+                } else {
+                    System.out.println("A tua vez terminou.");
+                    isTurnActive = false;
+                    //Utils.waitEnter();
+                }
+            }
+        }
     }
 }

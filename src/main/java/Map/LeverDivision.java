@@ -3,79 +3,103 @@ package Map;
 import Interfaces.IDivision;
 import Interfaces.ILever;
 import Interfaces.IMap;
+import Interfaces.IPlayer;
 import Lever.Lever;
 import Reader.Reader;
 import Structures.Interfaces.UnorderedListADT;
-import Util.Utils;
-
+import java.util.Iterator; // Importante
 import java.util.Random;
 
 public class LeverDivision extends Division {
     private Random rand = new Random();
+    private ILever[] myLevers; // Persistência das alavancas
 
     public LeverDivision(String name) {
         super(name);
     }
 
     @Override
-    public IDivision getComportment(IMap maze) {
-        System.out.println(this);
-        int neighborsCount;
-        int choice;
-        int leversCount;
+    public IDivision getComportament(IMap maze, IPlayer player) {
+        System.out.println(this.toString());
 
-        try {
-            UnorderedListADT<IDivision> neighbors = maze.getAdjacentVertex(this);
-            neighborsCount = neighbors.size();
+        // 1. GERAÇÃO PREGUIÇOSA (Lazy Loading) - Só gera se ainda não existirem
+        if (this.myLevers == null) {
+            try {
+                UnorderedListADT<IDivision> neighbors = maze.getAdjacentVertex(this);
+                int neighborsCount = neighbors.size();
+                int totalLevers = neighborsCount * 2;
 
-            ILever[] levers = new ILever[neighborsCount * 2];
-            leversCount = levers.length;
+                this.myLevers = new ILever[totalLevers];
 
-            for (int i = 0; i < neighborsCount; i++) {
-                levers[i] = new Lever(neighbors.removeFirst(), i);
+                // CORREÇÃO CRÍTICA: Usar Iterator em vez de removeFirst()
+                Iterator<IDivision> it = neighbors.iterator();
+                int i = 0;
+
+                // Preenche as reais
+                while(it.hasNext()) {
+                    this.myLevers[i] = new Lever(it.next(), i);
+                    i++;
+                }
+
+                // Preenche as falsas (null)
+                for (; i < totalLevers; i++) {
+                    this.myLevers[i] = new Lever(null, i);
+                }
+
+                // Baralhar (Fisher-Yates)
+                for (int k = totalLevers - 1; k > 0; k--) {
+                    int index = this.rand.nextInt(k + 1);
+                    ILever temp = this.myLevers[index];
+                    this.myLevers[index] = this.myLevers[k];
+                    this.myLevers[k] = temp;
+                }
+
+            } catch (Exception e) {
+                System.out.println("Erro ao gerar alavancas: " + e.getMessage());
+                return this;
             }
+        }
 
-            for (int i = neighborsCount; i < leversCount; i++) {
-                levers[i] = new Lever(null, i);
-            }
+        // 2. INTERAÇÃO COM JOGADOR
+        int leversCount = this.myLevers.length;
+        System.out.println("Existem " + leversCount + " alavancas nesta sala.");
 
-            //Fisher-Yates baralha
-            ILever temp;
-            int index;
-            for (int i = leversCount - 1; i > 0; i--) {
-                index = this.rand.nextInt(i + 1);
+        for (int i = 0; i < leversCount; i++) {
+            System.out.println((i + 1) + " - Alavanca");
+        }
 
-                temp = levers[index];
-                levers[index] = levers[i];
-                levers[i] = temp;
-            }
+        int choiceIndex;
+        if (player.isRealPlayer()) {
+            choiceIndex = Reader.readInt(1, leversCount, "Qual alavanca deseja puxar?: ") - 1;
+        } else {
+            // Bot escolhe um índice válido do array (0 a length-1)
+            choiceIndex = rand.nextInt(leversCount);
+            System.out.println("O " + player.getName() + " escolheu a alavanca " + (choiceIndex + 1));
+        }
 
-            System.out.println("Existem " + leversCount + " alavancas nesta sala.");
-            for (int i = 0; i < leversCount; i++) {
-                System.out.println((i + 1) + ". Puxar a Alavanca " + (i + 1));
-            }
-            choice = Reader.readInt(1, (leversCount + 1), "Qual alavanca deseja puxar?:");
+        // 3. LÓGICA DE MOVIMENTO
+        ILever chosenLever = this.myLevers[choiceIndex];
+        IDivision destination = chosenLever.getDivision();
 
-            IDivision destination = levers[choice - 1].getDivision();
-            if (destination == null) {
-                System.out.println("CLACK!... Nada acontece. Parece que esta alavanca esta partida.");
-                Utils.waitEnter();
-                return this; // O jogador fica na mesma sala
-            } else {
-                System.out.println("RUMBLE!... Uma passagem secreta abre-se!");
-                System.out.println("Estas a caminho da seguinte sala: " + destination.getName());
-                Utils.waitEnter();
-
-                return destination; // O jogador move-se
-            }
-        } catch (Exception e) {
-            System.out.println("Erro ao gerar alavancas: " + e.getMessage());
+        if (destination == null) {
+            System.out.println("CLACK!... Nada acontece. Parece que esta alavanca está partida.");
+            System.out.println("Perdeste a vez!");
             return this;
+        } else {
+            System.out.println("RUMBLE!... Uma passagem secreta abre-se!");
+            System.out.println("Estás a caminho de: " + destination.getName());
+            return destination;
         }
     }
 
     @Override
     public String toString() {
-        return "Alavanca";
+        StringBuilder sb = new StringBuilder();
+        sb.append("Esta na sala: ").append(getName()).append("\n");
+        sb.append("------------------------------------------------\n");
+        sb.append("Para conseguir avancar para a proxima sala tem\n");
+        sb.append("de escolher uma alavanca!\n");
+
+        return sb.toString();
     }
 }

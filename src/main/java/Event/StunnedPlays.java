@@ -8,11 +8,10 @@ import Menus.GameVisuals;
 import java.util.Random;
 
 public class StunnedPlays implements IEvent {
-    private Random rand = new Random();
 
     @Override
     public void apply(IPlayer player, boolean isRealPlayer) throws InvalidPlayersCountException {
-        int stunnedPlays = this.rand.nextInt(2) + 1;
+        int stunnedPlays = 1;
 
         player.addStunnedRound(stunnedPlays);
 

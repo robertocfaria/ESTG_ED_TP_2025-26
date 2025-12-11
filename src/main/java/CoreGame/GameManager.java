@@ -28,16 +28,13 @@ public class GameManager {
     public void startGame(Map maze) {
         this.maze = maze;
         this.setInitialPosition();
-
         boolean gameRunning = true;
-
         while (gameRunning) {
             turn();
             if (winnerPlayer != null) {
                 gameRunning = false;
             }
         }
-
         System.out.println("Jogo Terminado!");
         System.out.println("Parabens " + winnerPlayer.getName() + " pela Vitoria");
         Utils.waitEnter();
@@ -66,10 +63,10 @@ public class GameManager {
         String nameTemp;
 
         GameVisuals.showPlayerConfigHeader();
-        int realPlayers = Reader.readInt(1, 10, "Quantos jogadores reais (1 a 10): ");
+        int realPlayers = Reader.readInt(0, 10, "Quantos jogadores reais (0 a 10): ");
         for (int i = 0; i < realPlayers; i++) {
-            nameTemp = Reader.readString("Nome do Jogador " + (i + 1) + " : ");
-            players.addToRear(new HumanPlayer(nameTemp));
+            nameTemp = Reader.readString("Nome do Jogador " + (i + 1) + ": ");
+            players.addToRear(new Player(nameTemp));
 
             GameVisuals.showPlayerAdded(nameTemp, i + 1);
             GameVisuals.showNextPlayerSeparator();
@@ -77,7 +74,7 @@ public class GameManager {
 
         int botPlayers = Reader.readInt(0, 10, "Quantos BOTS (0 a 5): ");
         for (int i = 0; i < botPlayers; i++) {
-            players.addToRear(new BotPlayer());
+            players.addToRear(new Player());
         }
         if (botPlayers > 0) {
             System.out.println("BOT(s) adicionados com sucesso!");
