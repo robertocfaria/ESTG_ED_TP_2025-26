@@ -60,4 +60,12 @@ public class StartMenu {
         System.out.println("| 0 - Sair");
         System.out.println("|----------------------------------------------------------------");
     }
+
+    private static void menu3() {
+        System.out.println("|----------------------------------------------------------------");
+        System.out.println("|- Lista de Mapas Existentes ");
+        System.out.println("|----------------------------------------------------------------");
+        System.out.println("| 1 - 23H00 10/12/2025 - 10 Salas (x conecoes)");
+
+    }
 }
