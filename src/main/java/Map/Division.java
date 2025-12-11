@@ -2,6 +2,7 @@ package Map;
 
 import Interfaces.IDivision;
 import Interfaces.IMap;
+import Interfaces.IPlayer;
 
 public abstract class Division implements IDivision {
 
@@ -17,5 +18,5 @@ public abstract class Division implements IDivision {
     public String getName() { return this.name; }
 
     @Override
-    public abstract IDivision getComportment(IMap maze);
+    public abstract IDivision getComportament(IMap maze, IPlayer player);
 }

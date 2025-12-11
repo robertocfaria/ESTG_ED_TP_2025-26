@@ -24,9 +24,9 @@ public class Question {
         StringBuilder sb = new StringBuilder();
 
         sb.append(question).append("\n");
-        sb.append("--- Opcoes ---\n");
+        sb.append("--- Opcoes ---");
         for (int i = 0; i < options.length; i++) {
-            sb.append(i + 1).append(". ").append(options[i]).append("\n");
+            sb.append("\n").append(i + 1).append(". ").append(options[i]);
         }
 
         return sb.toString();

@@ -2,6 +2,7 @@ package Map;
 
 import Interfaces.IDivision;
 import Interfaces.IMap;
+import Interfaces.IPlayer;
 
 public class GoalDivision extends Division{
 
@@ -10,7 +11,7 @@ public class GoalDivision extends Division{
     }
 
     @Override
-    public IDivision getComportment(IMap maze) {
+    public IDivision getComportament(IMap maze, IPlayer player) {
         System.out.println("Parabéns! GANHASTE!");
         return null;
     }
