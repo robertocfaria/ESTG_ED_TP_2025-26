@@ -18,6 +18,7 @@ public class StartMenu {
         GameManager game;
         IHallway hallway;
         Map maze;
+        MapExporter exporter = new MapExporter();
 
         do {
             displayMenu();
@@ -29,7 +30,13 @@ public class StartMenu {
 
                     System.out.println("A iniciar o jogo...");
                     maze = new Map(tamanho);
-                    //aqui guarda a matriz
+
+                    try {
+                        exporter.exportToJson(maze, "src/main/resources/map.json"); //exporta conexões e divisoes
+                    } catch (Exception e) {
+                        System.out.println("Erro ao exportar mapa: " + e.getMessage());
+                    }
+
                     game.startGame(maze);
                     break;
                 case 2:
@@ -38,7 +45,13 @@ public class StartMenu {
 
                     System.out.println("A iniciar o jogo...");
                     maze = new Map(tamanho);
-                    //aqui guarda a matriz
+
+                    try {
+                        exporter.exportToJson(maze, "src/main/resources/map.json");
+                    } catch (Exception e) {
+                        System.out.println("Erro ao exportar mapa: " + e.getMessage());
+                    }
+
                     game.startGame(maze);
                     break;
                 case 3:

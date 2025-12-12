@@ -1,0 +1,133 @@
+{
+  "@id" : 1,
+  "adjMatrix" : [ [ null, {
+    "type" : "hallway",
+    "@id" : 2,
+    "players" : null
+  }, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null ], [ 2, null, 2, 2, null, null, null, null, null, null, null, null, null, null, null, null, null ], [ null, 2, null, 2, null, 2, null, null, null, null, null, null, null, null, null, null, null ], [ null, 2, 2, null, 2, null, null, null, null, null, null, null, null, null, null, null, null ], [ null, null, null, 2, null, 2, null, null, null, null, null, null, null, null, null, null, null ], [ null, null, 2, null, 2, null, 2, 2, null, null, null, null, null, null, null, null, null ], [ null, null, null, null, null, 2, null, 2, null, null, null, null, null, null, null, null, null ], [ null, null, null, null, null, 2, 2, null, 2, null, 2, null, null, null, null, null, null ], [ null, null, null, null, null, null, null, 2, null, 2, null, null, null, null, null, null, null ], [ null, null, null, null, null, null, null, null, 2, null, 2, null, 2, null, null, null, null ], [ null, null, null, null, null, null, null, 2, null, 2, null, 2, null, null, null, null, null ], [ null, null, null, null, null, null, null, null, null, null, 2, null, 2, null, null, null, null ], [ null, null, null, null, null, null, null, null, null, 2, null, 2, null, 2, null, null, null ], [ null, null, null, null, null, null, null, null, null, null, null, null, 2, null, 2, null, null ], [ null, null, null, null, null, null, null, null, null, null, null, null, null, 2, null, 2, null ], [ null, null, null, null, null, null, null, null, null, null, null, null, null, null, 2, null, 2 ], [ null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 2, null ] ],
+  "vertices" : [ {
+    "type" : "lever",
+    "@id" : 3,
+    "name" : "Torre da Tempestade",
+    "myLevers" : null
+  }, {
+    "type" : "question",
+    "@id" : 4,
+    "name" : "Torre do Relogio Parado",
+    "myQuestion" : {
+      "@id" : 5,
+      "question" : "Onde se localiza a sede das Nacoes Unidas (ONU)?",
+      "options" : [ "Genebra", "Bruxelas", "Nova Iorque", "Haia" ]
+    }
+  }, {
+    "type" : "question",
+    "@id" : 6,
+    "name" : "Sala das Engrenagens",
+    "myQuestion" : {
+      "@id" : 7,
+      "question" : "Qual e o rio mais extenso que corre exclusivamente em territorio portugues?",
+      "options" : [ "Tejo", "Douro", "Guadiana", "Mondego" ]
+    }
+  }, {
+    "type" : "lever",
+    "@id" : 8,
+    "name" : "Patio do Carrasco",
+    "myLevers" : null
+  }, {
+    "type" : "question",
+    "@id" : 9,
+    "name" : "Miradouro do Caos",
+    "myQuestion" : {
+      "@id" : 10,
+      "question" : "Qual destes estilos artisticos e caracterizado pelo uso de formas geometricas?",
+      "options" : [ "Impressionismo", "Cubismo", "Romantismo", "Barroco" ]
+    }
+  }, {
+    "type" : "lever",
+    "@id" : 11,
+    "name" : "Covil da Besta",
+    "myLevers" : null
+  }, {
+    "type" : "question",
+    "@id" : 12,
+    "name" : "Sala da Inquisicao",
+    "myQuestion" : {
+      "@id" : 13,
+      "question" : "Qual e a capital da Australia?",
+      "options" : [ "Sydney", "Melbourne", "Camberra", "Brisbane" ]
+    }
+  }, {
+    "type" : "lever",
+    "@id" : 14,
+    "name" : "Laboratorio de Tesla",
+    "myLevers" : null
+  }, {
+    "type" : "question",
+    "@id" : 15,
+    "name" : "Camara do Eco",
+    "myQuestion" : {
+      "@id" : 16,
+      "question" : "Qual e o maior pais de Africa em extensao territorial?",
+      "options" : [ "Sudao", "Republica Democratica do Congo", "Argelia", "Libia" ]
+    }
+  }, {
+    "type" : "question",
+    "@id" : 17,
+    "name" : "Entrada do Labirinto",
+    "myQuestion" : {
+      "@id" : 18,
+      "question" : "Qual destes arquitetos portugueses venceu o Premio Pritzker em 2011?",
+      "options" : [ "Alvaro Siza Vieira", "Eduardo Souto de Moura", "Carrilho da Graca", "Tomas Taveira" ]
+    }
+  }, {
+    "type" : "lever",
+    "@id" : 19,
+    "name" : "Sala do Grande Arquivo",
+    "myLevers" : null
+  }, {
+    "type" : "lever",
+    "@id" : 20,
+    "name" : "Camara de Tortura",
+    "myLevers" : null
+  }, {
+    "type" : "lever",
+    "@id" : 21,
+    "name" : "Cripta das Sombras",
+    "myLevers" : null
+  }, {
+    "type" : "question",
+    "@id" : 22,
+    "name" : "Santuario da Vida",
+    "myQuestion" : {
+      "@id" : 23,
+      "question" : "Quem pintou a obra-prima 'Guernica'?",
+      "options" : [ "Salvador Dali", "Pablo Picasso", "Joan Miro", "Diego Velazquez" ]
+    }
+  }, {
+    "type" : "question",
+    "@id" : 24,
+    "name" : "Cemiterio Subterraneo",
+    "myQuestion" : {
+      "@id" : 25,
+      "question" : "Qual e o planeta do Sistema Solar conhecido pelos seus aneis visiveis?",
+      "options" : [ "Jupiter", "Urano", "Saturno", "Neptuno" ]
+    }
+  }, {
+    "type" : "question",
+    "@id" : 26,
+    "name" : "Camara do Tesouro",
+    "myQuestion" : {
+      "@id" : 27,
+      "question" : "Em que ano caiu o Muro de Berlim?",
+      "options" : [ "1987", "1989", "1991", "1990" ]
+    }
+  }, {
+    "type" : "goal",
+    "@id" : 28,
+    "name" : "Sala do Tesouro"
+  } ],
+  "count" : 17,
+  "empty" : false,
+  "connected" : true,
+  "randomInitialDivision" : 3
+}
