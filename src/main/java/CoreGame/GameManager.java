@@ -1,5 +1,6 @@
 package CoreGame;
 
+import Exporters.ExportGameHistory;
 import Interfaces.IHallway;
 import Map.*;
 import Interfaces.IPlayer;
@@ -36,9 +37,18 @@ public class GameManager {
                 gameRunning = false;
             }
         }
-        System.out.println("Jogo Terminado!");
-        System.out.println("Parabens " + winnerPlayer.getName() + " pela Vitoria");
+        System.out.println("\n++++++++++++++++++++++++++++++++++++++++++++++++++");
+        System.out.println("+++ JOGO TERMINADO - VITORIA DE " + winnerPlayer.getName().toUpperCase());
+        System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++\n");
         Utils.waitEnter();
+        System.out.println("--- HISTORICO DAS JOGADAS ---");
+        for(IPlayer player : players) {
+            player.printFullHistory();
+        }
+
+        ExportGameHistory.exportToJson(players);
+        System.out.println("O resumo do jogo foi guardado. Consulte quiser!");
+        System.out.println("\n");
 
     }
 
@@ -47,25 +57,39 @@ public class GameManager {
 
         for (IPlayer currentPlayer : players) {
             GameVisuals.showPlayerTurn(currentPlayer.getName());
-
             currentPlayer.move(maze);
-
-
             if (isWinner(currentPlayer)) {
                 GameVisuals.showVictory(currentPlayer.getName());
                 return;
             }
         }
 
-        System.out.println("Fim da Ronda: " + this.turn);
+        System.out.println("\n>>>> Fim da Ronda: " + this.turn + " <<<<");
         turn++;
     }
 
     private void addPlayers() {
-        String nameTemp;
+        int realPlayers = 0;
+        int botPlayers = 0;
 
-        GameVisuals.showPlayerConfigHeader();
-        int realPlayers = Reader.readInt(0, 10, "Quantos jogadores reais (0 a 10): ");
+        // 1. Validação: Repete as perguntas até a soma ser maior que 0
+        do {
+            GameVisuals.showPlayerConfigHeader();
+
+            realPlayers = Reader.readInt(0, 10, "Quantos jogadores reais (0 a 10): ");
+            botPlayers = Reader.readInt(0, 5, "Quantos BOTS (0 a 5): ");
+
+            if (realPlayers + botPlayers == 0) {
+                System.out.println();
+                System.out.println("Erro: O jogo precisa de pelo menos 1 jogador (Real ou Bot).");
+                System.out.println("Por favor, tente novamente.");
+                System.out.println();
+            }
+
+        } while (realPlayers + botPlayers == 0);
+
+
+        String nameTemp;
         for (int i = 0; i < realPlayers; i++) {
             nameTemp = Reader.readString("Nome do Jogador " + (i + 1) + ": ");
             players.addToRear(new Player(nameTemp));
@@ -74,17 +98,13 @@ public class GameManager {
             GameVisuals.showNextPlayerSeparator();
         }
 
-        int botPlayers = Reader.readInt(0, 5, "Quantos BOTS (0 a 5): ");
         for (int i = 0; i < botPlayers; i++) {
             players.addToRear(new Player());
         }
+
         if (botPlayers > 0) {
             System.out.println("BOT(s) adicionados com sucesso!");
         }
-
-        //verifica se tem pelo menos 1 jogador
-
-
     }
 
     private void setInitialPosition() {
