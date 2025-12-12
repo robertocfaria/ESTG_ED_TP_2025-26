@@ -2,9 +2,13 @@ package Menus;
 
 import Interfaces.IPlayer;
 
+/**
+ * Utility class dedicated to managing and displaying visual elements and formatted
+ * output to the console for the game. This class ensures consistent formatting
+ * (centered text, separators, borders) for game events, menus, and status updates.
+ */
 public class GameVisuals {
 
-    // Largura padrão para as caixas de texto
     private static final int WIDTH = 60;
 
     /**
@@ -97,7 +101,7 @@ public class GameVisuals {
         }
 
         System.out.println();
-        printLine("+", "=", "+");
+        printLine("+", "-", "+");
         printCenteredLine("E V E N T O  E S P E C I A L");
         printLine("|", "-", "|");
         printCenteredLine("R O L L B A C K");
@@ -106,7 +110,7 @@ public class GameVisuals {
         printCenteredLine("foi movido de volta para:");
         printCenteredLine(divisionName.toUpperCase());
         printCenteredLine("");
-        printLine("+", "=", "+");
+        printLine("+", "-", "+");
         System.out.println();
     }
 
@@ -119,7 +123,7 @@ public class GameVisuals {
         }
 
         System.out.println();
-        printLine("+", "=", "+");
+        printLine("+", "-", "+");
         printCenteredLine("E V E N T O  E S P E C I A L");
         printLine("|", "-", "|");
         printCenteredLine("S H U F F L E  A L L");
@@ -127,7 +131,7 @@ public class GameVisuals {
         printCenteredLine("As posicoes de todos os jogadores");
         printCenteredLine("foram baralhadas!");
         printCenteredLine("");
-        printLine("+", "=", "+");
+        printLine("+", "-", "+");
         System.out.println();
     }
 
@@ -140,7 +144,7 @@ public class GameVisuals {
         }
 
         System.out.println();
-        printLine("+", "=", "+");
+        printLine("+", "-", "+");
         printCenteredLine("E V E N T O  E S P E C I A L");
         printLine("|", "-", "|");
         printCenteredLine("S T U N N E D");
@@ -148,7 +152,7 @@ public class GameVisuals {
         printCenteredLine("O jogador " + playerName.toUpperCase());
         printCenteredLine("ficou atordoado por " + amount + " ronda(s)!");
         printCenteredLine("");
-        printLine("+", "=", "+");
+        printLine("+", "-", "+");
         System.out.println();
     }
 
@@ -159,7 +163,7 @@ public class GameVisuals {
      */
     public static void showSwapChoiceMenu(IPlayer[] players) {
         System.out.println();
-        printLine("+", "=", "+");
+        printLine("+", "-", "+");
         printCenteredLine("T R O C A  D E  P O S I C O E S");
         printLine("|", "-", "|");
         printCenteredLine("Selecione o jogador para trocar:");
@@ -173,7 +177,7 @@ public class GameVisuals {
         }
 
         printCenteredLine("");
-        printLine("+", "=", "+");
+        printLine("+", "-", "+");
         System.out.println();
     }
 
@@ -206,21 +210,6 @@ public class GameVisuals {
     /**
      * Mostra o ecrã de Game Over.
      */
-    public static void showGameOver() {
-        System.out.println();
-        printLine("+", "=", "+");
-        printCenteredLine("!!!  GAME OVER  !!!");
-        printLine("|", "-", "|");
-        printCenteredLine("");
-        printCenteredLine("A tua jornada termina aqui...");
-        printCenteredLine("Tenta novamente!");
-        printCenteredLine("");
-        printLine("+", "=", "+");
-        System.out.println();
-    }
-
-    // --- MÉTODOS AUXILIARES ---
-
     private static void printLine(String left, String mid, String right) {
         System.out.print(left);
         for (int i = 0; i < WIDTH; i++) {

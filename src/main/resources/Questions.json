@@ -149,6 +149,261 @@
       "question": "Em Ciclismo, qual e a cor da camisola do lider da Volta a Franca?",
       "options": ["Rosa", "Vermelha", "Amarela", "Verde"],
       "correct_index": 2
+    },
+    {
+      "question": "Quem foi o navegador portugues responsavel pela descoberta do caminho maritimo para a India?",
+      "options": ["Bartolomeu Dias", "Pedro Alvares Cabral", "Vasco da Gama", "Infante D. Henrique"],
+      "correct_index": 2
+    },
+    {
+      "question": "Qual e o osso mais longo do corpo humano?",
+      "options": ["Femur", "Tibia", "Umero", "Peroneo"],
+      "correct_index": 0
+    },
+    {
+      "question": "Em que ano ocorreu a Revolucao dos Cravos em Portugal?",
+      "options": ["1970", "1974", "1975", "1968"],
+      "correct_index": 1
+    },
+    {
+      "question": "Qual e a capital da Turquia?",
+      "options": ["Istambul", "Ancara", "Antalya", "Izmir"],
+      "correct_index": 1
+    },
+    {
+      "question": "Quem pintou o famoso teto da Capela Sistina?",
+      "options": ["Leonardo da Vinci", "Rafael", "Michelangelo", "Donatello"],
+      "correct_index": 2
+    },
+    {
+      "question": "Qual e o elemento quimico mais abundante no Universo?",
+      "options": ["Oxigenio", "Carbono", "Helio", "Hidrogenio"],
+      "correct_index": 3
+    },
+    {
+      "question": "Em que pais se situa a antiga cidade de Machu Picchu?",
+      "options": ["Bolivia", "Equador", "Peru", "Chile"],
+      "correct_index": 2
+    },
+    {
+      "question": "Quem foi o primeiro Rei de Portugal?",
+      "options": ["D. Dinis", "D. Afonso Henriques", "D. Sancho I", "D. Manuel I"],
+      "correct_index": 1
+    },
+    {
+      "question": "Qual e a velocidade aproximada da luz no vacuo?",
+      "options": ["100.000 km/s", "300.000 km/s", "500.000 km/s", "1.000.000 km/s"],
+      "correct_index": 1
+    },
+    {
+      "question": "Quantas sinfonias completas compos Ludwig van Beethoven?",
+      "options": ["5", "7", "9", "12"],
+      "correct_index": 2
+    },
+    {
+      "question": "Qual e o pais mais pequeno do mundo em area?",
+      "options": ["Monaco", "Nauru", "Vaticano", "Liechtenstein"],
+      "correct_index": 2
+    },
+    {
+      "question": "Quem escreveu a obra 'Cem Anos de Solidao'?",
+      "options": ["Jorge Luis Borges", "Gabriel Garcia Marquez", "Pablo Neruda", "Mario Vargas Llosa"],
+      "correct_index": 1
+    },
+    {
+      "question": "Qual e o nome da moeda oficial do Japao?",
+      "options": ["Yuan", "Won", "Iene", "Baht"],
+      "correct_index": 2
+    },
+    {
+      "question": "Em que ano o Homem pisou a Lua pela primeira vez?",
+      "options": ["1965", "1969", "1971", "1959"],
+      "correct_index": 1
+    },
+    {
+      "question": "Qual e o orgao responsavel pela producao de insulina no corpo humano?",
+      "options": ["Figado", "Rins", "Pancreas", "Baco"],
+      "correct_index": 2
+    },
+    {
+      "question": "Onde se realizou a Expo 98?",
+      "options": ["Porto", "Coimbra", "Lisboa", "Faro"],
+      "correct_index": 2
+    },
+    {
+      "question": "Quem e o autor da famosa pintura 'A Noite Estrelada'?",
+      "options": ["Claude Monet", "Vincent van Gogh", "Paul Cezanne", "Henri Matisse"],
+      "correct_index": 1
+    },
+    {
+      "question": "Qual e a camada mais externa da atmosfera terrestre?",
+      "options": ["Troposfera", "Estratosfera", "Mesosfera", "Exosfera"],
+      "correct_index": 3
+    },
+    {
+      "question": "Quem foi o lider da Africa do Sul que lutou contra o Apartheid e foi Premio Nobel da Paz?",
+      "options": ["Desmond Tutu", "Nelson Mandela", "Thabo Mbeki", "Jacob Zuma"],
+      "correct_index": 1
+    },
+    {
+      "question": "Qual destas ilhas nao pertence ao arquipelago dos Acores?",
+      "options": ["Pico", "Porto Santo", "Sao Jorge", "Faial"],
+      "correct_index": 1
+    },
+    {
+      "question": "Qual e o metal liquido a temperatura ambiente?",
+      "options": ["Chumbo", "Mercurio", "Zinco", "Aluminio"],
+      "correct_index": 1
+    },
+    {
+      "question": "Em que ano começou a Primeira Guerra Mundial?",
+      "options": ["1912", "1914", "1918", "1939"],
+      "correct_index": 1
+    },
+    {
+      "question": "Quem formulou a Teoria da Relatividade Geral?",
+      "options": ["Isaac Newton", "Nikola Tesla", "Albert Einstein", "Stephen Hawking"],
+      "correct_index": 2
+    },
+    {
+      "question": "Qual e o maior oceano do planeta Terra?",
+      "options": ["Atlantico", "Indico", "Pacifico", "Artico"],
+      "correct_index": 2
+    },
+    {
+      "question": "Em que cidade portuguesa se localiza a Torre dos Clerigos?",
+      "options": ["Braga", "Guimaraes", "Lisboa", "Porto"],
+      "correct_index": 3
+    },
+    {
+      "question": "Qual e a capital da Polonia?",
+      "options": ["Cracovia", "Varsovia", "Gdansk", "Poznan"],
+      "correct_index": 1
+    },
+    {
+      "question": "Quem escreveu o classico distopico '1984'?",
+      "options": ["Aldous Huxley", "Ray Bradbury", "George Orwell", "H.G. Wells"],
+      "correct_index": 2
+    },
+    {
+      "question": "Qual e o ponto mais alto de Portugal Continental?",
+      "options": ["Pico Ruivo", "Serra do Geres", "Serra da Estrela (Torre)", "Serra de Sao Mamede"],
+      "correct_index": 2
+    },
+    {
+      "question": "Qual e o nome da agencia espacial norte-americana?",
+      "options": ["ESA", "Roscosmos", "NASA", "SpaceX"],
+      "correct_index": 2
+    },
+    {
+      "question": "Em que ano foi inaugurada a Ponte Vasco da Gama em Lisboa?",
+      "options": ["1995", "1998", "2000", "2004"],
+      "correct_index": 1
+    },
+    {
+      "question": "Qual e o gas responsavel pela maior parte do Efeito de Estufa?",
+      "options": ["Oxigenio", "Dioxido de Carbono", "Azoto", "Argon"],
+      "correct_index": 1
+    },
+    {
+      "question": "Quem foi a fundadora da Enfermagem moderna?",
+      "options": ["Florence Nightingale", "Marie Curie", "Madre Teresa", "Clara Barton"],
+      "correct_index": 0
+    },
+    {
+      "question": "Qual e a capital do Brasil?",
+      "options": ["Rio de Janeiro", "Sao Paulo", "Salvador", "Brasilia"],
+      "correct_index": 3
+    },
+    {
+      "question": "Qual destes paises nao tem costa maritima?",
+      "options": ["Belgica", "Suica", "Dinamarca", "Holanda"],
+      "correct_index": 1
+    },
+    {
+      "question": "Quantos anéis compoem o simbolo dos Jogos Olimpicos?",
+      "options": ["4", "5", "6", "7"],
+      "correct_index": 1
+    },
+    {
+      "question": "Quem descobriu a Penicilina?",
+      "options": ["Louis Pasteur", "Alexander Fleming", "Robert Koch", "Joseph Lister"],
+      "correct_index": 1
+    },
+    {
+      "question": "Qual e a lingua mais falada no mundo (como lingua nativa)?",
+      "options": ["Ingles", "Espanhol", "Mandarim", "Hindi"],
+      "correct_index": 2
+    },
+    {
+      "question": "Em que ano ocorreu o desastre nuclear de Chernobyl?",
+      "options": ["1984", "1986", "1988", "1990"],
+      "correct_index": 1
+    },
+    {
+      "question": "Quem e o autor da epopeia 'Os Lusiadas'?",
+      "options": ["Gil Vicente", "Luis de Camoes", "Bocage", "Almeida Garrett"],
+      "correct_index": 1
+    },
+    {
+      "question": "Qual e o nome do estreito que separa a Europa da Africa?",
+      "options": ["Estreito de Ormuz", "Estreito de Bering", "Estreito de Gibraltar", "Estreito de Magalhaes"],
+      "correct_index": 2
+    },
+    {
+      "question": "Qual e o mineral mais duro conhecido na natureza?",
+      "options": ["Quartzo", "Topazio", "Diamante", "Rubi"],
+      "correct_index": 2
+    },
+    {
+      "question": "Em que cidade se encontra o Museu do Louvre?",
+      "options": ["Londres", "Paris", "Berlim", "Roma"],
+      "correct_index": 1
+    },
+    {
+      "question": "Qual e a capital da India?",
+      "options": ["Bombaim (Mumbai)", "Calcuta", "Nova Deli", "Madras"],
+      "correct_index": 2
+    },
+    {
+      "question": "Quem foi o ultimo rei da monarquia portuguesa?",
+      "options": ["D. Carlos I", "D. Manuel II", "D. Luis I", "D. Pedro V"],
+      "correct_index": 1
+    },
+    {
+      "question": "Qual e a principal funcao das globulos vermelhos?",
+      "options": ["Combater infeccoes", "Coagulacao do sangue", "Transportar oxigenio", "Produzir hormonas"],
+      "correct_index": 2
+    },
+    {
+      "question": "Quem foi o vocalista da banda Queen?",
+      "options": ["David Bowie", "Elton John", "Freddie Mercury", "Mick Jagger"],
+      "correct_index": 2
+    },
+    {
+      "question": "Qual e o nome da maior floresta tropical do mundo?",
+      "options": ["Floresta Negra", "Floresta Amazonica", "Floresta do Congo", "Taiga"],
+      "correct_index": 1
+    },
+    {
+      "question": "Em que seculo aconteceu a Revolucao Francesa?",
+      "options": ["Seculo XVII", "Seculo XVIII", "Seculo XIX", "Seculo XVI"],
+      "correct_index": 1
+    },
+    {
+      "question": "Qual e a unidade de medida de resistencia eletrica?",
+      "options": ["Volt", "Ampere", "Ohm", "Watt"],
+      "correct_index": 2
+    },
+    {
+      "question": "Qual e o maior animal vivo do planeta?",
+      "options": ["Elefante Africano", "Baleia Azul", "Tubarao Baleia", "Girafa"],
+      "correct_index": 1
+    },
+    {
+      "question": "Quem é o baixista dos AskBayns?",
+      "options": ["Gerson", "Wiliam", "Joazinho", "Honorat Bat"],
+      "correct_index": 2
     }
   ]
 }

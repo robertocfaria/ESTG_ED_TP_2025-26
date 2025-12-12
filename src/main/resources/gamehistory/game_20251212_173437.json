@@ -1,0 +1,35 @@
+{
+  "game_date": "20251212_173437",
+  "players": [
+    {
+      "name": "BOT1",
+      "type": "Bot",
+      "history": [
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Escolheu Alavanca 1 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Escolheu Alavanca 2 -> PASSAGEM ABERTA PARA A SALA: Masmorra do Desespero -> [AVANÇOU PARA: Masmorra do Desespero]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Masmorra do Desespero] -> Perg: Qual e a capital da Polonia? | ACERTOU -> [AVANÇOU PARA: Camara de Magma]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara de Magma] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara de Magma] -> Escolheu Alavanca 6 -> PASSAGEM ABERTA PARA A SALA: DIVISAO FINAL -> [AVANÇOU PARA: DIVISAO FINAL]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        }
+      ]
+    }
+  ]
+}
