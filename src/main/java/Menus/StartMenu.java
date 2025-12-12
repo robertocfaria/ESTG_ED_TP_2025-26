@@ -1,10 +1,12 @@
 package Menus;
 
 import CoreGame.GameManager;
+import DTOs.MapExporter;
 import Interfaces.IHallway;
 import Map.*;
 import Reader.*;
 
+import java.io.IOException;
 import java.util.Random;
 
 public class StartMenu {

@@ -1,9 +1,16 @@
 package Map;
 
+import com.fasterxml.jackson.annotation.*;
+
+
+@JsonIdentityInfo(generator = ObjectIdGenerators.IntSequenceGenerator.class, property = "@id")
 public class Question {
     private String question;
     private String[] options;
     private int correctIndex;
+
+    public Question() {
+    }
 
     public Question(String question, String[] options, int correctIndex) {
         this.question = question;
@@ -11,13 +18,33 @@ public class Question {
         this.correctIndex = correctIndex;
     }
 
-    public String getQuestion() { return question; }
+    public String getQuestion() {
+        return question;
+    }
 
-    public String[] getOptions() { return options; }
+    public void setQuestion(String question) {
+        this.question = question;
+    }
 
-    public boolean isCorrect(int index) { return index == this.correctIndex; }
+    public String[] getOptions() {
+        return options;
+    }
 
-    public boolean getCorrectIndex(int index) { return correctIndex == index; }
+    public void setOptions(String[] options) {
+        this.options = options;
+    }
+
+    public boolean getCorrectIndex(int index) {
+        return correctIndex == index;
+    }
+
+    public void setCorrectIndex(int correctIndex) {
+        this.correctIndex = correctIndex;
+    }
+
+    public boolean isCorrect(int index) {
+        return index == this.correctIndex;
+    }
 
     @Override
     public String toString() {

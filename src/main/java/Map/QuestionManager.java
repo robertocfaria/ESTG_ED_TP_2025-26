@@ -2,12 +2,15 @@ package Map;
 
 import Structures.List.ArrayUnorderedList;
 import Structures.Queue.LinkedQueue;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Random;
+import com.fasterxml.jackson.annotation.*;
 
+@JsonIdentityInfo(generator = ObjectIdGenerators.IntSequenceGenerator.class, property = "@id")
 public class QuestionManager {
     private ArrayUnorderedList<Question> questions;
     private LinkedQueue<Question> queueQuestions;
@@ -17,6 +20,22 @@ public class QuestionManager {
         this.queueQuestions = new LinkedQueue<>();
         importQuestions();
         setQueue();
+    }
+
+    public ArrayUnorderedList<Question> getQuestions() {
+        return questions;
+    }
+
+    public void setQuestions(ArrayUnorderedList<Question> questions) {
+        this.questions = questions;
+    }
+
+    public LinkedQueue<Question> getQueueQuestions() {
+        return queueQuestions;
+    }
+
+    public void setQueueQuestions(LinkedQueue<Question> queueQuestions) {
+        this.queueQuestions = queueQuestions;
     }
 
     private void setQueue() {

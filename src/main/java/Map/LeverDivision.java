@@ -7,12 +7,28 @@ import Interfaces.IPlayer;
 import Lever.Lever;
 import Reader.Reader;
 import Structures.Interfaces.UnorderedListADT;
-import java.util.Iterator; // Importante
+import java.util.Iterator;
 import java.util.Random;
 
+import com.fasterxml.jackson.annotation.*;
+
+
+@JsonIdentityInfo(generator = ObjectIdGenerators.IntSequenceGenerator.class, property = "@id")
 public class LeverDivision extends Division {
     private Random rand = new Random();
     private ILever[] myLevers; // Persistência das alavancas
+
+    public LeverDivision() {
+        super();
+    }
+
+    public ILever[] getMyLevers() {
+        return myLevers;
+    }
+
+    public void setMyLevers(ILever[] myLevers) {
+        this.myLevers = myLevers;
+    }
 
     public LeverDivision(String name) {
         super(name);

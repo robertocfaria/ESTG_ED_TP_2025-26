@@ -18,6 +18,9 @@ import Structures.Stack.LinkedStack;
 import java.util.Iterator;
 import java.util.Random;
 
+import com.fasterxml.jackson.annotation.*;
+
+@JsonIdentityInfo(generator = ObjectIdGenerators.IntSequenceGenerator.class, property = "@id")
 public class Map implements IMap {
     public static final int INCREASE_FACTOR = 2;
     private IHallway[][] adjMatrix;
@@ -25,6 +28,33 @@ public class Map implements IMap {
     private int count;
     private Random rand = new Random();
     private IHallway hallway;
+
+    public Map() {
+    }
+
+    public void setVertices(IDivision[] vertices) {
+        this.vertices = vertices;
+    }
+
+    public void setAdjMatrix(IHallway[][] matrix) {
+        this.adjMatrix = matrix;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public IDivision[] getVertices() {
+        return this.vertices;
+    }
+
+    public IHallway[][] getAdjMatrix() {
+        return this.adjMatrix;
+    }
 
     public Map(int capacity) {
         this.vertices = new IDivision[capacity];
@@ -82,23 +112,14 @@ public class Map implements IMap {
     }
 
     private void generateConnections(IHallway hallway) {
-        // Probabilidade baixa para não encher o mapa de linhas
         double density = 0.2;
-
-        // ALCANCE MÁXIMO DO ATALHO
-        // A sala 0 só poderá ligar no máximo até à 3 ou 4. Nunca à 9.
         int jumpLimit = 3;
 
-        // 1. Criar o caminho principal (Espinha Dorsal)
         for (int i = 0; i < this.count - 1; i++) {
-            // Podes adicionar: hallway.setAttributes(1); // Custo normal
             this.addEdge(i, i + 1, hallway);
         }
 
-        // 2. Criar atalhos CURTOS
         for (int i = 0; i < this.count; i++) {
-            // O segredo está aqui: o limite NÃO é 'this.count'.
-            // É o índice atual + o salto máximo.
             int limit = Math.min(this.count, i + jumpLimit + 1);
 
             for (int j = i + 2; j < limit; j++) {
@@ -157,27 +178,23 @@ public class Map implements IMap {
         int[] distances = new int[this.count];
         boolean[] visited = new boolean[this.count];
 
-        // Inicializar distâncias
         for (int i = 0; i < this.count; i++) {
-            distances[i] = -1; // -1 significa inalcançável
+            distances[i] = -1;
             visited[i] = false;
         }
 
-        // Configurar o início (índice 0)
         LinkedQueue<Integer> queue = new LinkedQueue<>();
         queue.enqueue(0);
         visited[0] = true;
         distances[0] = 0;
 
-        // BFS Loop
         while (!queue.isEmpty()) {
             int current = queue.dequeue();
 
             for (int neighbor = 0; neighbor < this.count; neighbor++) {
-                // Se existe ligação e ainda não foi visitado
                 if (adjMatrix[current][neighbor] != null && !visited[neighbor]) {
                     visited[neighbor] = true;
-                    distances[neighbor] = distances[current] + 1; // A distância é a do anterior + 1
+                    distances[neighbor] = distances[current] + 1;
                     queue.enqueue(neighbor);
                 }
             }

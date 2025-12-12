@@ -3,10 +3,16 @@ package Map;
 import Interfaces.IDivision;
 import Interfaces.IMap;
 import Interfaces.IPlayer;
+import com.fasterxml.jackson.annotation.*;
 
+
+@JsonIdentityInfo(generator = ObjectIdGenerators.IntSequenceGenerator.class, property = "@id")
 public abstract class Division implements IDivision {
 
     private String name;
+
+    public Division() {
+    }
 
     //lista de player que ja estiveram aqui!
 
@@ -16,6 +22,10 @@ public abstract class Division implements IDivision {
 
     @Override
     public String getName() { return this.name; }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     @Override
     public abstract IDivision getComportament(IMap maze, IPlayer player);

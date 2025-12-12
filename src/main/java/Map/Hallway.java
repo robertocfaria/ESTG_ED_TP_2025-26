@@ -1,15 +1,33 @@
 package Map;
 
 import Event.*;
-import Exceptions.InvalidPlayersCountException;
 import Interfaces.IEvent;
 import Interfaces.IHallway;
 import Interfaces.IPlayer;
 import Structures.Interfaces.ListADT;
 
+import com.fasterxml.jackson.annotation.*;
+
+
+@JsonIdentityInfo(generator = ObjectIdGenerators.IntSequenceGenerator.class, property = "@id")
 public class Hallway implements IHallway {
     private static EventManager EVENTS = new EventManager();
     private ListADT<IPlayer> players;
+
+    public Hallway() {
+    }
+
+    public ListADT<IPlayer> getPlayers() {
+        return players;
+    }
+
+    public static EventManager getEVENTS() {
+        return EVENTS;
+    }
+
+    public static void setEVENTS(EventManager EVENTS) {
+        Hallway.EVENTS = EVENTS;
+    }
 
     @Override
     public void setPlayers(ListADT<IPlayer> players) {

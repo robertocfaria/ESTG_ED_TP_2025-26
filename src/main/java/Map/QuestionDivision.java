@@ -8,10 +8,25 @@ import Structures.Interfaces.UnorderedListADT;
 import java.util.Iterator;
 import java.util.Random;
 
+import com.fasterxml.jackson.annotation.*;
+
+@JsonIdentityInfo(generator = ObjectIdGenerators.IntSequenceGenerator.class, property = "@id")
 public class QuestionDivision extends Division {
 
     private static QuestionManager questions;
     private Question myQuestion; // Persistência: A pergunta desta sala específica
+
+    public QuestionDivision() {
+        super();
+    }
+
+    public Question getMyQuestion() {
+        return this.myQuestion;
+    }
+
+    public void setMyQuestion(Question myQuestion) {
+        this.myQuestion = myQuestion;
+    }
 
     public QuestionDivision(String name) {
         super(name);
