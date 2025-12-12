@@ -5,7 +5,7 @@ import Structures.Stack.ArrayStack;
 
 public interface IPlayer {
 
-    void move(IMap maze);
+    void move(IMaze maze);
 
     String getName();
 

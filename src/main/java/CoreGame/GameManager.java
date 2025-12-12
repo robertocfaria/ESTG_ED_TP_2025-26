@@ -1,7 +1,6 @@
 package CoreGame;
 
 import Exporters.ExportGameHistory;
-import Interfaces.IHallway;
 import Map.*;
 import Interfaces.IPlayer;
 import Menus.GameVisuals;
@@ -13,7 +12,7 @@ import Util.Utils;
 public class GameManager {
     private ArrayUnorderedList<IPlayer> players;
     private IPlayer winnerPlayer;
-    private Map maze;
+    private Maze maze;
     private int turn;
     private boolean finished;
 
@@ -25,7 +24,7 @@ public class GameManager {
     }
 
     //TODO SAVE GAME HISTORY
-    public void startGame(Map maze) {
+    public void startGame(Maze maze) {
         this.maze = maze;
         addPlayers();
         maze.setHallwayPlayers(players);

@@ -1,7 +1,6 @@
 package Map;
 
 import Event.*;
-import Exceptions.InvalidPlayersCountException;
 import Interfaces.IEvent;
 import Interfaces.IHallway;
 import Interfaces.IPlayer;
@@ -11,9 +10,24 @@ public class Hallway implements IHallway {
     private static EventManager EVENTS = new EventManager();
     private ListADT<IPlayer> players;
 
+    public Hallway() {
+    }
+
+    public ListADT<IPlayer> getPlayers() {
+        return players;
+    }
+
     @Override
     public void setPlayers(ListADT<IPlayer> players) {
         this.players = players;
+    }
+
+    public static EventManager getEVENTS() {
+        return EVENTS;
+    }
+
+    public static void setEVENTS(EventManager EVENTS) {
+        Hallway.EVENTS = EVENTS;
     }
 
     @Override

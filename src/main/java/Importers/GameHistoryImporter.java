@@ -50,9 +50,9 @@ public class GameHistoryImporter {
                 // 1. Data do Jogo
                 if (line.startsWith("\"game_date\":")) {
                     String date = extractValue(line);
-                    System.out.println("\n==================================================");
-                    System.out.println(" DATA DO JOGO: " + date);
-                    System.out.println("==================================================");
+                    System.out.println("\n------------------------------------------------");
+                    System.out.println("- DATA DO JOGO: " + date);
+                    System.out.println("------------------------------------------------");
                 }
                 // 2. Nome do Jogador
                 else if (line.startsWith("\"name\":")) {
@@ -72,14 +72,10 @@ public class GameHistoryImporter {
                     System.out.println("   * " + log);
                 }
             }
-            System.out.println("\n[FIM DO FICHEIRO]\n");
-
         } catch (IOException e) {
             System.err.println("Erro ao ler o ficheiro: " + e.getMessage());
         }
     }
-
-    // --- MÉTODOS AUXILIARES ---
 
     private static String extractValue(String line) {
         int firstQuote = line.indexOf("\"", line.indexOf(":"));

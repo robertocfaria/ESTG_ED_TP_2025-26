@@ -1,0 +1,58 @@
+[ {
+  "@id" : 1,
+  "name" : "Mapa [Divisoes: 10 | Conexoes: 24]",
+  "adjMatrix" : [ [ null, {
+    "type" : "hallway",
+    "@id" : 2,
+    "players" : null
+  }, null, 2, null, null, null, null, null, null ], [ 2, null, 2, null, null, null, null, null, null, null ], [ null, 2, null, 2, null, null, null, null, null, null ], [ 2, null, 2, null, 2, 2, 2, null, null, null ], [ null, null, null, 2, null, 2, null, null, null, null ], [ null, null, null, 2, 2, null, 2, null, null, null ], [ null, null, null, 2, null, 2, null, 2, null, null ], [ null, null, null, null, null, null, 2, null, 2, null ], [ null, null, null, null, null, null, null, 2, null, 2 ], [ null, null, null, null, null, null, null, null, 2, null ] ],
+  "vertices" : [ {
+    "type" : "question",
+    "@id" : 3,
+    "name" : "Camara de Criogenia"
+  }, {
+    "type" : "lever",
+    "@id" : 4,
+    "name" : "Masmorra do Desespero",
+    "myLevers" : null
+  }, {
+    "type" : "lever",
+    "@id" : 5,
+    "name" : "Trono de Ossos",
+    "myLevers" : null
+  }, {
+    "type" : "question",
+    "@id" : 6,
+    "name" : "Patio das Estatuas Vivas"
+  }, {
+    "type" : "question",
+    "@id" : 7,
+    "name" : "Galeria dos Ancestrais"
+  }, {
+    "type" : "question",
+    "@id" : 8,
+    "name" : "Adega dos Vampiros"
+  }, {
+    "type" : "question",
+    "@id" : 9,
+    "name" : "Biblioteca Proibida"
+  }, {
+    "type" : "lever",
+    "@id" : 10,
+    "name" : "Corredor da Morte",
+    "myLevers" : null
+  }, {
+    "type" : "lever",
+    "@id" : 11,
+    "name" : "Sala do Oraculo",
+    "myLevers" : null
+  }, {
+    "type" : "goal",
+    "@id" : 12,
+    "name" : "DIVISAO FINAL"
+  } ],
+  "count" : 10,
+  "empty" : false,
+  "randomInitialDivision" : 3,
+  "connected" : true
+} ]

@@ -4,7 +4,6 @@ import Interfaces.IDivision;
 import Interfaces.IPlayer;
 import Exceptions.InvalidPlayersCountException;
 import Interfaces.IEvent;
-import Menus.GameVisuals;
 
 public class RollBack implements IEvent {
 

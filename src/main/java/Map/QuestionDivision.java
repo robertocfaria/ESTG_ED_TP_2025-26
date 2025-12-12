@@ -1,7 +1,7 @@
 package Map;
 
 import Interfaces.IDivision;
-import Interfaces.IMap;
+import Interfaces.IMaze;
 import Interfaces.IPlayer;
 import Reader.Reader;
 import Structures.Interfaces.UnorderedListADT;
@@ -10,7 +10,11 @@ import java.util.Random;
 
 public class QuestionDivision extends Division {
 
-    private static QuestionManager questions;
+    private static QuestionManager questions = new QuestionManager();
+
+    public QuestionDivision() {
+        super();
+    }
 
     public QuestionDivision(String name) {
         super(name);
@@ -24,7 +28,7 @@ public class QuestionDivision extends Division {
     }
 
     @Override
-    public IDivision getComportament(IMap maze, IPlayer player) {
+    public IDivision getComportament(IMaze maze, IPlayer player) {
 
         Question myQuestion = questions.getQuestion();
 
@@ -90,7 +94,7 @@ public class QuestionDivision extends Division {
         sb.append("Para conseguir avancar para a proxima sala tem\n");
         sb.append("de responder acertadamente a esta pergunta:\n");
         if (myQuestion != null) {
-            sb.append(myQuestion.toString());
+            sb.append(myQuestion);
         }
         return sb.toString();
     }

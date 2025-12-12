@@ -19,6 +19,22 @@ public class QuestionManager {
         setQueue();
     }
 
+    public ArrayUnorderedList<Question> getQuestions() {
+        return questions;
+    }
+
+    public void setQuestions(ArrayUnorderedList<Question> questions) {
+        this.questions = questions;
+    }
+
+    public LinkedQueue<Question> getQueueQuestions() {
+        return queueQuestions;
+    }
+
+    public void setQueueQuestions(LinkedQueue<Question> queueQuestions) {
+        this.queueQuestions = queueQuestions;
+    }
+
     private void setQueue() {
         shuffleQuestions();
 
@@ -31,7 +47,7 @@ public class QuestionManager {
     }
 
     private void shuffleQuestions() {
-        if(this.questions.isEmpty()) {
+        if (this.questions.isEmpty()) {
             return;
         }
 
@@ -60,15 +76,15 @@ public class QuestionManager {
     }
 
     public Question getQuestion() {
-        if(queueQuestions.isEmpty()){
+        if (queueQuestions.isEmpty()) {
             setQueue();
         }
 
-        try{
+        try {
             Question tempQuestion = queueQuestions.dequeue();
             questions.addToRear(tempQuestion);
             return tempQuestion;
-        }catch (Exception e) {
+        } catch (Exception e) {
             return null;
         }
     }

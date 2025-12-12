@@ -2,7 +2,7 @@ package Map;
 
 import Interfaces.IDivision;
 import Interfaces.ILever;
-import Interfaces.IMap;
+import Interfaces.IMaze;
 import Interfaces.IPlayer;
 import Lever.Lever;
 import Reader.Reader;
@@ -14,12 +14,24 @@ public class LeverDivision extends Division {
     private Random rand = new Random();
     private ILever[] myLevers; // Persistência das alavancas
 
+    public LeverDivision() {
+        super();
+    }
+
+    public ILever[] getMyLevers() {
+        return myLevers;
+    }
+
+    public void setMyLevers(ILever[] myLevers) {
+        this.myLevers = myLevers;
+    }
+
     public LeverDivision(String name) {
         super(name);
     }
 
     @Override
-    public IDivision getComportament(IMap maze, IPlayer player) {
+    public IDivision getComportament(IMaze maze, IPlayer player) {
         System.out.println(this.toString());
 
         // 1. GERAÇÃO PREGUIÇOSA (Lazy Loading) - Só gera se ainda não existirem

@@ -1,0 +1,2051 @@
+{
+  "game_date": "20251212_202800",
+  "players": [
+    {
+      "name": "BOT2",
+      "type": "Bot",
+      "history": [
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Quem foi o navegador portugues responsavel pela descoberta do caminho maritimo para a India? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Quem foi o vocalista da banda Queen? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Em que cidade portuguesa se localiza a Torre dos Clerigos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Quem e o autor da famosa pintura 'A Noite Estrelada'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual e o mineral mais duro conhecido na natureza? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual e o pais mais pequeno do mundo em area? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual e o maior animal vivo do planeta? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Quem formulou a Teoria da Relatividade Geral? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Em que pais se situa a antiga cidade de Machu Picchu? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Quem foi o primeiro Presidente da Republica Portuguesa eleito (nao provisorio)? | ACERTOU -> [AVANCOU PARA: Labirinto de Espinhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual e o osso mais longo do corpo humano? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual e a capital do Canada? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Quem foi o navegador portugues responsavel pela descoberta do caminho maritimo para a India? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Quem escreveu o romance 'O Ano da Morte de Ricardo Reis'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Em que ano o Homem pisou a Lua pela primeira vez? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual e o maior pais de Africa em extensao territorial? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Em que desporto se utiliza o termo 'Checkmate'? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e a capital da Australia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Onde se realizou a Expo 98? | ACERTOU -> [AVANCOU PARA: Labirinto de Espinhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Em que cidade foi assinado o tratado que instituiu a Uniao Europeia em 1992? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Quem escreveu o classico distopico '1984'? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Quantos jogadores de campo (excluindo suplentes) tem uma equipa de Andebol? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: A Peninsula da Crimeia e um territorio disputado entre que paises? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e o canal que liga o Mar Mediterraneo ao Mar Vermelho? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Quem foi a primeira mulher a exercer o cargo de Primeiro-Ministro em Portugal? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e a principal funcao das globulos vermelhos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Em Ciclismo, qual e a cor da camisola do lider da Volta a Franca? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Em que ano ocorreu o desastre nuclear de Chernobyl? | ACERTOU -> [AVANCOU PARA: Labirinto de Espinhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ShuffleAllPlayers"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Em que ano Portugal aderiu a Comunidade Economica Europeia (atual UE)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual destes paises nao tem costa maritima? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual e o orgao responsavel pela producao de insulina no corpo humano? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual e o planeta do Sistema Solar conhecido pelos seus aneis visiveis? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual e o nome da maior floresta tropical do mundo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Em que seculo aconteceu a Revolucao Francesa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Quem escreveu a 'Divina Comedia'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual e a capital da Polonia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Em que ano ocorreu a Revolucao dos Cravos em Portugal? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual e o metal liquido a temperatura ambiente? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Quem pintou a obra-prima 'Guernica'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual destes paises nao faz parte da NATO (OTAN)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual destas operas foi composta por Wolfgang Amadeus Mozart? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual e o nome do estreito que separa a Europa da Africa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Em que cidade se encontra o Museu do Louvre? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual e o nome da moeda oficial do Japao? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual e a unidade de medida de resistencia eletrica? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Quem foi o lider da Africa do Sul que lutou contra o Apartheid e foi Premio Nobel da Paz? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Quem descobriu a Penicilina? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Em que ano começou a Primeira Guerra Mundial? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Quem foi a fundadora da Enfermagem moderna? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual e a camada mais externa da atmosfera terrestre? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Em que ano caiu o Muro de Berlim? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Quem foi o vocalista da banda Queen? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Que elemento quimico tem o simbolo 'Fe'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e o ponto mais alto de Portugal Continental? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e a distancia oficial de uma maratona? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Em que cidade se realizaram os Jogos Olimpicos de 1992? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Onde se localiza a sede das Nacoes Unidas (ONU)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e a capital da India? | ACERTOU -> [AVANCOU PARA: Jardim Venenoso]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem pintou o famoso teto da Capela Sistina? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o rio mais extenso que corre exclusivamente em territorio portugues? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o elemento quimico mais abundante no Universo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem escreveu a obra 'Cem Anos de Solidao'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Em que cidade portuguesa se localiza a Torre dos Clerigos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual destes arquitetos portugueses venceu o Premio Pritzker em 2011? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem e o autor da epopeia 'Os Lusiadas'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem é o baixista dos AskBayns? | ACERTOU -> [AVANCOU PARA: Galeria dos Espelhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem foi o ultimo rei da monarquia portuguesa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Em que ano foi inaugurada a Ponte Vasco da Gama em Lisboa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual destas ilhas nao pertence ao arquipelago dos Acores? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o nome da agencia espacial norte-americana? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem foi o primeiro Rei de Portugal? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Quem e o autor da famosa pintura 'A Noite Estrelada'? | ACERTOU -> [AVANCOU PARA: Jardim Venenoso]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e a capital da Turquia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o gas responsavel pela maior parte do Efeito de Estufa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quantos anéis compoem o simbolo dos Jogos Olimpicos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e a capital do Brasil? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual destes estilos artisticos e caracterizado pelo uso de formas geometricas? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem era o Primeiro-Ministro do Reino Unido aquando da vitoria na Segunda Guerra Mundial? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual selecao venceu o primeiro Campeonato do Mundo de Futebol em 1930? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quantas sinfonias completas compos Ludwig van Beethoven? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o nome do estuario onde desagua o Rio Tejo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o maior oceano do planeta Terra? | ACERTOU -> [AVANCOU PARA: Galeria dos Espelhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e a montanha mais alta do mundo (acima do nivel do mar)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e a velocidade aproximada da luz no vacuo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e a lingua mais falada no mundo (como lingua nativa)? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Em que cidade foi assinado o tratado que instituiu a Uniao Europeia em 1992? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Quem e o autor da epopeia 'Os Lusiadas'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Em que pais se situa a antiga cidade de Machu Picchu? | ACERTOU -> [AVANCOU PARA: Labirinto de Espinhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Quantos anéis compoem o simbolo dos Jogos Olimpicos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Quem é o baixista dos AskBayns? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Em que ano caiu o Muro de Berlim? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e o osso mais longo do corpo humano? | ACERTOU -> [AVANCOU PARA: Jardim Venenoso]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ShuffleAllPlayers"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem foi o ultimo rei da monarquia portuguesa? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Onde se localiza a sede das Nacoes Unidas (ONU)? | ACERTOU -> [AVANCOU PARA: Jardim Venenoso]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual destas ilhas nao pertence ao arquipelago dos Acores? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem foi a primeira mulher a exercer o cargo de Primeiro-Ministro em Portugal? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Em que ano ocorreu a Revolucao dos Cravos em Portugal? | ACERTOU -> [AVANCOU PARA: Galeria dos Espelhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e o nome do estreito que separa a Europa da Africa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e a capital da Polonia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Em que ano o Homem pisou a Lua pela primeira vez? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem escreveu a 'Divina Comedia'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e o metal liquido a temperatura ambiente? | ACERTOU -> [AVANCOU PARA: Jardim Venenoso]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o planeta do Sistema Solar conhecido pelos seus aneis visiveis? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem escreveu o classico distopico '1984'? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e a distancia oficial de uma maratona? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual destes arquitetos portugueses venceu o Premio Pritzker em 2011? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Quem foi o vocalista da banda Queen? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual destas operas foi composta por Wolfgang Amadeus Mozart? | ACERTOU -> [AVANCOU PARA: Labirinto de Espinhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual e o nome da moeda oficial do Japao? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Em que ano foi inaugurada a Ponte Vasco da Gama em Lisboa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Em que cidade se encontra o Museu do Louvre? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Em Ciclismo, qual e a cor da camisola do lider da Volta a Franca? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e a unidade de medida de resistencia eletrica? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e o elemento quimico mais abundante no Universo? | ACERTOU -> [AVANCOU PARA: Jardim Venenoso]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: A Peninsula da Crimeia e um territorio disputado entre que paises? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o nome da agencia espacial norte-americana? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e a capital da Turquia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e a velocidade aproximada da luz no vacuo? | ACERTOU -> [AVANCOU PARA: Galeria dos Espelhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual selecao venceu o primeiro Campeonato do Mundo de Futebol em 1930? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Em que ano Portugal aderiu a Comunidade Economica Europeia (atual UE)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Em que seculo aconteceu a Revolucao Francesa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem descobriu a Penicilina? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Onde se realizou a Expo 98? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e o rio mais extenso que corre exclusivamente em territorio portugues? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem foi a fundadora da Enfermagem moderna? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e a camada mais externa da atmosfera terrestre? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e a capital do Brasil? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem escreveu a obra 'Cem Anos de Solidao'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e o maior oceano do planeta Terra? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem foi o lider da Africa do Sul que lutou contra o Apartheid e foi Premio Nobel da Paz? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e o maior animal vivo do planeta? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual destes paises nao tem costa maritima? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e a montanha mais alta do mundo (acima do nivel do mar)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Em que ano ocorreu o desastre nuclear de Chernobyl? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual e a capital da Australia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual destes paises nao faz parte da NATO (OTAN)? | ACERTOU -> [AVANCOU PARA: Galeria dos Espelhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ShuffleAllPlayers"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Em que cidade portuguesa se localiza a Torre dos Clerigos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e o pais mais pequeno do mundo em area? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem foi o primeiro Rei de Portugal? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual destes estilos artisticos e caracterizado pelo uso de formas geometricas? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Em que desporto se utiliza o termo 'Checkmate'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e o ponto mais alto de Portugal Continental? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Quem foi o primeiro Presidente da Republica Portuguesa eleito (nao provisorio)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual e a capital do Canada? | ACERTOU -> [AVANCOU PARA: Camara do Rei Louco]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Quantos jogadores de campo (excluindo suplentes) tem uma equipa de Andebol? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Qual e o nome da maior floresta tropical do mundo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Em que cidade se realizaram os Jogos Olimpicos de 1992? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Qual e a lingua mais falada no mundo (como lingua nativa)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Quem foi o navegador portugues responsavel pela descoberta do caminho maritimo para a India? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Quem pintou o famoso teto da Capela Sistina? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Quem e o autor da famosa pintura 'A Noite Estrelada'? | ACERTOU -> [AVANCOU PARA: Patio da Nevoa]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Qual e o orgao responsavel pela producao de insulina no corpo humano? | ACERTOU -> [AVANCOU PARA: Camara do Rei Louco]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Qual e o gas responsavel pela maior parte do Efeito de Estufa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Que elemento quimico tem o simbolo 'Fe'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Quem pintou a obra-prima 'Guernica'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Quem escreveu o romance 'O Ano da Morte de Ricardo Reis'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Qual e a principal funcao das globulos vermelhos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Quem formulou a Teoria da Relatividade Geral? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Qual e o nome do estuario onde desagua o Rio Tejo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Qual e o canal que liga o Mar Mediterraneo ao Mar Vermelho? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Qual e o mineral mais duro conhecido na natureza? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Quem era o Primeiro-Ministro do Reino Unido aquando da vitoria na Segunda Guerra Mundial? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Quantas sinfonias completas compos Ludwig van Beethoven? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Em que ano começou a Primeira Guerra Mundial? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual e a capital da India? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual e o maior pais de Africa em extensao territorial? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Quem foi o vocalista da banda Queen? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual e a capital da Turquia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual e o nome da agencia espacial norte-americana? | ACERTOU -> [AVANCOU PARA: Galeria dos Espelhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Em que seculo aconteceu a Revolucao Francesa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual selecao venceu o primeiro Campeonato do Mundo de Futebol em 1930? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Em Ciclismo, qual e a cor da camisola do lider da Volta a Franca? | ACERTOU -> [AVANCOU PARA: Jardim Venenoso]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o planeta do Sistema Solar conhecido pelos seus aneis visiveis? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Em que ano foi inaugurada a Ponte Vasco da Gama em Lisboa? | ACERTOU -> [AVANCOU PARA: Galeria dos Espelhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem foi o navegador portugues responsavel pela descoberta do caminho maritimo para a India? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem é o baixista dos AskBayns? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem era o Primeiro-Ministro do Reino Unido aquando da vitoria na Segunda Guerra Mundial? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e o osso mais longo do corpo humano? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e o canal que liga o Mar Mediterraneo ao Mar Vermelho? | ACERTOU -> [AVANCOU PARA: Jardim Venenoso]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o rio mais extenso que corre exclusivamente em territorio portugues? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e a montanha mais alta do mundo (acima do nivel do mar)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem e o autor da epopeia 'Os Lusiadas'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem pintou a obra-prima 'Guernica'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quantos anéis compoem o simbolo dos Jogos Olimpicos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem e o autor da famosa pintura 'A Noite Estrelada'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o maior oceano do planeta Terra? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quantos jogadores de campo (excluindo suplentes) tem uma equipa de Andebol? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e a capital da Polonia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e a camada mais externa da atmosfera terrestre? | ACERTOU -> [AVANCOU PARA: Galeria dos Espelhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e a distancia oficial de uma maratona? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Que elemento quimico tem o simbolo 'Fe'? | ACERTOU -> [AVANCOU PARA: Jardim Venenoso]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o nome da moeda oficial do Japao? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o ponto mais alto de Portugal Continental? | ACERTOU -> [AVANCOU PARA: Galeria dos Espelhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e o pais mais pequeno do mundo em area? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Em que ano caiu o Muro de Berlim? | ACERTOU -> [AVANCOU PARA: Camara do Rei Louco]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Onde se localiza a sede das Nacoes Unidas (ONU)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Quem pintou o famoso teto da Capela Sistina? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Qual e o orgao responsavel pela producao de insulina no corpo humano? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Quem foi o lider da Africa do Sul que lutou contra o Apartheid e foi Premio Nobel da Paz? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual e o elemento quimico mais abundante no Universo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual destas ilhas nao pertence ao arquipelago dos Acores? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Quem escreveu o classico distopico '1984'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Em que cidade se realizaram os Jogos Olimpicos de 1992? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual e a capital do Brasil? | ACERTOU -> [AVANCOU PARA: Camara do Rei Louco]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Qual e a unidade de medida de resistencia eletrica? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Qual e o metal liquido a temperatura ambiente? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Qual e o maior pais de Africa em extensao territorial? | ACERTOU -> [AVANCOU PARA: Patio da Nevoa]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Qual e a velocidade aproximada da luz no vacuo? | ACERTOU -> [AVANCOU PARA: Camara de Gelo]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara de Gelo] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara de Gelo] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Camara de Gelo] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Camara de Gelo] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Camara de Gelo] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Patio da Nevoa -> [AVANCOU PARA: Patio da Nevoa]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Qual e o nome do estreito que separa a Europa da Africa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: A Peninsula da Crimeia e um territorio disputado entre que paises? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Quem formulou a Teoria da Relatividade Geral? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Qual e o maior animal vivo do planeta? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Em que ano ocorreu o desastre nuclear de Chernobyl? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Qual e o mineral mais duro conhecido na natureza? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Quem foi o primeiro Rei de Portugal? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Qual e o nome da maior floresta tropical do mundo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Qual destes paises nao faz parte da NATO (OTAN)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Quem escreveu a obra 'Cem Anos de Solidao'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Em que ano começou a Primeira Guerra Mundial? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Quem foi o primeiro Presidente da Republica Portuguesa eleito (nao provisorio)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Em que cidade portuguesa se localiza a Torre dos Clerigos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Em que ano o Homem pisou a Lua pela primeira vez? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Em que cidade se encontra o Museu do Louvre? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Onde se realizou a Expo 98? | ACERTOU -> [AVANCOU PARA: Camara de Gelo]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Camara de Gelo] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Camara de Gelo] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Sala de Aula Maldita -> [AVANCOU PARA: Sala de Aula Maldita]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala de Aula Maldita] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala de Aula Maldita] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala de Aula Maldita] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala de Aula Maldita] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Camara de Gelo -> [AVANCOU PARA: Camara de Gelo]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Camara de Gelo] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Camara de Gelo] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Patio da Nevoa -> [AVANCOU PARA: Patio da Nevoa]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Qual destas operas foi composta por Wolfgang Amadeus Mozart? | ACERTOU -> [AVANCOU PARA: Camara do Rei Louco]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Quem descobriu a Penicilina? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Em que desporto se utiliza o termo 'Checkmate'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual destes estilos artisticos e caracterizado pelo uso de formas geometricas? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Quem foi a primeira mulher a exercer o cargo de Primeiro-Ministro em Portugal? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Quem escreveu a 'Divina Comedia'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual e a capital do Canada? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Quem escreveu o romance 'O Ano da Morte de Ricardo Reis'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual destes paises nao tem costa maritima? | ACERTOU -> [AVANCOU PARA: Camara do Rei Louco]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ShuffleAllPlayers"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Quem foi o ultimo rei da monarquia portuguesa? | ACERTOU -> [AVANCOU PARA: Patio da Nevoa]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Em que ano ocorreu a Revolucao dos Cravos em Portugal? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Qual e o nome do estuario onde desagua o Rio Tejo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Qual e o gas responsavel pela maior parte do Efeito de Estufa? | ACERTOU -> [AVANCOU PARA: Camara do Rei Louco]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Qual e a lingua mais falada no mundo (como lingua nativa)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Em que ano Portugal aderiu a Comunidade Economica Europeia (atual UE)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Qual destes arquitetos portugueses venceu o Premio Pritzker em 2011? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Quantas sinfonias completas compos Ludwig van Beethoven? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Qual e a capital da Australia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Qual e a capital da India? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Qual e a principal funcao das globulos vermelhos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Quem foi a fundadora da Enfermagem moderna? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Em que pais se situa a antiga cidade de Machu Picchu? | ACERTOU -> [AVANCOU PARA: Patio da Nevoa]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Em que cidade foi assinado o tratado que instituiu a Uniao Europeia em 1992? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Em que ano o Homem pisou a Lua pela primeira vez? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Em que ano ocorreu o desastre nuclear de Chernobyl? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Qual e a capital do Canada? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Qual e o nome do estreito que separa a Europa da Africa? | ACERTOU -> [AVANCOU PARA: Camara de Gelo]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara de Gelo] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara de Gelo] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Patio da Nevoa -> [AVANCOU PARA: Patio da Nevoa]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Em que ano Portugal aderiu a Comunidade Economica Europeia (atual UE)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Qual e a capital da Polonia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Qual e a capital da India? | ACERTOU -> [AVANCOU PARA: Camara do Rei Louco]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Qual e a principal funcao das globulos vermelhos? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Qual e o maior animal vivo do planeta? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Qual destas ilhas nao pertence ao arquipelago dos Acores? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Quem e o autor da famosa pintura 'A Noite Estrelada'? | ACERTOU -> [AVANCOU PARA: Patio da Nevoa]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Qual e a camada mais externa da atmosfera terrestre? | ACERTOU -> [AVANCOU PARA: Camara do Rei Louco]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: A Peninsula da Crimeia e um territorio disputado entre que paises? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual e o elemento quimico mais abundante no Universo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual destas operas foi composta por Wolfgang Amadeus Mozart? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Em que cidade se encontra o Museu do Louvre? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual e o ponto mais alto de Portugal Continental? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual destes arquitetos portugueses venceu o Premio Pritzker em 2011? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Em que desporto se utiliza o termo 'Checkmate'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Quem foi o ultimo rei da monarquia portuguesa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual e a velocidade aproximada da luz no vacuo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual e o orgao responsavel pela producao de insulina no corpo humano? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual e a montanha mais alta do mundo (acima do nivel do mar)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Que elemento quimico tem o simbolo 'Fe'? | ACERTOU -> [AVANCOU PARA: Galeria dos Espelhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ShuffleAllPlayers"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem e o autor da epopeia 'Os Lusiadas'? | ACERTOU -> [AVANCOU PARA: Jardim Venenoso]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e o rio mais extenso que corre exclusivamente em territorio portugues? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e a distancia oficial de uma maratona? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Em que pais se situa a antiga cidade de Machu Picchu? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Onde se localiza a sede das Nacoes Unidas (ONU)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem foi o navegador portugues responsavel pela descoberta do caminho maritimo para a India? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem escreveu o romance 'O Ano da Morte de Ricardo Reis'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Em que cidade foi assinado o tratado que instituiu a Uniao Europeia em 1992? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem foi a primeira mulher a exercer o cargo de Primeiro-Ministro em Portugal? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Em que ano caiu o Muro de Berlim? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Em que cidade portuguesa se localiza a Torre dos Clerigos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Em Ciclismo, qual e a cor da camisola do lider da Volta a Franca? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem foi o primeiro Presidente da Republica Portuguesa eleito (nao provisorio)? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e a capital da Australia? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual e o nome da maior floresta tropical do mundo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Quem descobriu a Penicilina? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual e o maior pais de Africa em extensao territorial? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Em que ano começou a Primeira Guerra Mundial? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Quem foi a fundadora da Enfermagem moderna? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Em que cidade se realizaram os Jogos Olimpicos de 1992? | ACERTOU -> [AVANCOU PARA: Galeria dos Espelhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quantos jogadores de campo (excluindo suplentes) tem uma equipa de Andebol? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Em que seculo aconteceu a Revolucao Francesa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e o osso mais longo do corpo humano? | ACERTOU -> [AVANCOU PARA: Jardim Venenoso]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o mineral mais duro conhecido na natureza? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Quem foi o primeiro Rei de Portugal? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Quem era o Primeiro-Ministro do Reino Unido aquando da vitoria na Segunda Guerra Mundial? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Quem foi o lider da Africa do Sul que lutou contra o Apartheid e foi Premio Nobel da Paz? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Onde se realizou a Expo 98? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Em que ano foi inaugurada a Ponte Vasco da Gama em Lisboa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e o nome do estuario onde desagua o Rio Tejo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e a capital da Turquia? | ACERTOU -> [AVANCOU PARA: Jardim Venenoso]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem escreveu a obra 'Cem Anos de Solidao'? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Quem formulou a Teoria da Relatividade Geral? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Quem pintou a obra-prima 'Guernica'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual destes paises nao tem costa maritima? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e o maior oceano do planeta Terra? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e a capital do Brasil? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Quem pintou o famoso teto da Capela Sistina? | ACERTOU -> [AVANCOU PARA: Labirinto de Espinhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual e a lingua mais falada no mundo (como lingua nativa)? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e o gas responsavel pela maior parte do Efeito de Estufa? | ACERTOU -> [AVANCOU PARA: Jardim Venenoso]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o planeta do Sistema Solar conhecido pelos seus aneis visiveis? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quantos anéis compoem o simbolo dos Jogos Olimpicos? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o pais mais pequeno do mundo em area? | ACERTOU -> [AVANCOU PARA: Galeria dos Espelhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e o nome da agencia espacial norte-americana? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e o canal que liga o Mar Mediterraneo ao Mar Vermelho? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual destes estilos artisticos e caracterizado pelo uso de formas geometricas? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual selecao venceu o primeiro Campeonato do Mundo de Futebol em 1930? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e a unidade de medida de resistencia eletrica? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Quem é o baixista dos AskBayns? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Quem escreveu a 'Divina Comedia'? | ACERTOU -> [AVANCOU PARA: Galeria dos Espelhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual destes paises nao faz parte da NATO (OTAN)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quantas sinfonias completas compos Ludwig van Beethoven? | ACERTOU -> [AVANCOU PARA: Jardim Venenoso]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem escreveu o classico distopico '1984'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o metal liquido a temperatura ambiente? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Em que ano ocorreu a Revolucao dos Cravos em Portugal? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e o nome da moeda oficial do Japao? | ACERTOU -> [AVANCOU PARA: Jardim Venenoso]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem foi o vocalista da banda Queen? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Quem formulou a Teoria da Relatividade Geral? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Quem escreveu a obra 'Cem Anos de Solidao'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e a capital da Polonia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e o rio mais extenso que corre exclusivamente em territorio portugues? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e o nome da agencia espacial norte-americana? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Quem escreveu a 'Divina Comedia'? | ACERTOU -> [AVANCOU PARA: Labirinto de Espinhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual destas operas foi composta por Wolfgang Amadeus Mozart? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Onde se localiza a sede das Nacoes Unidas (ONU)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Quem foi o navegador portugues responsavel pela descoberta do caminho maritimo para a India? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual selecao venceu o primeiro Campeonato do Mundo de Futebol em 1930? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Quem foi o primeiro Presidente da Republica Portuguesa eleito (nao provisorio)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual e o canal que liga o Mar Mediterraneo ao Mar Vermelho? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ShuffleAllPlayers"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e o nome do estuario onde desagua o Rio Tejo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e o maior pais de Africa em extensao territorial? | ACERTOU -> [AVANCOU PARA: Jardim Venenoso]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o nome do estreito que separa a Europa da Africa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Em que ano ocorreu a Revolucao dos Cravos em Portugal? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o metal liquido a temperatura ambiente? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual destes estilos artisticos e caracterizado pelo uso de formas geometricas? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o maior oceano do planeta Terra? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem e o autor da famosa pintura 'A Noite Estrelada'? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e a distancia oficial de uma maratona? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e o maior animal vivo do planeta? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Quem é o baixista dos AskBayns? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Em que cidade se realizaram os Jogos Olimpicos de 1992? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Quantos anéis compoem o simbolo dos Jogos Olimpicos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Quem foi o lider da Africa do Sul que lutou contra o Apartheid e foi Premio Nobel da Paz? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e a lingua mais falada no mundo (como lingua nativa)? | ACERTOU -> [AVANCOU PARA: Labirinto de Espinhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Em que ano foi inaugurada a Ponte Vasco da Gama em Lisboa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Quem descobriu a Penicilina? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual destas ilhas nao pertence ao arquipelago dos Acores? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e a principal funcao das globulos vermelhos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e a velocidade aproximada da luz no vacuo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e o orgao responsavel pela producao de insulina no corpo humano? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Quem foi a primeira mulher a exercer o cargo de Primeiro-Ministro em Portugal? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e a capital da Turquia? | ACERTOU -> [AVANCOU PARA: Jardim Venenoso]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem escreveu o romance 'O Ano da Morte de Ricardo Reis'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quantas sinfonias completas compos Ludwig van Beethoven? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Em que ano começou a Primeira Guerra Mundial? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Em que ano caiu o Muro de Berlim? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Em que desporto se utiliza o termo 'Checkmate'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quantos jogadores de campo (excluindo suplentes) tem uma equipa de Andebol? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e a montanha mais alta do mundo (acima do nivel do mar)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Em que cidade portuguesa se localiza a Torre dos Clerigos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Em que ano Portugal aderiu a Comunidade Economica Europeia (atual UE)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem pintou o famoso teto da Capela Sistina? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual destes paises nao tem costa maritima? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o osso mais longo do corpo humano? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Em que ano o Homem pisou a Lua pela primeira vez? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Em que seculo aconteceu a Revolucao Francesa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o elemento quimico mais abundante no Universo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o gas responsavel pela maior parte do Efeito de Estufa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Em que cidade se encontra o Museu do Louvre? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem foi o primeiro Rei de Portugal? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e o planeta do Sistema Solar conhecido pelos seus aneis visiveis? | ACERTOU -> [AVANCOU PARA: Labirinto de Espinhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual e a unidade de medida de resistencia eletrica? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual destes arquitetos portugueses venceu o Premio Pritzker em 2011? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Qual destes paises nao faz parte da NATO (OTAN)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perg: Que elemento quimico tem o simbolo 'Fe'? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Quem foi a fundadora da Enfermagem moderna? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Em Ciclismo, qual e a cor da camisola do lider da Volta a Franca? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Em que cidade foi assinado o tratado que instituiu a Uniao Europeia em 1992? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Quem e o autor da epopeia 'Os Lusiadas'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e o nome da maior floresta tropical do mundo? | ACERTOU -> [AVANCOU PARA: Jardim Venenoso]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e a camada mais externa da atmosfera terrestre? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e a capital da Australia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e a capital do Canada? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Em que ano ocorreu o desastre nuclear de Chernobyl? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e o mineral mais duro conhecido na natureza? | ACERTOU -> [AVANCOU PARA: Jardim Venenoso]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem foi o vocalista da banda Queen? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem pintou a obra-prima 'Guernica'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Em que pais se situa a antiga cidade de Machu Picchu? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem era o Primeiro-Ministro do Reino Unido aquando da vitoria na Segunda Guerra Mundial? | ACERTOU -> [AVANCOU PARA: Galeria dos Espelhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e o pais mais pequeno do mundo em area? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e a capital da India? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e o nome da moeda oficial do Japao? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: A Peninsula da Crimeia e um territorio disputado entre que paises? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem foi o ultimo rei da monarquia portuguesa? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual e a capital do Brasil? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Quem escreveu o classico distopico '1984'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual e o ponto mais alto de Portugal Continental? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Onde se realizou a Expo 98? | ACERTOU -> [AVANCOU PARA: Camara do Rei Louco]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Quem pintou a obra-prima 'Guernica'? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Quantos anéis compoem o simbolo dos Jogos Olimpicos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Em que ano caiu o Muro de Berlim? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual destes estilos artisticos e caracterizado pelo uso de formas geometricas? | ACERTOU -> [AVANCOU PARA: Galeria dos Espelhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Em que cidade se encontra o Museu do Louvre? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem era o Primeiro-Ministro do Reino Unido aquando da vitoria na Segunda Guerra Mundial? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e a montanha mais alta do mundo (acima do nivel do mar)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quantos jogadores de campo (excluindo suplentes) tem uma equipa de Andebol? | ACERTOU -> [AVANCOU PARA: Jardim Venenoso]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o nome do estreito que separa a Europa da Africa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o maior animal vivo do planeta? | ACERTOU -> [AVANCOU PARA: Galeria dos Espelhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem foi a fundadora da Enfermagem moderna? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual e a capital da Turquia? | ACERTOU -> [AVANCOU PARA: Camara do Rei Louco]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Quem foi o navegador portugues responsavel pela descoberta do caminho maritimo para a India? | ACERTOU -> [AVANCOU PARA: Patio da Nevoa]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ShuffleAllPlayers"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Quem formulou a Teoria da Relatividade Geral? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Qual e a capital da Polonia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Quem foi o primeiro Presidente da Republica Portuguesa eleito (nao provisorio)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Em que ano Portugal aderiu a Comunidade Economica Europeia (atual UE)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Qual e a principal funcao das globulos vermelhos? | ACERTOU -> [AVANCOU PARA: Camara do Rei Louco]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Quem é o baixista dos AskBayns? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Qual e o elemento quimico mais abundante no Universo? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Em Ciclismo, qual e a cor da camisola do lider da Volta a Franca? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual e o maior oceano do planeta Terra? | ACERTOU -> [AVANCOU PARA: Galeria dos Espelhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e a distancia oficial de uma maratona? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e a camada mais externa da atmosfera terrestre? | ACERTOU -> [AVANCOU PARA: Jardim Venenoso]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e a capital do Brasil? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o nome da agencia espacial norte-americana? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Em que desporto se utiliza o termo 'Checkmate'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e a capital da India? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Onde se realizou a Expo 98? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Em que ano o Homem pisou a Lua pela primeira vez? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Em que cidade foi assinado o tratado que instituiu a Uniao Europeia em 1992? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o maior pais de Africa em extensao territorial? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e o rio mais extenso que corre exclusivamente em territorio portugues? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e o planeta do Sistema Solar conhecido pelos seus aneis visiveis? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Quem e o autor da famosa pintura 'A Noite Estrelada'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Quem descobriu a Penicilina? | ACERTOU -> [AVANCOU PARA: Jardim Venenoso]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Onde se localiza a sede das Nacoes Unidas (ONU)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Em que cidade se realizaram os Jogos Olimpicos de 1992? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual destas operas foi composta por Wolfgang Amadeus Mozart? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem pintou o famoso teto da Capela Sistina? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem foi o primeiro Rei de Portugal? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem escreveu a obra 'Cem Anos de Solidao'? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Em que ano ocorreu o desastre nuclear de Chernobyl? | ACERTOU -> [AVANCOU PARA: Jardim Venenoso]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual e o ponto mais alto de Portugal Continental? | ACERTOU -> [AVANCOU PARA: Labirinto de Espinhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Sala da Inquisicao] -> Perg: Qual destas ilhas nao pertence ao arquipelago dos Acores? | ACERTOU -> [AVANCOU PARA: Jardim Venenoso]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual selecao venceu o primeiro Campeonato do Mundo de Futebol em 1930? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: A Peninsula da Crimeia e um territorio disputado entre que paises? | ACERTOU -> [AVANCOU PARA: Sala da Inquisicao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e a velocidade aproximada da luz no vacuo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual destes paises nao faz parte da NATO (OTAN)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Em que ano foi inaugurada a Ponte Vasco da Gama em Lisboa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o nome da maior floresta tropical do mundo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Quem escreveu a 'Divina Comedia'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Jardim Venenoso] -> Perg: Qual e o pais mais pequeno do mundo em area? | ACERTOU -> [AVANCOU PARA: Galeria dos Espelhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e a capital da Australia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual destes paises nao tem costa maritima? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Em que cidade portuguesa se localiza a Torre dos Clerigos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quantas sinfonias completas compos Ludwig van Beethoven? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual destes arquitetos portugueses venceu o Premio Pritzker em 2011? | ACERTOU -> [AVANCOU PARA: Galeria dos Espelhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem escreveu o romance 'O Ano da Morte de Ricardo Reis'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem foi o vocalista da banda Queen? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem foi o lider da Africa do Sul que lutou contra o Apartheid e foi Premio Nobel da Paz? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e a unidade de medida de resistencia eletrica? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e o gas responsavel pela maior parte do Efeito de Estufa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Em que seculo aconteceu a Revolucao Francesa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e o orgao responsavel pela producao de insulina no corpo humano? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual e a capital do Canada? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perg: Qual e o metal liquido a temperatura ambiente? | ACERTOU -> [AVANCOU PARA: Camara do Rei Louco]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Quem escreveu o classico distopico '1984'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Qual e o nome da moeda oficial do Japao? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Camara do Rei Louco] -> Perg: Qual e o canal que liga o Mar Mediterraneo ao Mar Vermelho? | ACERTOU -> [AVANCOU PARA: Patio da Nevoa]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Qual e o osso mais longo do corpo humano? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Em que ano começou a Primeira Guerra Mundial? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Patio da Nevoa] -> Perg: Qual e o nome do estuario onde desagua o Rio Tejo? | ACERTOU -> [AVANCOU PARA: Camara de Gelo]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Camara de Gelo] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Camara de Gelo] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Camara de Gelo] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Sala de Aula Maldita -> [AVANCOU PARA: Sala de Aula Maldita]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala de Aula Maldita] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: DIVISAO FINAL -> [AVANCOU PARA: DIVISAO FINAL]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: DIVISAO FINAL] -> !!! VITORIA - JOGO TERMINADO !!!"
+        }
+      ]
+    }
+  ]
+}

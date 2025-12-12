@@ -1,12 +1,9 @@
 package CoreGame;
 
-import Event.ExtraPlays;
 import Interfaces.*;
-import Structures.List.ArrayList;
 import Structures.List.ArrayUnorderedList;
 import Structures.Stack.ArrayStack;
 import Util.Utils;
-
 
 public class Player implements IPlayer {
     protected static int botNumber = 1;
@@ -20,12 +17,6 @@ public class Player implements IPlayer {
     protected ArrayStack<HistoryEntry> fullHistory;
     protected int totMoves;
 
-
-    /**
-     * Este construtor cria um jogador Real novo.
-     *
-     * @param name Nome do Jogador
-     */
     public Player(String name) {
         this.name = name;
         this.stunned = 0;
@@ -38,9 +29,6 @@ public class Player implements IPlayer {
         this.totMoves = 0;
     }
 
-    /**
-     * Este construtor cria um jogador automático. Usa a variável estatica para definir o número"
-     */
     public Player() {
         this.name = "BOT" + botNumber;
         botNumber++;
@@ -113,14 +101,13 @@ public class Player implements IPlayer {
     }
 
     @Override
-    public void move(IMap maze) {
-
+    public void move(IMaze maze) {
         if (getStunned() > 0) {
             System.out.println(">>> Estás atordoado e perdes esta vez! <<<");
             addStunnedRound(getStunned() - 1);
-            // Regista que perdeu a vez (opcional)
+
             addHistoryMove(this.division, "Perdeu a vez por estar atordoado.");
-            if(isRealPlayer()) {
+            if (isRealPlayer()) {
                 Utils.waitEnter();
             }
             return;
@@ -131,14 +118,14 @@ public class Player implements IPlayer {
         ArrayUnorderedList<String> divisionNames = new ArrayUnorderedList<>();
 
         while (isTurnActive) {
-            if(totMoves > 0) {
-                System.out.println("\n-- Hisorico do jogo/jogada --");
+            if (totMoves > 0) {
+                System.out.println("\n-- Historico do jogo/jogada --");
                 System.out.println(">> Desde o inicio do jogo ja passou por: " + totMoves + " casas");
                 System.out.println(">> Esta jogada ja fez " + movesInThisTurn + " movimentos: ");
                 for (String division : divisionNames) {
                     System.out.print(division.toString() + " -> ");
                 }
-                System.out.println("\n-- Fim do hisorico do jogo/jogada --");
+                System.out.println("\n-- Fim do historico do jogo/jogada --");
             }
             System.out.println();
 
@@ -178,8 +165,7 @@ public class Player implements IPlayer {
                     System.out.println("Erro crítico ao mover: " + e.getMessage());
                     isTurnActive = false;
                 }
-            }
-            else {
+            } else {
                 System.out.println(">>> FALHASTE O DESAFIO! <<<");
                 if (getExtraRounds() > 0) {
                     System.out.println("MAS ESPERA! Tens " + getExtraRounds() + " Jogada(s) Extra!");
@@ -209,22 +195,24 @@ public class Player implements IPlayer {
         System.out.println("\n--- LOG do " + this.name.toUpperCase() + " ---");
         Structures.Stack.ArrayStack<HistoryEntry> temp = new Structures.Stack.ArrayStack<>();
 
-        // er e Esvaziar
         while (!this.fullHistory.isEmpty()) {
             try {
                 HistoryEntry entry = this.fullHistory.pop();
                 if (entry != null) {
                     System.out.println(entry.toString());
-                    temp.push(entry); // Guarda no temporário!
+                    temp.push(entry);
                 }
-            } catch (Exception e) { break; }
+            } catch (Exception e) {
+                break;
+            }
         }
 
-        //REPOR (CRUCIAL: Se isto falhar, o JSON sai vazio)
         while (!temp.isEmpty()) {
             try {
                 this.fullHistory.push(temp.pop());
-            } catch (Exception e) { break; }
+            } catch (Exception e) {
+                break;
+            }
         }
         System.out.println("-----------------------------------");
     }
@@ -238,16 +226,12 @@ public class Player implements IPlayer {
             temp.push(this.fullHistory.pop());
         }
 
-        //Repor na original E encher a cópia
         while (!temp.isEmpty()) {
             HistoryEntry entry = temp.pop();
-            this.fullHistory.push(entry); // Devolve à original
-            copy.push(entry);             // Mete na cópia
+            this.fullHistory.push(entry);
+            copy.push(entry);
         }
 
         return copy;
     }
-
-
-
 }

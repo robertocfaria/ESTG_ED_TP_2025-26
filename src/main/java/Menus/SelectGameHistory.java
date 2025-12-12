@@ -4,9 +4,9 @@ import Reader.Reader;
 
 public class SelectGameHistory {
 
-    public SelectGameHistory(){
+    public SelectGameHistory() {
         Reader reader = new Reader();
-        // 1. Obter lista
+
         String[] files = Importers.GameHistoryImporter.getHistoryFiles();
 
         for (int i = 0; i < files.length; i++) {
@@ -18,6 +18,4 @@ public class SelectGameHistory {
 
         Importers.GameHistoryImporter.printHistoryFile(selectedFile);
     }
-
-
 }

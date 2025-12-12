@@ -4,10 +4,10 @@ import Exceptions.NotSupportedOperation;
 import Importers.DivisionNames;
 import Interfaces.IDivision;
 import Interfaces.IHallway;
-import Interfaces.IMap;
+import Interfaces.IMaze;
 import Interfaces.IPlayer;
 import NewSctructures.ArrayUnorderedListWithGet;
-import NewSctructures.UnorderedListWithGetADT;
+import Interfaces.UnorderedListWithGetADT;
 import Structures.Exceptions.ElementNotFoundException;
 import Structures.Exceptions.EmptyCollectionException;
 import Structures.Interfaces.ListADT;
@@ -18,15 +18,25 @@ import Structures.Stack.LinkedStack;
 import java.util.Iterator;
 import java.util.Random;
 
-public class Map implements IMap {
+import com.fasterxml.jackson.annotation.*;
+
+@JsonIdentityInfo(generator = ObjectIdGenerators.IntSequenceGenerator.class, property = "@id")
+public class Maze implements IMaze {
     public static final int INCREASE_FACTOR = 2;
+
+    private Random rand = new Random();
+    private String name;
+    private IHallway hallway;
+
     private IHallway[][] adjMatrix;
     private IDivision[] vertices;
     private int count;
-    private Random rand = new Random();
-    private IHallway hallway;
 
-    public Map(int capacity) {
+    public Maze() {
+        this.hallway = new Hallway();
+    }
+
+    public Maze(int capacity) {
         this.vertices = new IDivision[capacity];
         this.adjMatrix = new IHallway[capacity][capacity];
         this.hallway = new Hallway();
@@ -34,7 +44,39 @@ public class Map implements IMap {
 
         generateDivisions(capacity);
         generateConnections(this.hallway);
+        this.name = this.generateName();
+
         defineGoalDivision();
+    }
+
+    private int countConnections() {
+        if (this.adjMatrix == null) {
+            return 0;
+        }
+
+        int connections = 0;
+
+        for (int i = 0; i < this.count; i++) {
+            for (int j = 0; j < this.count; j++) {
+                if (this.adjMatrix[i][j] != null) {
+                    connections++;
+                }
+            }
+        }
+
+        return connections;
+    }
+
+    private String generateName() {
+        return String.format("Mapa [Divisoes: %d | Conexoes: %d]", this.count, this.countConnections());
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setHallwayPlayers(ListADT<IPlayer> players) {
@@ -82,23 +124,14 @@ public class Map implements IMap {
     }
 
     private void generateConnections(IHallway hallway) {
-        // Probabilidade baixa para não encher o mapa de linhas
         double density = 0.2;
-
-        // ALCANCE MÁXIMO DO ATALHO
-        // A sala 0 só poderá ligar no máximo até à 3 ou 4. Nunca à 9.
         int jumpLimit = 3;
 
-        // 1. Criar o caminho principal (Espinha Dorsal)
         for (int i = 0; i < this.count - 1; i++) {
-            // Podes adicionar: hallway.setAttributes(1); // Custo normal
             this.addEdge(i, i + 1, hallway);
         }
 
-        // 2. Criar atalhos CURTOS
         for (int i = 0; i < this.count; i++) {
-            // O segredo está aqui: o limite NÃO é 'this.count'.
-            // É o índice atual + o salto máximo.
             int limit = Math.min(this.count, i + jumpLimit + 1);
 
             for (int j = i + 2; j < limit; j++) {
@@ -157,27 +190,23 @@ public class Map implements IMap {
         int[] distances = new int[this.count];
         boolean[] visited = new boolean[this.count];
 
-        // Inicializar distâncias
         for (int i = 0; i < this.count; i++) {
-            distances[i] = -1; // -1 significa inalcançável
+            distances[i] = -1;
             visited[i] = false;
         }
 
-        // Configurar o início (índice 0)
         LinkedQueue<Integer> queue = new LinkedQueue<>();
         queue.enqueue(0);
         visited[0] = true;
         distances[0] = 0;
 
-        // BFS Loop
         while (!queue.isEmpty()) {
             int current = queue.dequeue();
 
             for (int neighbor = 0; neighbor < this.count; neighbor++) {
-                // Se existe ligação e ainda não foi visitado
                 if (adjMatrix[current][neighbor] != null && !visited[neighbor]) {
                     visited[neighbor] = true;
-                    distances[neighbor] = distances[current] + 1; // A distância é a do anterior + 1
+                    distances[neighbor] = distances[current] + 1;
                     queue.enqueue(neighbor);
                 }
             }
@@ -280,53 +309,7 @@ public class Map implements IMap {
 
     @Override
     public double shortestPathWeight(IDivision startVertex, IDivision targetVertex) {
-        /** int start = getIndex(startVertex);
-         int target = getIndex(targetVertex);
-
-         if (start == -1 || target == -1) {
-         return -1;
-         }
-
-         int n = this.count;
-         double[] dist = new double[n];
-         boolean[] visited = new boolean[n];
-
-         for (int i = 0; i < n; i++) {
-         dist[i] = Double.POSITIVE_INFINITY;
-         }
-         dist[start] = 0.0;
-
-         for (int count = 0; count < n - 1; count++) {
-         int u = -1;
-         double minDist = Double.POSITIVE_INFINITY;
-
-         for (int v = 0; v < n; v++) {
-         if (!visited[v] && dist[v] < minDist) {
-         minDist = dist[v];
-         u = v;
-         }
-         }
-
-         if (u == -1) break;
-         if (u == target) break;
-
-         visited[u] = true;
-
-         for (int v = 0; v < n; v++) {
-         double weight = adjMatrix[u][v];
-
-         if (weight != -1 && !visited[v]) {
-         double newDist = dist[u] + weight;
-
-         if (newDist < dist[v]) {
-         dist[v] = newDist;
-         }
-         }
-         }
-         }
-
-         return dist[target] == Double.POSITIVE_INFINITY ? -1 : dist[target];*/
-        return 0;
+        throw new NotSupportedOperation("Sorry, we didn't have time to make this method");
     }
 
     @Override
@@ -533,6 +516,38 @@ public class Map implements IMap {
     @Override
     public int size() {
         return this.count;
+    }
+
+    public void setVertices(IDivision[] vertices) {
+        this.vertices = vertices;
+    }
+
+    public void setAdjMatrix(IHallway[][] matrix) {
+        this.adjMatrix = matrix;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public IHallway getHallway() {
+        return hallway;
+    }
+
+    public void setHallway(IHallway hallway) {
+        this.hallway = hallway;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public IDivision[] getVertices() {
+        return this.vertices;
+    }
+
+    public IHallway[][] getAdjMatrix() {
+        return this.adjMatrix;
     }
 
     @Override
