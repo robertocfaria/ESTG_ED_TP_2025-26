@@ -1,6 +1,5 @@
 package Interfaces;
 
-import NewSctructures.UnorderedListWithGetADT;
 import Structures.Interfaces.NetworkADT;
 
 public interface IMap extends NetworkADT<IDivision> {

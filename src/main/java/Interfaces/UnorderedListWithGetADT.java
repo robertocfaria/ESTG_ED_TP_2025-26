@@ -1,4 +1,4 @@
-package NewSctructures;
+package Interfaces;
 
 import Structures.Interfaces.UnorderedListADT;
 

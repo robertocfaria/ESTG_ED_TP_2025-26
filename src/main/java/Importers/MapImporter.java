@@ -1,4 +1,4 @@
-package DTOs;
+package Importers;
 
 import Map.Map;
 import com.fasterxml.jackson.databind.DeserializationFeature;

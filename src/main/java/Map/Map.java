@@ -7,7 +7,7 @@ import Interfaces.IHallway;
 import Interfaces.IMap;
 import Interfaces.IPlayer;
 import NewSctructures.ArrayUnorderedListWithGet;
-import NewSctructures.UnorderedListWithGetADT;
+import Interfaces.UnorderedListWithGetADT;
 import Structures.Exceptions.ElementNotFoundException;
 import Structures.Exceptions.EmptyCollectionException;
 import Structures.Interfaces.ListADT;

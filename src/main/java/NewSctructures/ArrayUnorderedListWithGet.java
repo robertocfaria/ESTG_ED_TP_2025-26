@@ -1,5 +1,6 @@
 package NewSctructures;
 
+import Interfaces.UnorderedListWithGetADT;
 import Structures.List.ArrayUnorderedList;
 
 public class ArrayUnorderedListWithGet<T> extends ArrayUnorderedList<T> implements UnorderedListWithGetADT<T> {
