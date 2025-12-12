@@ -12,9 +12,7 @@ public class StunnedPlays implements IEvent {
     @Override
     public void apply(IPlayer player, boolean isRealPlayer) throws InvalidPlayersCountException {
         int stunnedPlays = 1;
-
         player.addStunnedRound(stunnedPlays);
-
-        GameVisuals.showStunnedPlaysEvent(player.getName(), stunnedPlays, isRealPlayer);
+        System.out.println("Um mafarrico atirou-te com um pedra. Ficas-te atordoado! Vais perder jogadas, para descansar.\n");
     }
 }

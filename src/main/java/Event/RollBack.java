@@ -11,9 +11,7 @@ public class RollBack implements IEvent {
     @Override
     public void apply(IPlayer player, boolean isRealPlayer) throws InvalidPlayersCountException {
         IDivision lastPos = player.getLastDivision();
-
         player.setDivision(lastPos);
-
-        GameVisuals.showRollBackEvent(player.getName(), lastPos.getName(), isRealPlayer);
+        System.out.println("Encontras-te um cão bravo. Vais ter de voltar para a casa onde estavas.");
     }
 }

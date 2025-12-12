@@ -60,7 +60,6 @@ public class LeverDivision extends Division {
             }
         }
 
-        // 2. INTERAÇÃO COM JOGADOR
         int leversCount = this.myLevers.length;
         System.out.println("Existem " + leversCount + " alavancas nesta sala.");
 
@@ -72,22 +71,28 @@ public class LeverDivision extends Division {
         if (player.isRealPlayer()) {
             choiceIndex = Reader.readInt(1, leversCount, "Qual alavanca deseja puxar?: ") - 1;
         } else {
-            // Bot escolhe um índice válido do array (0 a length-1)
             choiceIndex = rand.nextInt(leversCount);
             System.out.println("O " + player.getName() + " escolheu a alavanca " + (choiceIndex + 1));
         }
-
         // 3. LÓGICA DE MOVIMENTO
         ILever chosenLever = this.myLevers[choiceIndex];
         IDivision destination = chosenLever.getDivision();
 
+        String resultado;
         if (destination == null) {
-            System.out.println("CLACK!... Nada acontece. Parece que esta alavanca está partida.");
-            System.out.println("Perdeste a vez!");
+            resultado = "ARMADILHA";
+        } else {
+            resultado = "PASSAGEM ABERTA PARA A SALA: " + destination.getName();
+        }
+        String log = "Escolheu Alavanca " + (choiceIndex + 1) + " -> " + resultado;
+        player.addHistoryMove(this, log);
+
+        if (destination == null) {
+            System.out.println(">> CLACK!... Nada acontece. Parece que esta alavanca esta partida.");
             return this;
         } else {
-            System.out.println("RUMBLE!... Uma passagem secreta abre-se!");
-            System.out.println("Estás a caminho de: " + destination.getName());
+            System.out.println(">> RUMBLE!... Uma passagem secreta abre-se!");
+
             return destination;
         }
     }
@@ -98,7 +103,7 @@ public class LeverDivision extends Division {
         sb.append("Esta na sala: ").append(getName()).append("\n");
         sb.append("------------------------------------------------\n");
         sb.append("Para conseguir avancar para a proxima sala tem\n");
-        sb.append("de escolher uma alavanca!\n");
+        sb.append("de escolher uma alavanca!");
 
         return sb.toString();
     }

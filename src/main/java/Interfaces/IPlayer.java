@@ -23,4 +23,10 @@ public interface IPlayer {
     IEvent getLastEvent();
 
     IDivision getLastDivision();
+
+    void addHistoryMove(IDivision division, String log);
+
+    void addHistoryEvent(IEvent event);
+
+    void printFullHistory();
 }

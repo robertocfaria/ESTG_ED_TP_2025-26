@@ -1,6 +1,9 @@
 package CoreGame;
 
+import Event.ExtraPlays;
 import Interfaces.*;
+import Structures.List.ArrayList;
+import Structures.List.ArrayUnorderedList;
 import Structures.Stack.ArrayStack;
 import Util.Utils;
 
@@ -14,8 +17,9 @@ public class Player implements IPlayer {
     protected ArrayStack<IEvent> movementsHistory;
     protected ArrayStack<IDivision> divisionsHistory;
     protected IDivision division;
-    protected int numberDivisonsAvancedRound;
-    protected ArrayStack<String> nameDivisionsAvancedRound;
+    protected ArrayStack<HistoryEntry> fullHistory;
+    protected int totMoves;
+
 
     /**
      * Este construtor cria um jogador Real novo.
@@ -30,6 +34,8 @@ public class Player implements IPlayer {
         this.division = null;
         this.movementsHistory = new ArrayStack<>();
         this.divisionsHistory = new ArrayStack<>();
+        this.fullHistory = new ArrayStack<>();
+        this.totMoves = 0;
     }
 
     /**
@@ -44,6 +50,8 @@ public class Player implements IPlayer {
         this.division = null;
         this.movementsHistory = new ArrayStack<>();
         this.divisionsHistory = new ArrayStack<>();
+        this.fullHistory = new ArrayStack<>();
+        this.totMoves = 0;
     }
 
     @Override
@@ -110,63 +118,124 @@ public class Player implements IPlayer {
         if (getStunned() > 0) {
             System.out.println(">>> Estas atordoado e perdes esta vez! <<<");
             addStunnedRound(getStunned() - 1);
-            Utils.waitEnter();
+            addHistoryMove(this.division, "Perdeu a vez por estar atordoado.");
+            if(isRealPlayer()) {
+                Utils.waitEnter();
+            }
             return;
         }
 
         boolean isTurnActive = true;
         int movesInThisTurn = 0;
+        ArrayUnorderedList<String> divisionNames = new ArrayUnorderedList<>();
 
         while (isTurnActive) {
-            IDivision currentPos = getDivision();
+            if(totMoves > 0) {
+                System.out.println("\n-- Hisorico do jogo/jogada --");
+                System.out.println(">> Desde o inicio do jogo ja passou por: " + totMoves + " casas");
+                System.out.println(">> Esta jogada ja fez " + movesInThisTurn + " movimentos: ");
+                for (String division : divisionNames) {
+                    System.out.print(division.toString() + " -> ");
+                }
+                System.out.println("\n-- Fim do hisorico do jogo/jogada --");
+            }
+            System.out.println();
 
+            IDivision currentPos = getDivision();
             IDivision nextPos = currentPos.getComportament(maze, this);
             if (nextPos != null && !nextPos.equals(currentPos)) {
                 try {
                     IHallway hallway = maze.getEdge(currentPos, nextPos);
-                    IEvent event = hallway.getEvent(this);
-
                     divisionsHistory.push(currentPos);
                     setDivision(nextPos);
-                    movesInThisTurn++;
 
-                    System.out.println(">>> SUCESSO! Avançaste para: " + nextPos.getName());
-
-                    // Aplicar Evento do Corredor
+                    IEvent event = hallway.getEvent(this);
                     if (event != null) {
-                        System.out.println("Encontraste um evento no corredor!");
+                        System.out.println(">>> ATENCAO! -> Pelo caminho:");
                         event.apply(this, isRealPlayer());
 
-                        // globalHistory.push(new HistoryEntry(event));
-                        movementsHistory.push(event); // Se ainda usares a stack antiga
+                        addHistoryEvent(event);
+                        movementsHistory.push(event);
                     }
 
                     if (getStunned() > 0) {
-                        System.out.println("!!! O evento deixou-te ATORDOADO! A tua vez acabou. !!!");
                         isTurnActive = false;
                     }
 
-                    System.out.println("Como acertaste, podes continuar a jogar!");
+                    movesInThisTurn++;
+                    totMoves++;
+                    divisionNames.addToRear(currentPos.getName());
 
+                    System.out.println(">>> SUCESSO! Avancaste para: " + nextPos.getName());
                 } catch (Exception e) {
                     System.out.println("Erro crítico ao mover: " + e.getMessage());
                     isTurnActive = false;
                 }
-            }
-
-            else {
+            } else {
                 System.out.println(">>> FALHASTE O DESAFIO! <<<");
                 if (getExtraRounds() > 0) {
                     System.out.println("MAS ESPERA! Tens " + getExtraRounds() + " Jogada(s) Extra!");
-                    System.out.println("Gastaste uma para tentar novamente.");
+                    System.out.println("(Gastaste uma para tentar novamente!)");
                     setExtraRound(getExtraRounds() - 1);
-                    //Utils.waitEnter();
+                    addHistoryEvent(new ExtraPlays());
+                    if(isRealPlayer()) {
+                        Utils.waitEnter();
+                    }
                 } else {
-                    System.out.println("A tua vez terminou.");
+                    System.out.println("--- Infelizmente, a tua vez terminou. ---");
                     isTurnActive = false;
-                    //Utils.waitEnter();
+                    if(isRealPlayer()) {
+                        Utils.waitEnter();
+                    }
                 }
             }
         }
     }
+
+
+    @Override
+    public void addHistoryMove(IDivision division, String log) {
+        HistoryEntry entry = new HistoryEntry(division, log);
+        this.fullHistory.push(entry);
+    }
+
+    @Override
+    public void addHistoryEvent(IEvent event) {
+        HistoryEntry entry = new HistoryEntry(event);
+        this.fullHistory.push(entry);
+    }
+
+    @Override
+    public void printFullHistory() {
+        System.out.println("\n--- HISTORICO:  " + this.name.toUpperCase() + " ---");
+
+        ArrayStack<HistoryEntry> temp = new ArrayStack<>();
+
+        while (!this.fullHistory.isEmpty()) {
+            try {
+                HistoryEntry entry = this.fullHistory.pop();
+
+                if (entry != null) {
+                    System.out.println(entry.toString());
+                    temp.push(entry);
+                }
+
+
+            } catch (Exception e) {
+                break;
+            }
+        }
+
+        while (!temp.isEmpty()) {
+            try {
+                this.fullHistory.push(temp.pop());
+            } catch (Exception e) {
+                break;
+            }
+        }
+        System.out.println("-----------------------------------");
+    }
+
+
+
 }

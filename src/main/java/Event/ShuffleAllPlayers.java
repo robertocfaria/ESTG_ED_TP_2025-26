@@ -44,6 +44,6 @@ public class ShuffleAllPlayers implements IEvent {
            p2.setDivision(playersDivision[index++]);
         }
 
-        GameVisuals.showShuffleAllPlayersEvent(isRealPlayer);
+        System.out.println("Entras-te numa festa, e todos os jogadores trocaram de salas. O que se passou?");
     }
 }

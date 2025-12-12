@@ -11,7 +11,6 @@ public class ExtraPlays implements IEvent {
     @Override
     public void apply(IPlayer player, boolean isRealPlayer) throws InvalidPlayersCountException {
         player.setExtraRound(EXTRA_PLAYS);
-
-        GameVisuals.showExtraPlaysEvent(player.getName(), EXTRA_PLAYS, isRealPlayer);
+        System.out.println("Encontras-te um homem generoso. Ele deu-te mais " + EXTRA_PLAYS + " jogadas extra!");
     }
 }

@@ -23,6 +23,7 @@ public class GameManager {
         this.finished = false;
     }
 
+    //TODO SAVE GAME HISTORY
     public void startGame(Map maze) {
         this.maze = maze;
         addPlayers();
@@ -36,10 +37,19 @@ public class GameManager {
                 gameRunning = false;
             }
         }
-        System.out.println("Jogo Terminado!");
-        System.out.println("Parabens " + winnerPlayer.getName() + " pela Vitoria");
-        Utils.waitEnter();
 
+        System.out.println("\n++++++++++++++++++++++++++++++++++++++++++++++++++");
+        System.out.println("+++ JOGO TERMINADO - VITORIA DE " + winnerPlayer.getName().toUpperCase());
+        System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++\n");
+        Utils.waitEnter();
+        System.out.println("--- HISTORICO DAS JOGADAS ---");
+        for(IPlayer player : players) {
+            player.printFullHistory();
+        }
+
+        //saveGameHisotory
+        System.out.println("O resumo do jogo foi guardado. Consulte quiser!");
+        System.out.println("\n");
     }
 
     private void turn() {
@@ -47,20 +57,19 @@ public class GameManager {
 
         for (IPlayer currentPlayer : players) {
             GameVisuals.showPlayerTurn(currentPlayer.getName());
-
             currentPlayer.move(maze);
-
-
             if (isWinner(currentPlayer)) {
                 GameVisuals.showVictory(currentPlayer.getName());
                 return;
             }
         }
 
-        System.out.println("Fim da Ronda: " + this.turn);
+        System.out.println("\n>>>> Fim da Ronda: " + this.turn + " <<<<");
         turn++;
     }
 
+
+    //TODO Verficar se tem mais de um jogo
     private void addPlayers() {
         String nameTemp;
 
@@ -81,8 +90,6 @@ public class GameManager {
         if (botPlayers > 0) {
             System.out.println("BOT(s) adicionados com sucesso!");
         }
-
-        //verifica se tem pelo menos 1 jogador
 
 
     }

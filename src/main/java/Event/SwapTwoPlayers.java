@@ -39,7 +39,7 @@ public class SwapTwoPlayers implements IEvent {
             choice = rand.nextInt(playersArray.length - 1);
         } else {
             GameVisuals.showSwapChoiceMenu(playersArray);
-            choice = Reader.readInt(1, playersArray.length - 1, "Escolha por qual jogador quer trocar de posição: ");
+            choice = Reader.readInt(1, playersArray.length - 1, "Uma bruxa quer que troques de posição com outro jogador. Qual?: ");
         }
 
         IPlayer playerToSwap = playersArray[choice - 1];
@@ -50,6 +50,6 @@ public class SwapTwoPlayers implements IEvent {
 
         Utils.waitEnter();
 
-        GameVisuals.showSwapTwoPlayersEvent(player.getName(), playerToSwap.getName(), isRealPlayer);
+        System.out.println("As posicoes foram trocada! " + player.getName() + " <-> " +  playerToSwap.getName() + "\n");
     }
 }
