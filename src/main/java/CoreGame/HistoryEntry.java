@@ -50,7 +50,7 @@ public class HistoryEntry {
 
             // Se houver informação de destino, adicionamos à frente
             if (nextDivisionName != null) {
-                texto += " -> [AVANÇOU PARA: " + nextDivisionName + "]";
+                texto += " -> [AVANCOU PARA: " + nextDivisionName + "]";
             }
             return texto;
         } else {

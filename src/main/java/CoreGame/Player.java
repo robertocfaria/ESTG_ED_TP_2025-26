@@ -165,7 +165,7 @@ public class Player implements IPlayer {
 
                     if (nextPos instanceof Map.GoalDivision) {
                         System.out.println("Chegaste ao destino final!");
-                        //adicionar ito ao historico
+                        addHistoryMove(nextPos, "!!! VITORIA - JOGO TERMINADO !!!");
                         isTurnActive = false;
                     } else if (getStunned() > 0) {
                         System.out.println("!!! O evento deixou-te ATORDOADO! A tua vez acabou. !!!");

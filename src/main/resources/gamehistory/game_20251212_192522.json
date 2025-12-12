@@ -1,0 +1,3014 @@
+{
+  "game_date": "20251212_192522",
+  "players": [
+    {
+      "name": "BOT1",
+      "type": "Bot",
+      "history": [
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Qual e o rio mais extenso que corre exclusivamente em territorio portugues? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Qual e a capital da Polonia? | ACERTOU -> [AVANCOU PARA: Sala da Escuridao Total]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala da Escuridao Total] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Camara de Criogenia -> [AVANCOU PARA: Camara de Criogenia]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Qual e o ponto mais alto de Portugal Continental? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Em que pais se situa a antiga cidade de Machu Picchu? | ACERTOU -> [AVANCOU PARA: Sala da Escuridao Total]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala da Escuridao Total] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala da Escuridao Total] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Camara de Criogenia -> [AVANCOU PARA: Camara de Criogenia]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Qual e o nome da maior floresta tropical do mundo? | ACERTOU -> [AVANCOU PARA: Sala da Escuridao Total]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Qual e o osso mais longo do corpo humano? | ACERTOU -> [AVANCOU PARA: Sala da Escuridao Total]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala da Escuridao Total] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Camara de Criogenia -> [AVANCOU PARA: Camara de Criogenia]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Quem foi o primeiro Presidente da Republica Portuguesa eleito (nao provisorio)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Quem pintou a obra-prima 'Guernica'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Qual destas ilhas nao pertence ao arquipelago dos Acores? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Em que ano Portugal aderiu a Comunidade Economica Europeia (atual UE)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Quem foi o vocalista da banda Queen? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Em que seculo aconteceu a Revolucao Francesa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Em que ano ocorreu a Revolucao dos Cravos em Portugal? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Quem é o baixista dos AskBayns? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Em que cidade foi assinado o tratado que instituiu a Uniao Europeia em 1992? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Onde se localiza a sede das Nacoes Unidas (ONU)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Quantos anéis compoem o simbolo dos Jogos Olimpicos? | ACERTOU -> [AVANCOU PARA: Sala da Escuridao Total]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala da Escuridao Total] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Camara de Criogenia -> [AVANCOU PARA: Camara de Criogenia]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Qual destes arquitetos portugueses venceu o Premio Pritzker em 2011? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Qual e a lingua mais falada no mundo (como lingua nativa)? | ACERTOU -> [AVANCOU PARA: Sala da Escuridao Total]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Qual destes paises nao tem costa maritima? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Qual e a capital da India? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Quem foi a fundadora da Enfermagem moderna? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Qual e o canal que liga o Mar Mediterraneo ao Mar Vermelho? | ACERTOU -> [AVANCOU PARA: Sala da Escuridao Total]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala da Escuridao Total] -> Escolheu Alavanca 3 -> PASSAGEM ABERTA PARA A SALA: Trono de Ossos -> [AVANCOU PARA: Trono de Ossos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Sala das Runas -> [AVANCOU PARA: Sala das Runas]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Qual e o maior oceano do planeta Terra? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Qual e o nome do estreito que separa a Europa da Africa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Qual destes estilos artisticos e caracterizado pelo uso de formas geometricas? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Qual e o planeta do Sistema Solar conhecido pelos seus aneis visiveis? | ACERTOU -> [AVANCOU PARA: Sala do Destino]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 4 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 2 -> PASSAGEM ABERTA PARA A SALA: Sala das Runas -> [AVANCOU PARA: Sala das Runas]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Qual e o maior pais de Africa em extensao territorial? | ACERTOU -> [AVANCOU PARA: Trono de Ossos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Sala das Runas -> [AVANCOU PARA: Sala das Runas]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Quem era o Primeiro-Ministro do Reino Unido aquando da vitoria na Segunda Guerra Mundial? | ACERTOU -> [AVANCOU PARA: Sala do Destino]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 4 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 4 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 4 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Camara de Mutacao -> [AVANCOU PARA: Camara de Mutacao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Escolheu Alavanca 6 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Escolheu Alavanca 6 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Escolheu Alavanca 2 -> PASSAGEM ABERTA PARA A SALA: Sala das Ilusoes -> [AVANCOU PARA: Sala das Ilusoes]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala das Ilusoes] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Camara de Mutacao -> [AVANCOU PARA: Camara de Mutacao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ShuffleAllPlayers"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Escolheu Alavanca 5 -> PASSAGEM ABERTA PARA A SALA: Sala do Destino -> [AVANCOU PARA: Sala do Destino]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Camara de Mutacao -> [AVANCOU PARA: Camara de Mutacao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Escolheu Alavanca 2 -> PASSAGEM ABERTA PARA A SALA: Sala das Ilusoes -> [AVANCOU PARA: Sala das Ilusoes]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala das Ilusoes] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala das Ilusoes] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Labirinto de Espinhos -> [AVANCOU PARA: Labirinto de Espinhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Sala das Ilusoes -> [AVANCOU PARA: Sala das Ilusoes]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala das Ilusoes] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala das Ilusoes] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Labirinto de Espinhos -> [AVANCOU PARA: Labirinto de Espinhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Sala das Ilusoes] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala das Ilusoes] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Camara de Mutacao -> [AVANCOU PARA: Camara de Mutacao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Escolheu Alavanca 5 -> PASSAGEM ABERTA PARA A SALA: Sala do Destino -> [AVANCOU PARA: Sala do Destino]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 4 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 4 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Camara de Mutacao -> [AVANCOU PARA: Camara de Mutacao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Santuario do Tempo -> [AVANCOU PARA: Santuario do Tempo]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Escolheu Alavanca 6 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Escolheu Alavanca 2 -> PASSAGEM ABERTA PARA A SALA: Sala das Ilusoes -> [AVANCOU PARA: Sala das Ilusoes]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Escolheu Alavanca 6 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Santuario do Tempo -> [AVANCOU PARA: Santuario do Tempo]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Labirinto de Espinhos -> [AVANCOU PARA: Labirinto de Espinhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Escolheu Alavanca 1 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Escolheu Alavanca 1 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Sala das Ilusoes -> [AVANCOU PARA: Sala das Ilusoes]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Sala das Ilusoes] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Labirinto de Espinhos -> [AVANCOU PARA: Labirinto de Espinhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ShuffleAllPlayers"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Escolheu Alavanca 3 -> PASSAGEM ABERTA PARA A SALA: Dormitorio dos Espectros -> [AVANCOU PARA: Dormitorio dos Espectros]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Escolheu Alavanca 5 -> PASSAGEM ABERTA PARA A SALA: Ruinas Ancestrais -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 6 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Fabrica de Pesadelos -> [AVANCOU PARA: Fabrica de Pesadelos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Em que ano caiu o Muro de Berlim? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: A Peninsula da Crimeia e um territorio disputado entre que paises? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Em que desporto se utiliza o termo 'Checkmate'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual selecao venceu o primeiro Campeonato do Mundo de Futebol em 1930? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Quem pintou o famoso teto da Capela Sistina? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e o metal liquido a temperatura ambiente? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Que elemento quimico tem o simbolo 'Fe'? | ACERTOU -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 10 -> PASSAGEM ABERTA PARA A SALA: Dormitorio dos Espectros -> [AVANCOU PARA: Dormitorio dos Espectros]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Escolheu Alavanca 3 -> PASSAGEM ABERTA PARA A SALA: Santuario do Tempo -> [AVANCOU PARA: Santuario do Tempo]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 3 -> PASSAGEM ABERTA PARA A SALA: Camara de Mutacao -> [AVANCOU PARA: Camara de Mutacao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Escolheu Alavanca 2 -> PASSAGEM ABERTA PARA A SALA: Sala das Ilusoes -> [AVANCOU PARA: Sala das Ilusoes]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala das Ilusoes] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala das Ilusoes] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Camara de Mutacao -> [AVANCOU PARA: Camara de Mutacao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Escolheu Alavanca 5 -> PASSAGEM ABERTA PARA A SALA: Sala do Destino -> [AVANCOU PARA: Sala do Destino]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Escolheu Alavanca 2 -> PASSAGEM ABERTA PARA A SALA: Sala das Ilusoes -> [AVANCOU PARA: Sala das Ilusoes]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala das Ilusoes] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala das Ilusoes] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala das Ilusoes] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala das Ilusoes] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala das Ilusoes] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala das Ilusoes] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala das Ilusoes] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Labirinto de Espinhos -> [AVANCOU PARA: Labirinto de Espinhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ShuffleAllPlayers"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Escolheu Alavanca 3 -> PASSAGEM ABERTA PARA A SALA: Dormitorio dos Espectros -> [AVANCOU PARA: Dormitorio dos Espectros]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Escolheu Alavanca 5 -> PASSAGEM ABERTA PARA A SALA: Ruinas Ancestrais -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 5 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 5 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Covil da Besta -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Ruinas Ancestrais -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Fabrica de Pesadelos -> [AVANCOU PARA: Fabrica de Pesadelos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 10 -> PASSAGEM ABERTA PARA A SALA: Dormitorio dos Espectros -> [AVANCOU PARA: Dormitorio dos Espectros]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 9 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 7 -> PASSAGEM ABERTA PARA A SALA: Santuario do Tempo -> [AVANCOU PARA: Santuario do Tempo]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 4 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Labirinto de Espinhos -> [AVANCOU PARA: Labirinto de Espinhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Escolheu Alavanca 3 -> PASSAGEM ABERTA PARA A SALA: Dormitorio dos Espectros -> [AVANCOU PARA: Dormitorio dos Espectros]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Escolheu Alavanca 6 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Escolheu Alavanca 1 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Escolheu Alavanca 1 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Escolheu Alavanca 3 -> PASSAGEM ABERTA PARA A SALA: Santuario do Tempo -> [AVANCOU PARA: Santuario do Tempo]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 5 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 7 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 8 -> PASSAGEM ABERTA PARA A SALA: Ruinas Ancestrais -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Covil da Besta -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Ruinas Ancestrais -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 5 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Fabrica de Pesadelos -> [AVANCOU PARA: Fabrica de Pesadelos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Quem e o autor da famosa pintura 'A Noite Estrelada'? | ACERTOU -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e o mineral mais duro conhecido na natureza? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Em que cidade se realizaram os Jogos Olimpicos de 1992? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Em que cidade se encontra o Museu do Louvre? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e o orgao responsavel pela producao de insulina no corpo humano? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Quem formulou a Teoria da Relatividade Geral? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual destes paises nao faz parte da NATO (OTAN)? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Ruinas Ancestrais -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 10 -> PASSAGEM ABERTA PARA A SALA: Dormitorio dos Espectros -> [AVANCOU PARA: Dormitorio dos Espectros]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Escolheu Alavanca 3 -> PASSAGEM ABERTA PARA A SALA: Santuario do Tempo -> [AVANCOU PARA: Santuario do Tempo]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Escolheu Alavanca 3 -> PASSAGEM ABERTA PARA A SALA: Santuario do Tempo -> [AVANCOU PARA: Santuario do Tempo]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 8 -> PASSAGEM ABERTA PARA A SALA: Ruinas Ancestrais -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 10 -> PASSAGEM ABERTA PARA A SALA: Dormitorio dos Espectros -> [AVANCOU PARA: Dormitorio dos Espectros]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Escolheu Alavanca 6 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Escolheu Alavanca 1 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Escolheu Alavanca 3 -> PASSAGEM ABERTA PARA A SALA: Santuario do Tempo -> [AVANCOU PARA: Santuario do Tempo]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 8 -> PASSAGEM ABERTA PARA A SALA: Ruinas Ancestrais -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 7 -> PASSAGEM ABERTA PARA A SALA: Santuario do Tempo -> [AVANCOU PARA: Santuario do Tempo]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 6 -> PASSAGEM ABERTA PARA A SALA: Dormitorio dos Espectros -> [AVANCOU PARA: Dormitorio dos Espectros]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Escolheu Alavanca 5 -> PASSAGEM ABERTA PARA A SALA: Ruinas Ancestrais -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Fabrica de Pesadelos -> [AVANCOU PARA: Fabrica de Pesadelos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e a montanha mais alta do mundo (acima do nivel do mar)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual destas operas foi composta por Wolfgang Amadeus Mozart? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e a capital da Turquia? | ACERTOU -> [AVANCOU PARA: Santuario da Vida]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Em que ano ocorreu o desastre nuclear de Chernobyl? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e o nome da moeda oficial do Japao? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e o nome da agencia espacial norte-americana? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Ruinas Ancestrais -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 6 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 9 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 5 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 7 -> PASSAGEM ABERTA PARA A SALA: Santuario do Tempo -> [AVANCOU PARA: Santuario do Tempo]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 8 -> PASSAGEM ABERTA PARA A SALA: Ruinas Ancestrais -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Fabrica de Pesadelos -> [AVANCOU PARA: Fabrica de Pesadelos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ShuffleAllPlayers"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Quem foi o lider da Africa do Sul que lutou contra o Apartheid e foi Premio Nobel da Paz? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e o gas responsavel pela maior parte do Efeito de Estufa? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 5 -> PASSAGEM ABERTA PARA A SALA: Silo de Misseis -> [AVANCOU PARA: Silo de Misseis]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 5 -> PASSAGEM ABERTA PARA A SALA: Silo de Misseis -> [AVANCOU PARA: Silo de Misseis]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Ruinas Ancestrais -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Fabrica de Pesadelos -> [AVANCOU PARA: Fabrica de Pesadelos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 7 -> PASSAGEM ABERTA PARA A SALA: Santuario do Tempo -> [AVANCOU PARA: Santuario do Tempo]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Labirinto de Espinhos -> [AVANCOU PARA: Labirinto de Espinhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Escolheu Alavanca 3 -> PASSAGEM ABERTA PARA A SALA: Dormitorio dos Espectros -> [AVANCOU PARA: Dormitorio dos Espectros]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Sala das Ilusoes -> [AVANCOU PARA: Sala das Ilusoes]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala das Ilusoes] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala das Ilusoes] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Labirinto de Espinhos -> [AVANCOU PARA: Labirinto de Espinhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Escolheu Alavanca 5 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Escolheu Alavanca 1 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Sala das Ilusoes -> [AVANCOU PARA: Sala das Ilusoes]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Sala das Ilusoes] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Labirinto de Espinhos -> [AVANCOU PARA: Labirinto de Espinhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Escolheu Alavanca 1 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Escolheu Alavanca 6 -> PASSAGEM ABERTA PARA A SALA: Santuario do Tempo -> [AVANCOU PARA: Santuario do Tempo]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 5 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 8 -> PASSAGEM ABERTA PARA A SALA: Ruinas Ancestrais -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 9 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 9 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Covil da Besta -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 4 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 4 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 5 -> PASSAGEM ABERTA PARA A SALA: Silo de Misseis -> [AVANCOU PARA: Silo de Misseis]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 6 -> PASSAGEM ABERTA PARA A SALA: Fabrica de Pesadelos -> [AVANCOU PARA: Fabrica de Pesadelos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ShuffleAllPlayers"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Quem descobriu a Penicilina? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Onde se realizou a Expo 98? | ACERTOU -> [AVANCOU PARA: Santuario da Vida]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Em que ano o Homem pisou a Lua pela primeira vez? | ACERTOU -> [AVANCOU PARA: Fabrica de Pesadelos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e a capital da Australia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Em que ano começou a Primeira Guerra Mundial? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e a velocidade aproximada da luz no vacuo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e a unidade de medida de resistencia eletrica? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e a principal funcao das globulos vermelhos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Quem foi a primeira mulher a exercer o cargo de Primeiro-Ministro em Portugal? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 6 -> PASSAGEM ABERTA PARA A SALA: Fabrica de Pesadelos -> [AVANCOU PARA: Fabrica de Pesadelos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Quem escreveu a obra 'Cem Anos de Solidao'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e a capital do Brasil? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Em que ano foi inaugurada a Ponte Vasco da Gama em Lisboa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e a camada mais externa da atmosfera terrestre? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e o nome do estuario onde desagua o Rio Tejo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Quantos jogadores de campo (excluindo suplentes) tem uma equipa de Andebol? | ACERTOU -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 5 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Fabrica de Pesadelos -> [AVANCOU PARA: Fabrica de Pesadelos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e o maior animal vivo do planeta? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e o pais mais pequeno do mundo em area? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Quem foi o ultimo rei da monarquia portuguesa? | ACERTOU -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 9 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 10 -> PASSAGEM ABERTA PARA A SALA: Dormitorio dos Espectros -> [AVANCOU PARA: Dormitorio dos Espectros]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Labirinto de Espinhos -> [AVANCOU PARA: Labirinto de Espinhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Escolheu Alavanca 5 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Escolheu Alavanca 1 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Escolheu Alavanca 6 -> PASSAGEM ABERTA PARA A SALA: Santuario do Tempo -> [AVANCOU PARA: Santuario do Tempo]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 3 -> PASSAGEM ABERTA PARA A SALA: Camara de Mutacao -> [AVANCOU PARA: Camara de Mutacao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Escolheu Alavanca 5 -> PASSAGEM ABERTA PARA A SALA: Sala do Destino -> [AVANCOU PARA: Sala do Destino]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 2 -> PASSAGEM ABERTA PARA A SALA: Sala das Runas -> [AVANCOU PARA: Sala das Runas]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Qual e o elemento quimico mais abundante no Universo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Quem foi o navegador portugues responsavel pela descoberta do caminho maritimo para a India? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Qual e a distancia oficial de uma maratona? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Qual e a capital do Canada? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Quem escreveu o classico distopico '1984'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Quem e o autor da epopeia 'Os Lusiadas'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Em Ciclismo, qual e a cor da camisola do lider da Volta a Franca? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Quem foi o primeiro Rei de Portugal? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Quem escreveu o romance 'O Ano da Morte de Ricardo Reis'? | ACERTOU -> [AVANCOU PARA: Trono de Ossos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Escolheu Alavanca 1 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Sala das Runas -> [AVANCOU PARA: Sala das Runas]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Em que cidade portuguesa se localiza a Torre dos Clerigos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Quantas sinfonias completas compos Ludwig van Beethoven? | ACERTOU -> [AVANCOU PARA: Sala do Destino]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ShuffleAllPlayers"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Camara de Mutacao -> [AVANCOU PARA: Camara de Mutacao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Santuario do Tempo -> [AVANCOU PARA: Santuario do Tempo]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 6 -> PASSAGEM ABERTA PARA A SALA: Dormitorio dos Espectros -> [AVANCOU PARA: Dormitorio dos Espectros]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Escolheu Alavanca 6 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Labirinto de Espinhos -> [AVANCOU PARA: Labirinto de Espinhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Sala das Ilusoes -> [AVANCOU PARA: Sala das Ilusoes]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala das Ilusoes] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala das Ilusoes] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Labirinto de Espinhos -> [AVANCOU PARA: Labirinto de Espinhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Sala das Ilusoes -> [AVANCOU PARA: Sala das Ilusoes]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala das Ilusoes] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Camara de Mutacao -> [AVANCOU PARA: Camara de Mutacao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Escolheu Alavanca 5 -> PASSAGEM ABERTA PARA A SALA: Sala do Destino -> [AVANCOU PARA: Sala do Destino]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 2 -> PASSAGEM ABERTA PARA A SALA: Sala das Runas -> [AVANCOU PARA: Sala das Runas]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Quem escreveu a 'Divina Comedia'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Qual e a capital da India? | ACERTOU -> [AVANCOU PARA: Sala do Destino]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 4 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Camara de Mutacao -> [AVANCOU PARA: Camara de Mutacao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 4 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 2 -> PASSAGEM ABERTA PARA A SALA: Sala das Runas -> [AVANCOU PARA: Sala das Runas]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Em que ano começou a Primeira Guerra Mundial? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Onde se realizou a Expo 98? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Qual e o nome da agencia espacial norte-americana? | ACERTOU -> [AVANCOU PARA: Trono de Ossos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Sala das Runas -> [AVANCOU PARA: Sala das Runas]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Sala das Runas -> [AVANCOU PARA: Sala das Runas]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Qual e o nome do estuario onde desagua o Rio Tejo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Qual e a distancia oficial de uma maratona? | ACERTOU -> [AVANCOU PARA: Sala do Destino]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Camara de Mutacao -> [AVANCOU PARA: Camara de Mutacao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Escolheu Alavanca 5 -> PASSAGEM ABERTA PARA A SALA: Sala do Destino -> [AVANCOU PARA: Sala do Destino]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 2 -> PASSAGEM ABERTA PARA A SALA: Sala das Runas -> [AVANCOU PARA: Sala das Runas]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Quem foi a primeira mulher a exercer o cargo de Primeiro-Ministro em Portugal? | ACERTOU -> [AVANCOU PARA: Trono de Ossos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Escolheu Alavanca 1 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Escolheu Alavanca 2 -> PASSAGEM ABERTA PARA A SALA: Sala da Escuridao Total -> [AVANCOU PARA: Sala da Escuridao Total]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala da Escuridao Total] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Camara de Criogenia -> [AVANCOU PARA: Camara de Criogenia]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Sala da Escuridao Total] -> Escolheu Alavanca 4 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala da Escuridao Total] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala da Escuridao Total] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala da Escuridao Total] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Camara de Criogenia -> [AVANCOU PARA: Camara de Criogenia]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Qual e a camada mais externa da atmosfera terrestre? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Qual e o maior pais de Africa em extensao territorial? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Quem é o baixista dos AskBayns? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Em que ano foi inaugurada a Ponte Vasco da Gama em Lisboa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Quem e o autor da epopeia 'Os Lusiadas'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Quem pintou o famoso teto da Capela Sistina? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Quem e o autor da famosa pintura 'A Noite Estrelada'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Quem escreveu a obra 'Cem Anos de Solidao'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Em que ano Portugal aderiu a Comunidade Economica Europeia (atual UE)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Em que ano caiu o Muro de Berlim? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Quem era o Primeiro-Ministro do Reino Unido aquando da vitoria na Segunda Guerra Mundial? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Quantos anéis compoem o simbolo dos Jogos Olimpicos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Em que ano o Homem pisou a Lua pela primeira vez? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Quem formulou a Teoria da Relatividade Geral? | ACERTOU -> [AVANCOU PARA: Sala da Escuridao Total]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: A Peninsula da Crimeia e um territorio disputado entre que paises? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Qual e a capital do Canada? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Qual e a unidade de medida de resistencia eletrica? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Qual destes estilos artisticos e caracterizado pelo uso de formas geometricas? | ACERTOU -> [AVANCOU PARA: Sala da Escuridao Total]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala da Escuridao Total] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala da Escuridao Total] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala da Escuridao Total] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala da Escuridao Total] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala da Escuridao Total] -> Escolheu Alavanca 3 -> PASSAGEM ABERTA PARA A SALA: Trono de Ossos -> [AVANCOU PARA: Trono de Ossos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Escolheu Alavanca 1 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Sala das Runas -> [AVANCOU PARA: Sala das Runas]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Escolheu Alavanca 1 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Escolheu Alavanca 1 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Sala das Runas -> [AVANCOU PARA: Sala das Runas]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Sala das Runas -> [AVANCOU PARA: Sala das Runas]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ShuffleAllPlayers"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Em que cidade se realizaram os Jogos Olimpicos de 1992? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Qual e o pais mais pequeno do mundo em area? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Quem foi o lider da Africa do Sul que lutou contra o Apartheid e foi Premio Nobel da Paz? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Quem descobriu a Penicilina? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Qual e o maior oceano do planeta Terra? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Qual destas operas foi composta por Wolfgang Amadeus Mozart? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Quem foi o ultimo rei da monarquia portuguesa? | ACERTOU -> [AVANCOU PARA: Sala do Destino]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 4 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 2 -> PASSAGEM ABERTA PARA A SALA: Sala das Runas -> [AVANCOU PARA: Sala das Runas]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 2 -> PASSAGEM ABERTA PARA A SALA: Sala das Runas -> [AVANCOU PARA: Sala das Runas]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Qual e o ponto mais alto de Portugal Continental? | ACERTOU -> [AVANCOU PARA: Trono de Ossos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Escolheu Alavanca 2 -> PASSAGEM ABERTA PARA A SALA: Sala da Escuridao Total -> [AVANCOU PARA: Sala da Escuridao Total]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala da Escuridao Total] -> Escolheu Alavanca 4 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala da Escuridao Total] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala da Escuridao Total] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Camara de Criogenia -> [AVANCOU PARA: Camara de Criogenia]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Qual e o rio mais extenso que corre exclusivamente em territorio portugues? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Qual destas ilhas nao pertence ao arquipelago dos Acores? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Quem foi o primeiro Presidente da Republica Portuguesa eleito (nao provisorio)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Qual e a lingua mais falada no mundo (como lingua nativa)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Qual e o canal que liga o Mar Mediterraneo ao Mar Vermelho? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Onde se localiza a sede das Nacoes Unidas (ONU)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Qual e a velocidade aproximada da luz no vacuo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Qual e a montanha mais alta do mundo (acima do nivel do mar)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Em Ciclismo, qual e a cor da camisola do lider da Volta a Franca? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Qual e o nome do estreito que separa a Europa da Africa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Qual selecao venceu o primeiro Campeonato do Mundo de Futebol em 1930? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Criogenia] -> Perg: Qual e o osso mais longo do corpo humano? | ACERTOU -> [AVANCOU PARA: Sala da Escuridao Total]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ShuffleAllPlayers"
+        },
+        {
+          "event_log": "[SALA: Sala da Escuridao Total] -> Escolheu Alavanca 3 -> PASSAGEM ABERTA PARA A SALA: Trono de Ossos -> [AVANCOU PARA: Trono de Ossos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Escolheu Alavanca 1 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Trono de Ossos] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Sala das Runas -> [AVANCOU PARA: Sala das Runas]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Sala das Runas] -> Perg: Em que cidade portuguesa se localiza a Torre dos Clerigos? | ACERTOU -> [AVANCOU PARA: Sala do Destino]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 4 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 4 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Sala do Destino] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Camara de Mutacao -> [AVANCOU PARA: Camara de Mutacao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Escolheu Alavanca 6 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Santuario do Tempo -> [AVANCOU PARA: Santuario do Tempo]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 7 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 4 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 4 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 5 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Labirinto de Espinhos -> [AVANCOU PARA: Labirinto de Espinhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 7 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 8 -> PASSAGEM ABERTA PARA A SALA: Ruinas Ancestrais -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 7 -> PASSAGEM ABERTA PARA A SALA: Santuario do Tempo -> [AVANCOU PARA: Santuario do Tempo]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 8 -> PASSAGEM ABERTA PARA A SALA: Santuario da Vida -> [AVANCOU PARA: Santuario da Vida]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual e o mineral mais duro conhecido na natureza? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual e o metal liquido a temperatura ambiente? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual e o planeta do Sistema Solar conhecido pelos seus aneis visiveis? | ACERTOU -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 8 -> PASSAGEM ABERTA PARA A SALA: Santuario da Vida -> [AVANCOU PARA: Santuario da Vida]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Quem pintou a obra-prima 'Guernica'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual destes paises nao faz parte da NATO (OTAN)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Em que cidade foi assinado o tratado que instituiu a Uniao Europeia em 1992? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Em que seculo aconteceu a Revolucao Francesa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Em que pais se situa a antiga cidade de Machu Picchu? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual e a principal funcao das globulos vermelhos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual e o nome da maior floresta tropical do mundo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Em que cidade se encontra o Museu do Louvre? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Em que ano ocorreu a Revolucao dos Cravos em Portugal? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual e a capital do Brasil? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Quem escreveu o classico distopico '1984'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual destes arquitetos portugueses venceu o Premio Pritzker em 2011? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Quantos jogadores de campo (excluindo suplentes) tem uma equipa de Andebol? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual destes paises nao tem costa maritima? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Quem escreveu a 'Divina Comedia'? | ACERTOU -> [AVANCOU PARA: Fabrica de Pesadelos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Quem foi o vocalista da banda Queen? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Ruinas Ancestrais -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 6 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 5 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 8 -> PASSAGEM ABERTA PARA A SALA: Santuario da Vida -> [AVANCOU PARA: Santuario da Vida]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual e a capital da Australia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual e a capital da Turquia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Em que ano ocorreu o desastre nuclear de Chernobyl? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual e o gas responsavel pela maior parte do Efeito de Estufa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Quem foi a fundadora da Enfermagem moderna? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual e o nome da moeda oficial do Japao? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual e a capital da Polonia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual e o elemento quimico mais abundante no Universo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Em que desporto se utiliza o termo 'Checkmate'? | ACERTOU -> [AVANCOU PARA: Fabrica de Pesadelos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e o maior animal vivo do planeta? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Que elemento quimico tem o simbolo 'Fe'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Quantas sinfonias completas compos Ludwig van Beethoven? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Quem foi o navegador portugues responsavel pela descoberta do caminho maritimo para a India? | ACERTOU -> [AVANCOU PARA: Santuario da Vida]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Quem foi o primeiro Rei de Portugal? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Quem escreveu o romance 'O Ano da Morte de Ricardo Reis'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual e o orgao responsavel pela producao de insulina no corpo humano? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual e o mineral mais duro conhecido na natureza? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual e o osso mais longo do corpo humano? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Quem foi o navegador portugues responsavel pela descoberta do caminho maritimo para a India? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Quantas sinfonias completas compos Ludwig van Beethoven? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Quem escreveu o romance 'O Ano da Morte de Ricardo Reis'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Em que ano ocorreu o desastre nuclear de Chernobyl? | ACERTOU -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Covil da Besta -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 6 -> PASSAGEM ABERTA PARA A SALA: Fabrica de Pesadelos -> [AVANCOU PARA: Fabrica de Pesadelos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e o nome do estreito que separa a Europa da Africa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e a lingua mais falada no mundo (como lingua nativa)? | ACERTOU -> [AVANCOU PARA: Santuario da Vida]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Quem foi a primeira mulher a exercer o cargo de Primeiro-Ministro em Portugal? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Em que desporto se utiliza o termo 'Checkmate'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Quem escreveu a 'Divina Comedia'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual e o pais mais pequeno do mundo em area? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual e o maior animal vivo do planeta? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual e a capital da India? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Quem pintou o famoso teto da Capela Sistina? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual e o canal que liga o Mar Mediterraneo ao Mar Vermelho? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Onde se realizou a Expo 98? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Quem era o Primeiro-Ministro do Reino Unido aquando da vitoria na Segunda Guerra Mundial? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Em que cidade se encontra o Museu do Louvre? | ACERTOU -> [AVANCOU PARA: Fabrica de Pesadelos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Em que ano caiu o Muro de Berlim? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Quem foi o lider da Africa do Sul que lutou contra o Apartheid e foi Premio Nobel da Paz? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e a capital do Brasil? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Em que ano começou a Primeira Guerra Mundial? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e o ponto mais alto de Portugal Continental? | ACERTOU -> [AVANCOU PARA: Santuario da Vida]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual e o nome do estuario onde desagua o Rio Tejo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual destas ilhas nao pertence ao arquipelago dos Acores? | ACERTOU -> [AVANCOU PARA: Fabrica de Pesadelos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e a capital do Canada? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Onde se localiza a sede das Nacoes Unidas (ONU)? | ACERTOU -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 5 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 5 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 9 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Covil da Besta -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Ruinas Ancestrais -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 10 -> PASSAGEM ABERTA PARA A SALA: Dormitorio dos Espectros -> [AVANCOU PARA: Dormitorio dos Espectros]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ShuffleAllPlayers"
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Escolheu Alavanca 3 -> PASSAGEM ABERTA PARA A SALA: Santuario do Tempo -> [AVANCOU PARA: Santuario do Tempo]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 7 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 7 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 6 -> PASSAGEM ABERTA PARA A SALA: Dormitorio dos Espectros -> [AVANCOU PARA: Dormitorio dos Espectros]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Escolheu Alavanca 6 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Dormitorio dos Espectros] -> Escolheu Alavanca 3 -> PASSAGEM ABERTA PARA A SALA: Santuario do Tempo -> [AVANCOU PARA: Santuario do Tempo]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 3 -> PASSAGEM ABERTA PARA A SALA: Camara de Mutacao -> [AVANCOU PARA: Camara de Mutacao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Santuario do Tempo -> [AVANCOU PARA: Santuario do Tempo]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 7 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 5 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 7 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 3 -> PASSAGEM ABERTA PARA A SALA: Camara de Mutacao -> [AVANCOU PARA: Camara de Mutacao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Labirinto de Espinhos -> [AVANCOU PARA: Labirinto de Espinhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Labirinto de Espinhos -> [AVANCOU PARA: Labirinto de Espinhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Escolheu Alavanca 5 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Labirinto de Espinhos] -> Escolheu Alavanca 6 -> PASSAGEM ABERTA PARA A SALA: Santuario do Tempo -> [AVANCOU PARA: Santuario do Tempo]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 4 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Santuario do Tempo] -> Escolheu Alavanca 8 -> PASSAGEM ABERTA PARA A SALA: Ruinas Ancestrais -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 6 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Covil da Besta -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 5 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 5 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 8 -> PASSAGEM ABERTA PARA A SALA: Santuario da Vida -> [AVANCOU PARA: Santuario da Vida]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Quem escreveu o classico distopico '1984'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual e o rio mais extenso que corre exclusivamente em territorio portugues? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Quem e o autor da epopeia 'Os Lusiadas'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual e o maior oceano do planeta Terra? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual e o nome da moeda oficial do Japao? | ACERTOU -> [AVANCOU PARA: Fabrica de Pesadelos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Quem escreveu a obra 'Cem Anos de Solidao'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Que elemento quimico tem o simbolo 'Fe'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e a velocidade aproximada da luz no vacuo? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ShuffleAllPlayers"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 4 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Ruinas Ancestrais -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Fabrica de Pesadelos -> [AVANCOU PARA: Fabrica de Pesadelos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual destas operas foi composta por Wolfgang Amadeus Mozart? | ACERTOU -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 9 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Fabrica de Pesadelos -> [AVANCOU PARA: Fabrica de Pesadelos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e a capital da Australia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Em que pais se situa a antiga cidade de Machu Picchu? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Em Ciclismo, qual e a cor da camisola do lider da Volta a Franca? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e o gas responsavel pela maior parte do Efeito de Estufa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual e a capital da Polonia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Qual destes arquitetos portugueses venceu o Premio Pritzker em 2011? | ACERTOU -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 5 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 6 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 9 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 8 -> PASSAGEM ABERTA PARA A SALA: Santuario da Vida -> [AVANCOU PARA: Santuario da Vida]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Quem foi o ultimo rei da monarquia portuguesa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Quantos jogadores de campo (excluindo suplentes) tem uma equipa de Andebol? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Quem foi o primeiro Rei de Portugal? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Em que cidade portuguesa se localiza a Torre dos Clerigos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Santuario da Vida] -> Perg: Qual e o orgao responsavel pela producao de insulina no corpo humano? | ACERTOU -> [AVANCOU PARA: Ruinas Ancestrais]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Ruinas Ancestrais] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Fabrica de Pesadelos -> [AVANCOU PARA: Fabrica de Pesadelos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ShuffleAllPlayers"
+        },
+        {
+          "event_log": "[SALA: Fabrica de Pesadelos] -> Perg: Em que ano o Homem pisou a Lua pela primeira vez? | ACERTOU -> [AVANCOU PARA: Covil da Besta]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Covil da Besta] -> Escolheu Alavanca 5 -> PASSAGEM ABERTA PARA A SALA: Silo de Misseis -> [AVANCOU PARA: Silo de Misseis]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Silo de Misseis] -> Escolheu Alavanca 2 -> PASSAGEM ABERTA PARA A SALA: Galeria dos Espelhos -> [AVANCOU PARA: Galeria dos Espelhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Silo de Misseis] -> Escolheu Alavanca 4 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Silo de Misseis] -> Escolheu Alavanca 2 -> PASSAGEM ABERTA PARA A SALA: Galeria dos Espelhos -> [AVANCOU PARA: Galeria dos Espelhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: A Peninsula da Crimeia e um territorio disputado entre que paises? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Em que cidade se realizaram os Jogos Olimpicos de 1992? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e a unidade de medida de resistencia eletrica? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem foi o primeiro Presidente da Republica Portuguesa eleito (nao provisorio)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem descobriu a Penicilina? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem foi o vocalista da banda Queen? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Em que cidade foi assinado o tratado que instituiu a Uniao Europeia em 1992? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem e o autor da famosa pintura 'A Noite Estrelada'? | ACERTOU -> [AVANCOU PARA: Arsenal Esquecido]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Qual selecao venceu o primeiro Campeonato do Mundo de Futebol em 1930? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Qual destes estilos artisticos e caracterizado pelo uso de formas geometricas? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Em que seculo aconteceu a Revolucao Francesa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Qual e a camada mais externa da atmosfera terrestre? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Em que ano Portugal aderiu a Comunidade Economica Europeia (atual UE)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Em que ano foi inaugurada a Ponte Vasco da Gama em Lisboa? | ACERTOU -> [AVANCOU PARA: Camara do Tesouro]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Camara do Tesouro] -> Perg: Quem pintou a obra-prima 'Guernica'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Tesouro] -> Perg: Quem foi a fundadora da Enfermagem moderna? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Tesouro] -> Perg: Qual e o maior pais de Africa em extensao territorial? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Tesouro] -> Perg: Quem é o baixista dos AskBayns? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Tesouro] -> Perg: Qual e o metal liquido a temperatura ambiente? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Tesouro] -> Perg: Qual e a principal funcao das globulos vermelhos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Tesouro] -> Perg: Quantos anéis compoem o simbolo dos Jogos Olimpicos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Tesouro] -> Perg: Qual e o nome da agencia espacial norte-americana? | ACERTOU -> [AVANCOU PARA: Arsenal Esquecido]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Quem formulou a Teoria da Relatividade Geral? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Em que ano ocorreu a Revolucao dos Cravos em Portugal? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Qual e o nome da maior floresta tropical do mundo? | ACERTOU -> [AVANCOU PARA: Sala de Jantar Fantasma]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Qual e o planeta do Sistema Solar conhecido pelos seus aneis visiveis? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Qual e a montanha mais alta do mundo (acima do nivel do mar)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Qual destes paises nao tem costa maritima? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Qual e a distancia oficial de uma maratona? | ACERTOU -> [AVANCOU PARA: Arsenal Esquecido]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Qual destes paises nao faz parte da NATO (OTAN)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Qual e o elemento quimico mais abundante no Universo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Qual e a capital da Turquia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Em que cidade se encontra o Museu do Louvre? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Quem foi a primeira mulher a exercer o cargo de Primeiro-Ministro em Portugal? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Que elemento quimico tem o simbolo 'Fe'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Em que desporto se utiliza o termo 'Checkmate'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Quem pintou o famoso teto da Capela Sistina? | ACERTOU -> [AVANCOU PARA: Jardim dos Sussurros]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Escolheu Alavanca 6 -> PASSAGEM ABERTA PARA A SALA: Galeria dos Espelhos -> [AVANCOU PARA: Galeria dos Espelhos]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem foi o vocalista da banda Queen? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e o planeta do Sistema Solar conhecido pelos seus aneis visiveis? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Quem e o autor da famosa pintura 'A Noite Estrelada'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e o orgao responsavel pela producao de insulina no corpo humano? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Galeria dos Espelhos] -> Perg: Qual e o nome da moeda oficial do Japao? | ACERTOU -> [AVANCOU PARA: Arsenal Esquecido]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Qual e o maior animal vivo do planeta? | ACERTOU -> [AVANCOU PARA: Camara do Tesouro]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Camara do Tesouro] -> Perg: Quem escreveu a 'Divina Comedia'? | ACERTOU -> [AVANCOU PARA: Jardim dos Sussurros]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Escolheu Alavanca 5 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Escolheu Alavanca 5 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Escolheu Alavanca 5 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Arsenal Esquecido -> [AVANCOU PARA: Arsenal Esquecido]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Escolheu Alavanca 7 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Arsenal Esquecido -> [AVANCOU PARA: Arsenal Esquecido]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Quantos anéis compoem o simbolo dos Jogos Olimpicos? | ACERTOU -> [AVANCOU PARA: Sala de Jantar Fantasma]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Quem foi o primeiro Presidente da Republica Portuguesa eleito (nao provisorio)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Qual destas ilhas nao pertence ao arquipelago dos Acores? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Quem era o Primeiro-Ministro do Reino Unido aquando da vitoria na Segunda Guerra Mundial? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Qual e a principal funcao das globulos vermelhos? | ACERTOU -> [AVANCOU PARA: Jardim dos Sussurros]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Camara do Tesouro -> [AVANCOU PARA: Camara do Tesouro]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Camara do Tesouro] -> Perg: Qual e a lingua mais falada no mundo (como lingua nativa)? | ACERTOU -> [AVANCOU PARA: Arsenal Esquecido]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ShuffleAllPlayers"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: A Peninsula da Crimeia e um territorio disputado entre que paises? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Em que cidade portuguesa se localiza a Torre dos Clerigos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Qual e o canal que liga o Mar Mediterraneo ao Mar Vermelho? | ACERTOU -> [AVANCOU PARA: Sala de Jantar Fantasma]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Qual e o pais mais pequeno do mundo em area? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Qual e a capital da India? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Qual e a distancia oficial de uma maratona? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Em que cidade foi assinado o tratado que instituiu a Uniao Europeia em 1992? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Qual e a capital do Canada? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Em que ano ocorreu o desastre nuclear de Chernobyl? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Qual e o maior pais de Africa em extensao territorial? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Qual destas operas foi composta por Wolfgang Amadeus Mozart? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Qual e o rio mais extenso que corre exclusivamente em territorio portugues? | ACERTOU -> [AVANCOU PARA: Jardim dos Sussurros]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Escolheu Alavanca 7 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Escolheu Alavanca 2 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Escolheu Alavanca 7 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Camara do Tesouro -> [AVANCOU PARA: Camara do Tesouro]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Camara do Tesouro] -> Perg: Quem foi o ultimo rei da monarquia portuguesa? | ACERTOU -> [AVANCOU PARA: Arsenal Esquecido]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Em que ano Portugal aderiu a Comunidade Economica Europeia (atual UE)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Em Ciclismo, qual e a cor da camisola do lider da Volta a Franca? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Qual e a camada mais externa da atmosfera terrestre? | ACERTOU -> [AVANCOU PARA: Sala de Jantar Fantasma]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ShuffleAllPlayers"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Quem formulou a Teoria da Relatividade Geral? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Qual e o metal liquido a temperatura ambiente? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Quem foi o primeiro Rei de Portugal? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Em que ano foi inaugurada a Ponte Vasco da Gama em Lisboa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Qual e a capital do Brasil? | ACERTOU -> [AVANCOU PARA: Jardim dos Sussurros]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Escolheu Alavanca 5 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Escolheu Alavanca 5 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Escolheu Alavanca 5 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Escolheu Alavanca 7 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Escolheu Alavanca 5 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Escolheu Alavanca 4 -> PASSAGEM ABERTA PARA A SALA: Camara do Tesouro -> [AVANCOU PARA: Camara do Tesouro]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara do Tesouro] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara do Tesouro] -> Perg: Em que ano ocorreu a Revolucao dos Cravos em Portugal? | ACERTOU -> [AVANCOU PARA: Arsenal Esquecido]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Qual destes paises nao tem costa maritima? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Qual e o nome da maior floresta tropical do mundo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Em que ano começou a Primeira Guerra Mundial? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Qual e a capital da Polonia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Qual e a capital da Australia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Quem escreveu o classico distopico '1984'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Quem foi a fundadora da Enfermagem moderna? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Quem é o baixista dos AskBayns? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Qual e o maior oceano do planeta Terra? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Quem escreveu a obra 'Cem Anos de Solidao'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Onde se localiza a sede das Nacoes Unidas (ONU)? | ACERTOU -> [AVANCOU PARA: Camara do Tesouro]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Camara do Tesouro] -> Perg: Qual e o mineral mais duro conhecido na natureza? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Tesouro] -> Perg: Onde se realizou a Expo 98? | ACERTOU -> [AVANCOU PARA: Arsenal Esquecido]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ShuffleAllPlayers"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Qual e o nome do estreito que separa a Europa da Africa? | ACERTOU -> [AVANCOU PARA: Camara do Tesouro]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara do Tesouro] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara do Tesouro] -> Perg: Qual e o osso mais longo do corpo humano? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Tesouro] -> Perg: Qual destes arquitetos portugueses venceu o Premio Pritzker em 2011? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Tesouro] -> Perg: Qual e o nome da agencia espacial norte-americana? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Tesouro] -> Perg: Quem escreveu o romance 'O Ano da Morte de Ricardo Reis'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Tesouro] -> Perg: Quem foi o navegador portugues responsavel pela descoberta do caminho maritimo para a India? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Tesouro] -> Perg: Qual e a velocidade aproximada da luz no vacuo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara do Tesouro] -> Perg: Em que pais se situa a antiga cidade de Machu Picchu? | ACERTOU -> [AVANCOU PARA: Arsenal Esquecido]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Qual destes estilos artisticos e caracterizado pelo uso de formas geometricas? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Qual e a capital da Turquia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Quantas sinfonias completas compos Ludwig van Beethoven? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Arsenal Esquecido] -> Perg: Qual e o elemento quimico mais abundante no Universo? | ACERTOU -> [AVANCOU PARA: Jardim dos Sussurros]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Jardim dos Sussurros] -> Escolheu Alavanca 8 -> PASSAGEM ABERTA PARA A SALA: Sala de Jantar Fantasma -> [AVANCOU PARA: Sala de Jantar Fantasma]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Em que ano caiu o Muro de Berlim? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Quantos jogadores de campo (excluindo suplentes) tem uma equipa de Andebol? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Qual e a montanha mais alta do mundo (acima do nivel do mar)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Jantar Fantasma] -> Perg: Em que ano o Homem pisou a Lua pela primeira vez? | ACERTOU -> [AVANCOU PARA: Capela Profanada]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Capela Profanada] -> Perg: Quem pintou a obra-prima 'Guernica'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Capela Profanada] -> Perg: Qual e a unidade de medida de resistencia eletrica? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Capela Profanada] -> Perg: Qual e o ponto mais alto de Portugal Continental? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Capela Profanada] -> Perg: Qual destes paises nao faz parte da NATO (OTAN)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Capela Profanada] -> Perg: Qual e o nome do estuario onde desagua o Rio Tejo? | ACERTOU -> [AVANCOU PARA: Sala de Aula Maldita]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala de Aula Maldita] -> Perg: Quem descobriu a Penicilina? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Aula Maldita] -> Perg: Quem foi o lider da Africa do Sul que lutou contra o Apartheid e foi Premio Nobel da Paz? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Aula Maldita] -> Perg: Quem e o autor da epopeia 'Os Lusiadas'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Aula Maldita] -> Perg: Qual selecao venceu o primeiro Campeonato do Mundo de Futebol em 1930? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Aula Maldita] -> Perg: Qual e o gas responsavel pela maior parte do Efeito de Estufa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Aula Maldita] -> Perg: Em que seculo aconteceu a Revolucao Francesa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Aula Maldita] -> Perg: Em que cidade se realizaram os Jogos Olimpicos de 1992? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Aula Maldita] -> Perg: Em que cidade se realizaram os Jogos Olimpicos de 1992? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Aula Maldita] -> Perg: Qual destas ilhas nao pertence ao arquipelago dos Acores? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Aula Maldita] -> Perg: Quem e o autor da epopeia 'Os Lusiadas'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Aula Maldita] -> Perg: Qual e o nome da moeda oficial do Japao? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Aula Maldita] -> Perg: Em que ano o Homem pisou a Lua pela primeira vez? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Aula Maldita] -> Perg: Qual e o maior pais de Africa em extensao territorial? | ACERTOU -> [AVANCOU PARA: Sala do Julgamento]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala do Julgamento] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala do Julgamento] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: Sala de Controlo Mestre -> [AVANCOU PARA: Sala de Controlo Mestre]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala de Controlo Mestre] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala de Controlo Mestre] -> Perg: Qual e o planeta do Sistema Solar conhecido pelos seus aneis visiveis? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Controlo Mestre] -> Perg: Em que desporto se utiliza o termo 'Checkmate'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Controlo Mestre] -> Perg: Quem escreveu o classico distopico '1984'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Controlo Mestre] -> Perg: Qual selecao venceu o primeiro Campeonato do Mundo de Futebol em 1930? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala de Controlo Mestre] -> Perg: Qual e o canal que liga o Mar Mediterraneo ao Mar Vermelho? | ACERTOU -> [AVANCOU PARA: DIVISAO FINAL]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: DIVISAO FINAL] -> !!! VITORIA - JOGO TERMINADO !!!"
+        }
+      ]
+    }
+  ]
+}

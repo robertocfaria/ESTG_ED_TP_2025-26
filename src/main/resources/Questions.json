@@ -399,6 +399,11 @@
       "question": "Qual e o maior animal vivo do planeta?",
       "options": ["Elefante Africano", "Baleia Azul", "Tubarao Baleia", "Girafa"],
       "correct_index": 1
+    },
+    {
+      "question": "Quem é o baixista dos AskBayns?",
+      "options": ["Gerson", "Wiliam", "Joazinho", "Honorat Bat"],
+      "correct_index": 2
     }
   ]
 }
