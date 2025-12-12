@@ -7,34 +7,47 @@ import Interfaces.IPlayer;
 import Lever.Lever;
 import Reader.Reader;
 import Structures.Interfaces.UnorderedListADT;
-import java.util.Iterator; // Importante
+import java.util.Iterator;
 import java.util.Random;
 
+/**
+ * Represents a division in the maze where the player must solve a physical puzzle
+ * involving choosing a correct lever to find the exit.
+ * <p>
+ * This division dynamically generates a set of levers on the first visit, with
+ * some leading to an adjacent division (correct exit) and others leading to nowhere (traps).
+ */
 public class LeverDivision extends Division {
     private Random rand = new Random();
-    private ILever[] myLevers; // Persistência das alavancas
+    private ILever[] myLevers;
 
+    /**
+     * Default constructor required for Jackson deserialization.
+     */
     public LeverDivision() {
         super();
     }
 
-    public ILever[] getMyLevers() {
-        return myLevers;
-    }
-
-    public void setMyLevers(ILever[] myLevers) {
-        this.myLevers = myLevers;
-    }
-
-    public LeverDivision(String name) {
-        super(name);
-    }
-
+    /**
+     * Defines the behavior of the lever division:
+     * <ol>
+     * <li>If it's the first visit, it generates levers: an equal number of
+     * correct levers (linking to neighbors) and trap levers (linking to null).
+     * The total number of levers is {@code neighbors * 2}. The array is then shuffled.</li>
+     * <li>Prompts the player (or randomly chooses for bots) to pull a lever.</li>
+     * <li>Logs the outcome to the player's history.</li>
+     * <li>If a trap lever is chosen, the player remains in the current division.</li>
+     * <li>If a correct lever is chosen, the player moves to the corresponding division.</li>
+     * </ol>
+     *
+     * @param maze The overall {@link IMaze} structure.
+     * @param player The {@link IPlayer} currently interacting with the division.
+     * @return The {@link IDivision} the player moves to, or the current division if a trap is chosen.
+     */
     @Override
     public IDivision getComportament(IMaze maze, IPlayer player) {
-        System.out.println(this.toString());
+        System.out.println(this);
 
-        // 1. GERAÇÃO PREGUIÇOSA (Lazy Loading) - Só gera se ainda não existirem
         if (this.myLevers == null) {
             try {
                 UnorderedListADT<IDivision> neighbors = maze.getAdjacentVertex(this);
@@ -43,22 +56,18 @@ public class LeverDivision extends Division {
 
                 this.myLevers = new ILever[totalLevers];
 
-                // CORREÇÃO CRÍTICA: Usar Iterator em vez de removeFirst()
                 Iterator<IDivision> it = neighbors.iterator();
                 int i = 0;
 
-                // Preenche as reais
                 while(it.hasNext()) {
                     this.myLevers[i] = new Lever(it.next(), i);
                     i++;
                 }
 
-                // Preenche as falsas (null)
                 for (; i < totalLevers; i++) {
                     this.myLevers[i] = new Lever(null, i);
                 }
 
-                // Baralhar (Fisher-Yates)
                 for (int k = totalLevers - 1; k > 0; k--) {
                     int index = this.rand.nextInt(k + 1);
                     ILever temp = this.myLevers[index];
@@ -86,7 +95,6 @@ public class LeverDivision extends Division {
             choiceIndex = rand.nextInt(leversCount);
             System.out.println("O " + player.getName() + " escolheu a alavanca " + (choiceIndex + 1));
         }
-        // 3. LÓGICA DE MOVIMENTO
         ILever chosenLever = this.myLevers[choiceIndex];
         IDivision destination = chosenLever.getDivision();
 
@@ -108,7 +116,36 @@ public class LeverDivision extends Division {
             return destination;
         }
     }
-
+    /**
+     * Retrieves the array of levers present in this division.
+     *
+     * @return An array of {@link ILever} objects.
+     */
+    public ILever[] getMyLevers() {
+        return myLevers;
+    }
+    /**
+     * Sets the array of levers for this division.
+     *
+     * @param myLevers The new array of {@link ILever} objects.
+     */
+    public void setMyLevers(ILever[] myLevers) {
+        this.myLevers = myLevers;
+    }
+    /**
+     * Constructs a LeverDivision with a specified name.
+     *
+     * @param name The descriptive name of the division.
+     */
+    public LeverDivision(String name) {
+        super(name);
+    }
+    /**
+     * Provides a multi-line string description of the division, prompting the player
+     * to choose a lever.
+     *
+     * @return A formatted string detailing the division's challenge.
+     */
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

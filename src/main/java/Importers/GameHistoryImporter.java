@@ -6,10 +6,20 @@ import java.io.FileReader;
 import java.io.FilenameFilter;
 import java.io.IOException;
 
+/**
+ * Utility class responsible for importing, listing, and reading saved game history files.
+ * It primarily targets JSON files stored in a designated game history folder and
+ * implements basic parsing to display the history log content to the console.
+ */
 public class GameHistoryImporter {
 
     /**
-     * Procura ficheiros de histórico e devolve os seus nomes.
+     * Retrieves an array of filenames for all JSON files found in the game history folder.
+     * The method checks two possible folder paths: the default {@code src/main/resources/gamehistory}
+     * and a fallback {@code saved_games}.
+     *
+     * @return An array of strings containing the names of all files ending with {@code .json};
+     * returns an empty array if the folder does not exist or contains no JSON files.
      */
     public static String[] getHistoryFiles() {
         File folder = getFolder();
@@ -25,9 +35,12 @@ public class GameHistoryImporter {
     }
 
     /**
-     * Lê um ficheiro JSON específico e imprime o seu conteúdo formatado na consola.
-     * Versão compatível (apenas caracteres simples).
-     * @param filename O nome do ficheiro (ex: "game_2025.json")
+     * Reads a specific game history JSON file and prints its content in a formatted,
+     * human-readable manner to the console.
+     * The method attempts to extract and display key information like the game date,
+     * player names, player types, and individual action logs.
+     *
+     * @param filename The name of the JSON file to be read (e.g., {@code game_20251212_100000.json}).
      */
     public static void printHistoryFile(String filename) {
         File folder = getFolder();
@@ -43,30 +56,25 @@ public class GameHistoryImporter {
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line;
 
-            // Parsing manual linha a linha
             while ((line = br.readLine()) != null) {
                 line = line.trim();
 
-                // 1. Data do Jogo
                 if (line.startsWith("\"game_date\":")) {
                     String date = extractValue(line);
                     System.out.println("\n------------------------------------------------");
                     System.out.println("- DATA DO JOGO: " + date);
                     System.out.println("------------------------------------------------");
                 }
-                // 2. Nome do Jogador
                 else if (line.startsWith("\"name\":")) {
                     String name = extractValue(line);
                     System.out.println("\n > JOGADOR: " + name.toUpperCase());
                 }
-                // 3. Tipo (Humano/Bot)
                 else if (line.startsWith("\"type\":")) {
                     String type = extractValue(line);
                     System.out.println("   TIPO: " + type);
                     System.out.println("   HISTORICO DE ACOES:");
                     System.out.println("   -------------------");
                 }
-                // 4. Log do Evento
                 else if (line.startsWith("\"event_log\":")) {
                     String log = extractValue(line);
                     System.out.println("   * " + log);
@@ -77,6 +85,13 @@ public class GameHistoryImporter {
         }
     }
 
+    /**
+     * Extracts the string value contained between double quotes after the colon (:)
+     * on a JSON-formatted line.
+     *
+     * @param line The line of text read from the JSON file.
+     * @return The extracted string value, or "---" if parsing fails.
+     */
     private static String extractValue(String line) {
         int firstQuote = line.indexOf("\"", line.indexOf(":"));
         int lastQuote = line.lastIndexOf("\"");
@@ -87,6 +102,13 @@ public class GameHistoryImporter {
         return "---";
     }
 
+    /**
+     * Determines the location of the game history folder.
+     * It checks the primary path {@code src/main/resources/gamehistory} and
+     * falls back to {@code saved_games} if the primary path is invalid or does not exist.
+     *
+     * @return A {@link File} object representing the directory.
+     */
     private static File getFolder() {
         String path = "src/main/resources/gamehistory";
         File folder = new File(path);

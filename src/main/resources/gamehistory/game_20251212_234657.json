@@ -1,0 +1,368 @@
+{
+  "game_date": "20251212_234657",
+  "players": [
+    {
+      "name": "BOT1",
+      "type": "Bot",
+      "history": [
+        {
+          "event_log": "[SALA: Torre do Relogio Parado] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: O Ultimo Refugio -> [AVANCOU PARA: O Ultimo Refugio]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Torre do Relogio Parado] -> Escolheu Alavanca 1 -> PASSAGEM ABERTA PARA A SALA: O Ultimo Refugio -> [AVANCOU PARA: O Ultimo Refugio]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: O Ultimo Refugio] -> Perg: Qual e a montanha mais alta do mundo (acima do nivel do mar)? | ACERTOU -> [AVANCOU PARA: Sala do Julgamento]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Sala do Julgamento] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Sala do Julgamento] -> Perg: Qual e o elemento quimico mais abundante no Universo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala do Julgamento] -> Perg: Qual e a capital do Canada? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala do Julgamento] -> Perg: Em que ano começou a Primeira Guerra Mundial? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala do Julgamento] -> Perg: Quem escreveu o classico distopico '1984'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Sala do Julgamento] -> Perg: Quem e o autor da epopeia 'Os Lusiadas'? | ACERTOU -> [AVANCOU PARA: Camara de Magma]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara de Magma] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara de Magma] -> Perg: Qual e o canal que liga o Mar Mediterraneo ao Mar Vermelho? | ACERTOU -> [AVANCOU PARA: Forja Infernal]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Forja Infernal] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Forja Infernal] -> Escolheu Alavanca 5 -> PASSAGEM ABERTA PARA A SALA: Camara de Meditacao -> [AVANCOU PARA: Camara de Meditacao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Qual e o nome da agencia espacial norte-americana? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Qual selecao venceu o primeiro Campeonato do Mundo de Futebol em 1930? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Quem foi a primeira mulher a exercer o cargo de Primeiro-Ministro em Portugal? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Em que desporto se utiliza o termo 'Checkmate'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Quem e o autor da famosa pintura 'A Noite Estrelada'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: A Peninsula da Crimeia e um territorio disputado entre que paises? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Em que ano caiu o Muro de Berlim? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Quem foi o ultimo rei da monarquia portuguesa? | ACERTOU -> [AVANCOU PARA: Forja Infernal]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Forja Infernal] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Forja Infernal] -> Escolheu Alavanca 6 -> PASSAGEM ABERTA PARA A SALA: Camara de Magma -> [AVANCOU PARA: Camara de Magma]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ShuffleAllPlayers"
+        },
+        {
+          "event_log": "[SALA: Camara de Magma] -> Perg: Qual destes paises nao faz parte da NATO (OTAN)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Magma] -> Perg: Qual e a capital da Turquia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Magma] -> Perg: Qual e a distancia oficial de uma maratona? | ACERTOU -> [AVANCOU PARA: Camara de Meditacao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Quem formulou a Teoria da Relatividade Geral? | ACERTOU -> [AVANCOU PARA: Forja Infernal]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Forja Infernal] -> Escolheu Alavanca 6 -> PASSAGEM ABERTA PARA A SALA: Camara de Magma -> [AVANCOU PARA: Camara de Magma]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Camara de Magma] -> Perg: Em que ano ocorreu a Revolucao dos Cravos em Portugal? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Magma] -> Perg: Qual destes paises nao tem costa maritima? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Magma] -> Perg: Quantos anéis compoem o simbolo dos Jogos Olimpicos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Magma] -> Perg: Quem é o baixista dos AskBayns? | ACERTOU -> [AVANCOU PARA: Forja Infernal]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Forja Infernal] -> Escolheu Alavanca 6 -> PASSAGEM ABERTA PARA A SALA: Camara de Magma -> [AVANCOU PARA: Camara de Magma]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Camara de Magma] -> Perg: Quem pintou a obra-prima 'Guernica'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Magma] -> Perg: Qual e o nome do estuario onde desagua o Rio Tejo? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Magma] -> Perg: Qual e o maior animal vivo do planeta? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Magma] -> Perg: Qual e a capital da Australia? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Magma] -> Perg: Quem foi o vocalista da banda Queen? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Magma] -> Perg: Que elemento quimico tem o simbolo 'Fe'? | ACERTOU -> [AVANCOU PARA: Camara de Meditacao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Em que cidade foi assinado o tratado que instituiu a Uniao Europeia em 1992? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Qual e o planeta do Sistema Solar conhecido pelos seus aneis visiveis? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Qual e o ponto mais alto de Portugal Continental? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Quem foi a fundadora da Enfermagem moderna? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Em que pais se situa a antiga cidade de Machu Picchu? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Qual e o mineral mais duro conhecido na natureza? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Quem foi o navegador portugues responsavel pela descoberta do caminho maritimo para a India? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Qual e a principal funcao das globulos vermelhos? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Qual e o maior oceano do planeta Terra? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Qual e o maior pais de Africa em extensao territorial? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Quem foi o lider da Africa do Sul que lutou contra o Apartheid e foi Premio Nobel da Paz? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Em que cidade portuguesa se localiza a Torre dos Clerigos? | ACERTOU -> [AVANCOU PARA: Camara de Mutacao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Perg: Quem escreveu a obra 'Cem Anos de Solidao'? | ACERTOU -> [AVANCOU PARA: Camara de Meditacao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Em que cidade se realizaram os Jogos Olimpicos de 1992? | ACERTOU -> [AVANCOU PARA: Forja Infernal]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Forja Infernal] -> Escolheu Alavanca 2 -> PASSAGEM ABERTA PARA A SALA: Sala do Reator -> [AVANCOU PARA: Sala do Reator]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Sala do Reator] -> Perg: Quem foi o primeiro Rei de Portugal? | ACERTOU -> [AVANCOU PARA: Forja Infernal]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Forja Infernal] -> Escolheu Alavanca 3 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Forja Infernal] -> Escolheu Alavanca 5 -> PASSAGEM ABERTA PARA A SALA: Camara de Meditacao -> [AVANCOU PARA: Camara de Meditacao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Qual destes estilos artisticos e caracterizado pelo uso de formas geometricas? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Em que ano foi inaugurada a Ponte Vasco da Gama em Lisboa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Qual e a capital do Brasil? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Quem descobriu a Penicilina? | ACERTOU -> [AVANCOU PARA: Camara de Mutacao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Qual e a capital da India? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Quem escreveu o romance 'O Ano da Morte de Ricardo Reis'? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Qual destes arquitetos portugueses venceu o Premio Pritzker em 2011? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Quantas sinfonias completas compos Ludwig van Beethoven? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Onde se localiza a sede das Nacoes Unidas (ONU)? | ACERTOU -> [AVANCOU PARA: Camara de Magma]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Camara de Magma] -> Perg: Qual e a camada mais externa da atmosfera terrestre? | ACERTOU -> [AVANCOU PARA: Forja Infernal]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: RollBack"
+        },
+        {
+          "event_log": "[SALA: Camara de Magma] -> Perg: Qual e a lingua mais falada no mundo (como lingua nativa)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Magma] -> Perg: Qual e a capital da Polonia? | ACERTOU -> [AVANCOU PARA: Camara de Meditacao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perdeu a vez por estar atordoado."
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Qual e o gas responsavel pela maior parte do Efeito de Estufa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Qual e a unidade de medida de resistencia eletrica? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Qual e o osso mais longo do corpo humano? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Qual e o rio mais extenso que corre exclusivamente em territorio portugues? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Qual destas operas foi composta por Wolfgang Amadeus Mozart? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Quem foi o primeiro Presidente da Republica Portuguesa eleito (nao provisorio)? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Meditacao] -> Perg: Em que cidade se encontra o Museu do Louvre? | ACERTOU -> [AVANCOU PARA: Camara de Magma]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: ExtraPlays"
+        },
+        {
+          "event_log": "[SALA: Camara de Magma] -> Perg: Qual e o pais mais pequeno do mundo em area? | ACERTOU -> [AVANCOU PARA: Forja Infernal]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Forja Infernal] -> Escolheu Alavanca 1 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Forja Infernal] -> Escolheu Alavanca 8 -> ARMADILHA"
+        },
+        {
+          "event_log": "[SALA: Forja Infernal] -> Escolheu Alavanca 7 -> PASSAGEM ABERTA PARA A SALA: Camara de Mutacao -> [AVANCOU PARA: Camara de Mutacao]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: Nothing"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Perg: Em que ano ocorreu o desastre nuclear de Chernobyl? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Perg: Em que ano o Homem pisou a Lua pela primeira vez? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Perg: Quantos jogadores de campo (excluindo suplentes) tem uma equipa de Andebol? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Perg: Qual e o nome do estreito que separa a Europa da Africa? | FALHOU"
+        },
+        {
+          "event_log": "[SALA: Camara de Mutacao] -> Perg: Quem era o Primeiro-Ministro do Reino Unido aquando da vitoria na Segunda Guerra Mundial? | ACERTOU -> [AVANCOU PARA: DIVISAO FINAL]"
+        },
+        {
+          "event_log": "[EVENTO] -> Evento Ocorrido: StunnedPlays"
+        },
+        {
+          "event_log": "[SALA: DIVISAO FINAL] -> !!! VITORIA - JOGO TERMINADO !!!"
+        }
+      ]
+    }
+  ]
+}

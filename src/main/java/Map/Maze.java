@@ -6,22 +6,36 @@ import Interfaces.IDivision;
 import Interfaces.IHallway;
 import Interfaces.IMaze;
 import Interfaces.IPlayer;
-import NewSctructures.ArrayUnorderedListWithGet;
-import Interfaces.UnorderedListWithGetADT;
 import Structures.Exceptions.ElementNotFoundException;
 import Structures.Exceptions.EmptyCollectionException;
 import Structures.Interfaces.ListADT;
+import Structures.Interfaces.UnorderedListADT;
 import Structures.List.ArrayUnorderedList;
+import Structures.List.DoubleLinkedUnorderedList;
 import Structures.Queue.LinkedQueue;
 import Structures.Stack.LinkedStack;
 
 import java.util.Iterator;
 import java.util.Random;
 
+import Util.Utils;
 import com.fasterxml.jackson.annotation.*;
 
+/**
+ * Represents the game map structure, implemented as an undirected graph where
+ * divisions are vertices and hallways are edges.
+ * <p>
+ * This class handles the creation, structure, and traversal of the maze,
+ * including generating divisions, connections, and defining the goal division.
+ * It implements the {@link IMaze} interface and uses an adjacency matrix
+ * to store connections (hallways) between divisions.
+ */
 @JsonIdentityInfo(generator = ObjectIdGenerators.IntSequenceGenerator.class, property = "@id")
 public class Maze implements IMaze {
+    /**
+     * The factor by which the capacity of the maze's internal arrays (vertices
+     * and adjacency matrix) is increased when needed.
+     */
     public static final int INCREASE_FACTOR = 2;
 
     private Random rand = new Random();
@@ -32,10 +46,21 @@ public class Maze implements IMaze {
     private IDivision[] vertices;
     private int count;
 
+    /**
+     * Default constructor for Maze, primarily used for serialization/deserialization.
+     * Initializes the hallway object.
+     */
     public Maze() {
         this.hallway = new Hallway();
     }
 
+    /**
+     * Constructs a Maze with a specified initial capacity (number of divisions).
+     * This constructor automatically generates the divisions, establishes connections
+     * between them, assigns a name, and defines a goal division.
+     *
+     * @param capacity The desired number of divisions (vertices) to create in the maze.
+     */
     public Maze(int capacity) {
         this.vertices = new IDivision[capacity];
         this.adjMatrix = new IHallway[capacity][capacity];
@@ -71,14 +96,30 @@ public class Maze implements IMaze {
         return String.format("Mapa [Divisoes: %d | Conexoes: %d]", this.count, this.countConnections());
     }
 
+    /**
+     * Returns the name of the maze.
+     *
+     * @return A string representing the maze's name and summary statistics.
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * Sets a custom name for the maze.
+     *
+     * @param name The new name for the maze.
+     */
     public void setName(String name) {
         this.name = name;
     }
 
+    /**
+     * Sets the list of players who will be using the shared hallway object
+     * for movement and interactions.
+     *
+     * @param players A {@link ListADT} of {@link IPlayer} objects.
+     */
     public void setHallwayPlayers(ListADT<IPlayer> players) {
         this.hallway.setPlayers(players);
     }
@@ -161,9 +202,6 @@ public class Maze implements IMaze {
         this.adjMatrix = expandedAdjMatrix;
     }
 
-    /**
-     * Dificuldade acrescida, pois usa o caminho mais longo para criar a sala Goal
-     */
     private void defineGoalDivision() {
         int[] distances = calculateDistancesFromStart();
 
@@ -243,9 +281,16 @@ public class Maze implements IMaze {
         }
     }
 
+    /**
+     * Finds and returns a random division that is suitable as a starting point.
+     * This method selects a division that has two or fewer connections, typically
+     * prioritizing divisions at the periphery of the maze.
+     *
+     * @return A random {@link IDivision} selected as an initial starting position.
+     */
     @Override
     public IDivision getRandomInitialDivision() {
-        ArrayUnorderedListWithGet<IDivision> result = new ArrayUnorderedListWithGet<>();
+        UnorderedListADT<IDivision> result = new DoubleLinkedUnorderedList<>();
 
         int connections = 0;
         for (int i = 0; i < this.count; i++) {
@@ -261,9 +306,15 @@ public class Maze implements IMaze {
         }
 
         int randIndex = this.rand.nextInt(result.size());
-        return result.get(randIndex);
+        return Utils.getListADTObject(randIndex, result);
     }
 
+    /**
+     * Adds a new division (vertex) to the maze.
+     * If the internal arrays are full, their capacity is automatically expanded.
+     *
+     * @param vertex The {@link IDivision} to be added.
+     */
     @Override
     public void addVertex(IDivision vertex) {
         if (this.size() == this.vertices.length) {
@@ -275,6 +326,14 @@ public class Maze implements IMaze {
         this.count++;
     }
 
+    /**
+     * Removes a division (vertex) from the maze.
+     * This operation also removes all connections involving the division.
+     *
+     * @param vertex The {@link IDivision} to be removed.
+     * @throws EmptyCollectionException If the maze is empty.
+     * @throws ElementNotFoundException If the specified division is not found in the maze.
+     */
     @Override
     public void removeVertex(IDivision vertex) throws EmptyCollectionException, ElementNotFoundException {
         if (this.isEmpty()) {
@@ -292,26 +351,67 @@ public class Maze implements IMaze {
         this.vertices[this.count - 1] = null;
     }
 
+    /**
+     * Adds a connection (edge) between two divisions (vertices).
+     * This operation is not supported in this implementation as connections are handled
+     * by {@link #addEdge(IDivision, IDivision, IHallway)}.
+     *
+     * @param t The first division.
+     * @param t1 The second division.
+     * @throws NotSupportedOperation Always throws this exception.
+     */
     @Override
     public void addEdge(IDivision t, IDivision t1) throws NotSupportedOperation {
         throw new NotSupportedOperation("This operation can't be done in this graph");
     }
 
+    /**
+     * Adds a weighted connection (edge) between two divisions (vertices).
+     * This operation is not supported in this implementation as connections are handled
+     * by {@link #addEdge(IDivision, IDivision, IHallway)}.
+     *
+     * @param t The first division.
+     * @param t1 The second division.
+     * @param v The weight of the connection.
+     * @throws NotSupportedOperation Always throws this exception.
+     */
     @Override
     public void addEdge(IDivision t, IDivision t1, double v) throws NotSupportedOperation {
         throw new NotSupportedOperation("This operation can't be done in this graph");
     }
 
+    /**
+     * Removes the connection (hallway) between two specified divisions.
+     *
+     * @param vertex1 The first division.
+     * @param vertex2 The second division.
+     */
     @Override
     public void removeEdge(IDivision vertex1, IDivision vertex2) {
         this.removeEdge(this.getIndex(vertex1), this.getIndex(vertex2));
     }
 
+    /**
+     * Calculates the weight of the shortest path between two divisions.
+     * This method is currently not implemented.
+     *
+     * @param startVertex The starting division.
+     * @param targetVertex The target division.
+     * @return The weight of the shortest path.
+     * @throws NotSupportedOperation Always throws this exception.
+     */
     @Override
     public double shortestPathWeight(IDivision startVertex, IDivision targetVertex) {
         throw new NotSupportedOperation("Sorry, we didn't have time to make this method");
     }
 
+    /**
+     * Returns an iterator that performs a Breadth-First Search (BFS) traversal
+     * starting from the specified division.
+     *
+     * @param startVertex The division where the traversal should begin.
+     * @return An {@link Iterator} over the divisions in the order they are visited by BFS.
+     */
     @Override
     public Iterator iteratorBFS(IDivision startVertex) {
         int startIndex = this.getIndex(startVertex);
@@ -344,6 +444,13 @@ public class Maze implements IMaze {
         return resultList.iterator();
     }
 
+    /**
+     * Returns an iterator that performs a Depth-First Search (DFS) traversal
+     * starting from the specified division.
+     *
+     * @param startVertex The division where the traversal should begin.
+     * @return An {@link Iterator} over the divisions in the order they are visited by DFS.
+     */
     @Override
     public Iterator iteratorDFS(IDivision startVertex) {
         int startIndex = this.getIndex(startVertex);
@@ -384,6 +491,15 @@ public class Maze implements IMaze {
         return resultList.iterator();
     }
 
+    /**
+     * Returns an iterator that generates the sequence of divisions representing the
+     * shortest path between the start and target divisions. This uses a Breadth-First Search
+     * approach to find the path with the minimum number of divisions.
+     *
+     * @param startVertex The starting division of the path.
+     * @param targetVertex The target division of the path.
+     * @return An {@link Iterator} over the divisions in the shortest path sequence.
+     */
     @Override
     public Iterator iteratorShortestPath(IDivision startVertex, IDivision targetVertex) {
         int startIndex = getIndex(startVertex);
@@ -443,11 +559,28 @@ public class Maze implements IMaze {
         return resultList.iterator();
     }
 
+    /**
+     * Adds a connection (edge) between two divisions, specifying the {@link IHallway}
+     * object that represents the connection's properties.
+     * The connection is added bidirectionally in the adjacency matrix.
+     *
+     * @param vertex1 The first division.
+     * @param vertex2 The second division.
+     * @param weight The {@link IHallway} object representing the connection.
+     */
     @Override
     public void addEdge(IDivision vertex1, IDivision vertex2, IHallway weight) {
         this.addEdge(this.getIndex(vertex1), this.getIndex(vertex2), weight);
     }
 
+    /**
+     * Retrieves the {@link IHallway} object connecting two specified divisions.
+     *
+     * @param vertex1 The first division.
+     * @param vertex2 The second division.
+     * @return The {@link IHallway} connecting the two divisions.
+     * @throws ElementNotFoundException If either division is not found in the maze.
+     */
     @Override
     public IHallway getEdge(IDivision vertex1, IDivision vertex2) throws ElementNotFoundException {
         int i = this.getIndex(vertex1);
@@ -460,15 +593,23 @@ public class Maze implements IMaze {
         return this.adjMatrix[i][j];
     }
 
+    /**
+     * Returns an unordered list of all divisions directly connected (adjacent)
+     * to the specified division.
+     *
+     * @param vertex The division whose neighbors are to be retrieved.
+     * @return A {@link UnorderedListADT} of adjacent {@link IDivision} objects.
+     * @throws ElementNotFoundException If the specified division is not found in the maze.
+     */
     @Override
-    public UnorderedListWithGetADT<IDivision> getAdjacentVertex(IDivision vertex) throws ElementNotFoundException {
+    public UnorderedListADT<IDivision> getAdjacentVertex(IDivision vertex) throws ElementNotFoundException {
         int index = this.getIndex(vertex);
 
         if (index == -1) {
             throw new ElementNotFoundException("Division not found");
         }
 
-        UnorderedListWithGetADT<IDivision> result = new ArrayUnorderedListWithGet<>();
+        UnorderedListADT<IDivision> result = new DoubleLinkedUnorderedList<>();
 
         for (int i = 0; i < this.count; i++) {
             if (i != index && (this.adjMatrix[i][index] != null || this.adjMatrix[index][i] != null)) {
@@ -479,11 +620,23 @@ public class Maze implements IMaze {
         return result;
     }
 
+    /**
+     * Checks if the maze is empty (contains no divisions).
+     *
+     * @return {@code true} if the maze has zero divisions; {@code false} otherwise.
+     */
     @Override
     public boolean isEmpty() {
         return this.count == 0;
     }
 
+    /**
+     * Checks if the maze is connected, meaning there is a path between every
+     * pair of divisions. This is checked using a Breadth-First Search (BFS)
+     * starting from the first division.
+     *
+     * @return {@code true} if the maze is connected; {@code false} otherwise.
+     */
     @Override
     public boolean isConnected() {
         if (this.count <= 1) {
@@ -513,43 +666,98 @@ public class Maze implements IMaze {
         return countVisited == this.count;
     }
 
+    /**
+     * Returns the total number of divisions (vertices) in the maze.
+     *
+     * @return The number of divisions in the maze.
+     */
     @Override
     public int size() {
         return this.count;
     }
 
+    /**
+     * Sets the array of divisions (vertices). Used primarily for deserialization.
+     *
+     * @param vertices The new array of {@link IDivision} objects.
+     */
     public void setVertices(IDivision[] vertices) {
         this.vertices = vertices;
     }
 
+    /**
+     * Sets the adjacency matrix of hallways. Used primarily for deserialization.
+     *
+     * @param matrix The new 2D array of {@link IHallway} objects.
+     */
     public void setAdjMatrix(IHallway[][] matrix) {
         this.adjMatrix = matrix;
     }
 
+    /**
+     * Sets the current count of divisions in the maze. Used primarily for deserialization.
+     *
+     * @param count The new number of divisions.
+     */
     public void setCount(int count) {
         this.count = count;
     }
 
+    /**
+     * Returns the shared {@link IHallway} instance used for all connections.
+     *
+     * @return The main {@link IHallway} object.
+     */
     public IHallway getHallway() {
         return hallway;
     }
 
+    /**
+     * Sets the shared {@link IHallway} instance. Used primarily for deserialization.
+     *
+     * @param hallway The new {@link IHallway} object.
+     */
     public void setHallway(IHallway hallway) {
-        this.hallway = hallway;
+        if (hallway == null) {
+            this.hallway = new Hallway();
+        } else {
+            this.hallway = hallway;
+        }
     }
 
+    /**
+     * Returns the current number of divisions (vertices).
+     *
+     * @return The count of divisions.
+     */
     public int getCount() {
         return count;
     }
 
+    /**
+     * Returns the array containing all divisions (vertices).
+     *
+     * @return The array of {@link IDivision} objects.
+     */
     public IDivision[] getVertices() {
         return this.vertices;
     }
 
+    /**
+     * Returns the adjacency matrix representing the connections (hallways) between divisions.
+     *
+     * @return The 2D array of {@link IHallway} objects.
+     */
     public IHallway[][] getAdjMatrix() {
         return this.adjMatrix;
     }
 
+    /**
+     * Generates a string representation of the maze structure, listing each division
+     * and its direct neighbors.
+     *
+     * @return A string showing the connections between divisions.
+     */
     @Override
     public String toString() {
         StringBuilder stgB = new StringBuilder();

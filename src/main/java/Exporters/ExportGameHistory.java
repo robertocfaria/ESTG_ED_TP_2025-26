@@ -11,20 +11,31 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Iterator;
 
+/**
+ * Utility class responsible for exporting the entire game history to an external
+ * file format, specifically JSON.
+ * <p>
+ * It collects history data from all players, structures it into a JSON format,
+ * handles file path creation, and writes the output to a timestamped file.
+ */
 public class ExportGameHistory {
 
     /**
-     * Exporta o histórico de todos os jogadores para um ficheiro JSON.
-     * Guarda apenas a representação textual (toString) de cada evento.
-     * @param players A lista de jogadores do jogo atual.
-     * @return true se guardou com sucesso, false se houve erro.
+     * Exports the history of all players in the game to a JSON file.
+     * <p>
+     * The file is created in the {@code src/main/resources/gamehistory} directory
+     * with a unique filename based on the current timestamp (e.g., {@code game_YYYYMMDD_HHmmss.json}).
+     * The JSON structure includes the game date and a list of players, each containing
+     * their name, type, and a chronological list of history entries (movement and events).
+     *
+     * @param players The {@link ListADT} of {@link IPlayer} objects whose history will be exported.
+     * @return {@code true} if the export was successful; {@code false} otherwise (e.g., due to an IO error).
      */
     public static boolean exportToJson(ListADT<IPlayer> players) {
 
         String folderPath = "src/main/resources/gamehistory";
         java.io.File directory = new java.io.File(folderPath);
 
-        // Garantir que a pasta existe
         if (!directory.exists()) {
             directory.mkdirs();
         }
@@ -47,20 +58,16 @@ public class ExportGameHistory {
             json.append("      \"type\": \"").append(player.isRealPlayer() ? "Human" : "Bot").append("\",\n");
             json.append("      \"history\": [\n");
 
-            // 1. Obter cópia do histórico
             ArrayStack<HistoryEntry> stack = player.getHistoryCopy();
 
-            // 2. Inverter para ordem cronológica
             ArrayStack<HistoryEntry> chronological = new ArrayStack<>();
             while (!stack.isEmpty()) {
                 chronological.push(stack.pop());
             }
 
-            // 3. Escrever no JSON
             while (!chronological.isEmpty()) {
                 HistoryEntry entry = chronological.pop();
 
-                // Ignorar nulos
                 if (entry == null) { continue; }
 
                 String fullLog = entry.toString().replace("\"", "'").replace("\n", " ");
@@ -75,9 +82,8 @@ public class ExportGameHistory {
                 }
             }
 
-            json.append("      ]\n"); // Fecha array history
+            json.append("      ]\n");
 
-            // Se houver mais jogadores, fecha o objeto e põe vírgula
             if (it.hasNext()) {
                 json.append("    },\n");
             } else {
@@ -85,10 +91,9 @@ public class ExportGameHistory {
             }
         }
 
-        json.append("  ]\n"); // Fecha array players
-        json.append("}");     // Fecha objeto principal
+        json.append("  ]\n");
+        json.append("}");
 
-        // 4. Escrever no ficheiro
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
             writer.write(json.toString());
             System.out.println("Histórico exportado com sucesso para: " + filename);

@@ -2,9 +2,13 @@ package Menus;
 
 import Interfaces.IPlayer;
 
+/**
+ * Utility class dedicated to managing and displaying visual elements and formatted
+ * output to the console for the game. This class ensures consistent formatting
+ * (centered text, separators, borders) for game events, menus, and status updates.
+ */
 public class GameVisuals {
 
-    // Largura padrão para as caixas de texto
     private static final int WIDTH = 60;
 
     /**

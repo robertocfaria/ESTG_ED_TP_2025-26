@@ -1,58 +1,175 @@
 [ {
   "@id" : 1,
   "name" : "Mapa [Divisoes: 10 | Conexoes: 24]",
-  "adjMatrix" : [ [ null, {
+  "hallway" : {
     "type" : "hallway",
     "@id" : 2,
-    "players" : null
-  }, null, 2, null, null, null, null, null, null ], [ 2, null, 2, null, null, null, null, null, null, null ], [ null, 2, null, 2, null, null, null, null, null, null ], [ 2, null, 2, null, 2, 2, 2, null, null, null ], [ null, null, null, 2, null, 2, null, null, null, null ], [ null, null, null, 2, 2, null, 2, null, null, null ], [ null, null, null, 2, null, 2, null, 2, null, null ], [ null, null, null, null, null, null, 2, null, 2, null ], [ null, null, null, null, null, null, null, 2, null, 2 ], [ null, null, null, null, null, null, null, null, 2, null ] ],
+    "players" : {
+      "empty" : true
+    }
+  },
+  "adjMatrix" : [ [ null, {
+    "type" : "hallway",
+    "@id" : 3,
+    "players" : {
+      "empty" : true
+    }
+  }, null, 3, null, null, null, null, null, null ], [ 3, null, 3, null, null, null, null, null, null, null ], [ null, 3, null, 3, null, null, null, null, null, null ], [ 3, null, 3, null, 3, 3, 3, null, null, null ], [ null, null, null, 3, null, 3, null, null, null, null ], [ null, null, null, 3, 3, null, 3, null, null, null ], [ null, null, null, 3, null, 3, null, 3, null, null ], [ null, null, null, null, null, null, 3, null, 3, null ], [ null, null, null, null, null, null, null, 3, null, 3 ], [ null, null, null, null, null, null, null, null, 3, null ] ],
   "vertices" : [ {
     "type" : "question",
-    "@id" : 3,
+    "@id" : 4,
     "name" : "Camara de Criogenia"
   }, {
     "type" : "lever",
-    "@id" : 4,
+    "@id" : 5,
     "name" : "Masmorra do Desespero",
     "myLevers" : null
   }, {
     "type" : "lever",
-    "@id" : 5,
+    "@id" : 6,
     "name" : "Trono de Ossos",
     "myLevers" : null
   }, {
     "type" : "question",
-    "@id" : 6,
+    "@id" : 7,
     "name" : "Patio das Estatuas Vivas"
   }, {
     "type" : "question",
-    "@id" : 7,
+    "@id" : 8,
     "name" : "Galeria dos Ancestrais"
   }, {
     "type" : "question",
-    "@id" : 8,
+    "@id" : 9,
     "name" : "Adega dos Vampiros"
   }, {
     "type" : "question",
-    "@id" : 9,
+    "@id" : 10,
     "name" : "Biblioteca Proibida"
   }, {
     "type" : "lever",
-    "@id" : 10,
+    "@id" : 11,
     "name" : "Corredor da Morte",
     "myLevers" : null
   }, {
     "type" : "lever",
-    "@id" : 11,
+    "@id" : 12,
     "name" : "Sala do Oraculo",
     "myLevers" : null
   }, {
     "type" : "goal",
-    "@id" : 12,
+    "@id" : 13,
     "name" : "DIVISAO FINAL"
   } ],
   "count" : 10,
   "empty" : false,
-  "randomInitialDivision" : 3,
+  "randomInitialDivision" : 4,
+  "connected" : true
+}, {
+  "@id" : 14,
+  "name" : "Mapa [Divisoes: 10 | Conexoes: 26]",
+  "hallway" : {
+    "type" : "hallway",
+    "@id" : 15,
+    "players" : {
+      "empty" : false
+    }
+  },
+  "adjMatrix" : [ [ null, 15, null, null, null, null, null, null, null, null ], [ 15, null, 15, null, null, null, null, null, null, null ], [ null, 15, null, 15, null, 15, null, null, null, null ], [ null, null, 15, null, 15, null, null, null, null, null ], [ null, null, null, 15, null, 15, 15, 15, null, null ], [ null, null, 15, null, 15, null, 15, null, null, null ], [ null, null, null, null, 15, 15, null, 15, null, 15 ], [ null, null, null, null, 15, null, 15, null, 15, null ], [ null, null, null, null, null, null, null, 15, null, 15 ], [ null, null, null, null, null, null, 15, null, 15, null ] ],
+  "vertices" : [ {
+    "type" : "lever",
+    "@id" : 16,
+    "name" : "Torre do Relogio Parado",
+    "myLevers" : [ {
+      "type" : "lever",
+      "@id" : 17,
+      "division" : {
+        "type" : "question",
+        "@id" : 18,
+        "name" : "O Ultimo Refugio"
+      },
+      "id" : 0
+    }, {
+      "type" : "lever",
+      "@id" : 19,
+      "division" : null,
+      "id" : 1
+    } ]
+  }, 18, {
+    "type" : "question",
+    "@id" : 20,
+    "name" : "Sala do Julgamento"
+  }, {
+    "type" : "question",
+    "@id" : 21,
+    "name" : "Portal do Abismo"
+  }, {
+    "type" : "question",
+    "@id" : 22,
+    "name" : "Camara de Meditacao"
+  }, {
+    "type" : "question",
+    "@id" : 23,
+    "name" : "Camara de Magma"
+  }, {
+    "type" : "lever",
+    "@id" : 24,
+    "name" : "Forja Infernal",
+    "myLevers" : [ {
+      "type" : "lever",
+      "@id" : 25,
+      "division" : null,
+      "id" : 5
+    }, {
+      "type" : "lever",
+      "@id" : 26,
+      "division" : {
+        "type" : "question",
+        "@id" : 27,
+        "name" : "Sala do Reator"
+      },
+      "id" : 3
+    }, {
+      "type" : "lever",
+      "@id" : 28,
+      "division" : null,
+      "id" : 4
+    }, {
+      "type" : "lever",
+      "@id" : 29,
+      "division" : null,
+      "id" : 6
+    }, {
+      "type" : "lever",
+      "@id" : 30,
+      "division" : 22,
+      "id" : 0
+    }, {
+      "type" : "lever",
+      "@id" : 31,
+      "division" : 23,
+      "id" : 1
+    }, {
+      "type" : "lever",
+      "@id" : 32,
+      "division" : {
+        "type" : "question",
+        "@id" : 33,
+        "name" : "Camara de Mutacao"
+      },
+      "id" : 2
+    }, {
+      "type" : "lever",
+      "@id" : 34,
+      "division" : null,
+      "id" : 7
+    } ]
+  }, 33, {
+    "type" : "goal",
+    "@id" : 35,
+    "name" : "DIVISAO FINAL"
+  }, 27 ],
+  "count" : 10,
+  "empty" : false,
+  "randomInitialDivision" : 16,
   "connected" : true
 } ]

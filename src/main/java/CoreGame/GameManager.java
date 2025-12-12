@@ -9,6 +9,12 @@ import Structures.Interfaces.ListADT;
 import Structures.List.ArrayUnorderedList;
 import Util.Utils;
 
+/**
+ * Manages the core game flow, including initialization, player management,
+ * turn execution, and determining the winner.
+ * It is responsible for orchestrating the interactions between the players,
+ * the maze, and the game visualization components.
+ */
 public class GameManager {
     private ArrayUnorderedList<IPlayer> players;
     private IPlayer winnerPlayer;
@@ -16,6 +22,11 @@ public class GameManager {
     private int turn;
     private boolean finished;
 
+    /**
+     * Constructs a new GameManager and initializes the game state.
+     * The players list is empty, there is no winner, the game is not finished,
+     * and the turn counter is set to 1.
+     */
     public GameManager() {
         this.players = new ArrayUnorderedList<>();
         this.winnerPlayer = null;
@@ -23,7 +34,21 @@ public class GameManager {
         this.finished = false;
     }
 
-    //TODO SAVE GAME HISTORY
+    /**
+     * Starts the main game loop using the provided maze.
+     * <p>
+     * The process includes:
+     * <ul>
+     * <li>Setting the maze.</li>
+     * <li>Configuring and adding players (real and bots).</li>
+     * <li>Setting the players' initial positions in the maze.</li>
+     * <li>Executing game rounds until a winner is found.</li>
+     * </ul>
+     * Finally, it displays the game result, prints the full movement history of all players,
+     * and exports the game history to a JSON file.
+     *
+     * @param maze The {@link Maze} object to be used for this game session.
+     */
     public void startGame(Maze maze) {
         this.maze = maze;
         addPlayers();
@@ -52,6 +77,13 @@ public class GameManager {
         System.out.println("\n");
     }
 
+    /**
+     * Executes one full round (turn) of the game.
+     * <p>
+     * It displays a round separator, iterates through all players allowing each one
+     * to make a move, and checks immediately after each move if the player has won.
+     * If a winner is found, the round is terminated early.
+     */
     private void turn() {
         GameVisuals.showRoundSeparator(this.turn);
 
@@ -68,6 +100,11 @@ public class GameManager {
         turn++;
     }
 
+    /**
+     * Prompts the user to configure and add real players and bot players to the game.
+     * It validates that at least one player (real or bot) is added before proceeding.
+     * For real players, it prompts for a name. Bots are added automatically.
+     */
     private void addPlayers() {
         int realPlayers = 0;
         int botPlayers = 0;
@@ -107,12 +144,24 @@ public class GameManager {
         }
     }
 
+    /**
+     * Sets the initial position for every player in the game.
+     * All players are placed in a random starting division provided by the maze.
+     */
     private void setInitialPosition() {
         for (IPlayer player : players) {
             player.setDivision(maze.getRandomInitialDivision());
         }
     }
 
+    /**
+     * Checks if a given player is the winner of the game.
+     * A player wins if their current division is an instance of {@link GoalDivision}.
+     * If the player is the winner, the {@code winnerPlayer} field is set.
+     *
+     * @param player The player to check for a victory condition.
+     * @return {@code true} if the player has reached the goal; {@code false} otherwise.
+     */
     private boolean isWinner(IPlayer player) {
         if (player.getDivision() instanceof GoalDivision) {
             this.winnerPlayer = player;
@@ -121,6 +170,11 @@ public class GameManager {
         return false;
     }
 
+    /**
+     * Returns the list of all players currently participating in the game.
+     *
+     * @return An {@link ListADT} containing all {@link IPlayer} objects.
+     */
     public ListADT<IPlayer> getPlayers() {
         return this.players;
     }

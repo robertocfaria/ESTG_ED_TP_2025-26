@@ -7,15 +7,26 @@ import Reader.Reader;
 import Structures.Interfaces.UnorderedListADT;
 import java.util.Iterator;
 import java.util.Random;
-
+/**
+ * Represents a division in the maze where the player must correctly answer a
+ * multiple-choice question to proceed to an adjacent division.
+ * If the player answers incorrectly, they remain in the current division.
+ */
 public class QuestionDivision extends Division {
 
     private static QuestionManager questions = new QuestionManager();
-
+    /**
+     * Default constructor required for Jackson deserialization.
+     */
     public QuestionDivision() {
         super();
     }
-
+    /**
+     * Constructs a QuestionDivision with a specified name.
+     * It ensures the static {@code QuestionManager} is initialized if it's currently null.
+     *
+     * @param name The descriptive name of the division.
+     */
     public QuestionDivision(String name) {
         super(name);
         if (questions == null) {
@@ -27,12 +38,25 @@ public class QuestionDivision extends Division {
         }
     }
 
+    /**
+     * Defines the behavior of the question division:
+     * <ol>
+     * <li>A random {@link Question} is retrieved from the {@code QuestionManager}.</li>
+     * <li>The player (or bot) provides an answer choice.</li>
+     * <li>The outcome (Correct/Incorrect) is logged to the player's history.</li>
+     * <li>If correct, the player is prompted to choose one of the adjacent divisions to move to.</li>
+     * <li>If incorrect, the player remains in the current division.</li>
+     * </ol>
+     *
+     * @param maze The overall {@link IMaze} structure, used to find adjacent divisions for successful movement.
+     * @param player The {@link IPlayer} currently interacting with the division.
+     * @return The {@link IDivision} the player moves to upon a correct answer, or the current division upon failure.
+     */
     @Override
     public IDivision getComportament(IMaze maze, IPlayer player) {
 
         Question myQuestion = questions.getQuestion();
 
-        //imprime a perungta
         System.out.println(print(myQuestion));
 
         int numOptions = 4;
@@ -56,7 +80,6 @@ public class QuestionDivision extends Division {
             UnorderedListADT<IDivision> adjacentPositions = maze.getAdjacentVertex(this);
             int neighborsSize = adjacentPositions.size();
 
-            // Converter para array para facilitar acesso por índice
             IDivision[] neighbors = new IDivision[neighborsSize];
             Iterator<IDivision> it = adjacentPositions.iterator();
             int i = 0;
@@ -86,7 +109,13 @@ public class QuestionDivision extends Division {
         }
     }
 
-
+    /**
+     * Formats the current division's name and the question text into a message
+     * ready to be displayed to the player.
+     *
+     * @param myQuestion The {@link Question} object to be displayed.
+     * @return A formatted string containing the room status and the question.
+     */
     public String print(Question myQuestion) {
         StringBuilder sb = new StringBuilder();
         sb.append("Esta na sala: ").append(getName()).append("\n");

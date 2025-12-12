@@ -8,127 +8,82 @@ import Map.*;
 import Reader.*;
 import Structures.Interfaces.UnorderedListADT;
 import Structures.List.DoubleLinkedUnorderedList;
+import Util.Utils;
 
 import java.util.Iterator;
 import java.util.Random;
 
+/**
+ * Manages the primary interactive console menus for the game, including the main menu
+ * for starting a new game or viewing history, and the secondary menu for map selection
+ * (random, creation, or loading).
+ */
 public class StartMenu {
     public static Random rand = new Random();
 
-    public static void menu() {
-        UnorderedListADT<Maze> mapsList;
-        Maze[] loadedMaps;
-        int opcao;
-        int tamanho;
-        GameManager game;
-        IHallway hallway;
-        Maze maze;
+    /**
+     * Displays a numbered list of all available mazes loaded from the game's storage.
+     *
+     * @param mazesList The {@link UnorderedListADT} containing the {@link Maze} objects.
+     */
+    private static void displayMazes(UnorderedListADT<Maze> mazesList) {
+        Iterator<Maze> iterator = mazesList.iterator();
 
-        String mazesFilePath = "src/main/resources/mazes.json";
-        MapExporter exporter = new MapExporter();
+        System.out.println("======Mapas disponiveis======");
+
+        int index = 1;
+        while (iterator.hasNext()) {
+            System.out.printf("%d. %s\n", index++, iterator.next().getName());
+        }
+    }
+
+    /**
+     * Imports the list of saved {@link Maze} objects from the designated JSON file.
+     * Implements basic error handling, returning an empty list if loading fails.
+     *
+     * @return An {@link UnorderedListADT} of loaded {@link Maze} objects.
+     */
+    private static UnorderedListADT<Maze> importMazesFromJson() {
         MapImporter importer = new MapImporter();
-        mapsList = new DoubleLinkedUnorderedList<>();
+
+        UnorderedListADT<Maze> mapsList;
 
         try {
-            loadedMaps = importer.importArrayFromJson(mazesFilePath);
-
-            for (int i = 0; i < loadedMaps.length; i++) {
-                mapsList.addToRear(loadedMaps[i]);
-            }
-            System.out.println(mapsList.size() + " mapas carregados");
+            mapsList = importer.importListADTFromJson(MapExporter.FILEPATH);
+            System.out.println("Foram carregado: " + mapsList.size() + " mapas");
         } catch (Exception e) {
             System.out.println("Erro ao carregar mapas guardados, a iniciar um conjunto vazio");
             mapsList = new DoubleLinkedUnorderedList<>();
         }
 
-        do {
-            displayMenu();
-            opcao = Reader.readInt(0, 4, "Opcao: ");
-
-            Maze newMap = null;
-            game = new GameManager();
-
-            switch (opcao) {
-                case 1:
-                    tamanho = rand.nextInt(90) + 10;
-                    newMap = new Maze(tamanho);
-                    break;
-                case 2:
-                    tamanho = Reader.readInt(10, 90, "Insira o numero de desafios que pretende (10 a 90): ");
-                    newMap = new Maze(tamanho);
-                    break;
-                case 3:
-                    if (mapsList.isEmpty()) {
-                        System.out.println("Não existem mapas para carregar, por favor gere um primeiro (Opção 1 ou 2). ");
-                        break;
-                    }
-
-                    System.out.println("Mapas disponíveis");
-
-                    int index = 1;
-                    for (Maze map : mapsList) {
-                        System.out.printf("%d. %s\n", index++, map.getName());
-                    }
-
-
-                    int mapChoice = Reader.readInt(1, mapsList.size(), "Escolha o labirinto que deseja: ") - 1;
-                    Maze chosenMap = null;
-
-                    index = 0;
-                    for (Maze map : mapsList) {
-                        if (index == mapChoice) {
-                            chosenMap = map;
-                        }
-
-                        index++;
-                    }
-
-                    System.out.println("A iniciar jogo com " + chosenMap.getName());
-                    game.startGame(chosenMap);
-                    break;
-
-                default:
-                    new SelectGameHistory();
-            }
-
-            if (newMap != null) {
-                mapsList.addToRear(newMap);
-
-                Maze[] newMapArray = new Maze[mapsList.size()];
-                try {
-                    Iterator<Maze> iterator = mapsList.iterator();
-
-                    for (int i = 0; i < newMapArray.length; i++) {
-                        newMapArray[i] = iterator.next();
-                    }
-
-                    exporter.exportArrayToJson(newMapArray, mazesFilePath);
-                    System.out.println("Mapa adicionado ao json");
-
-                    game = new GameManager();
-                    System.out.println("A iniciar o jogo com: " + newMap.getName());
-
-                    game.startGame(newMap);
-                } catch (Exception e) {
-                    System.out.println("Erro ao guardar mapa" + e.getMessage());
-                }
-            }
-        } while (opcao != 0);
+        return mapsList;
     }
 
-    private static void displayMenu() {
-        System.out.println("|----------------------------------------------------------------");
-        System.out.println("|- Bem vindo ao Jogo do Labirinto!");
-        System.out.println("|----------------------------------------------------------------");
-        System.out.println("| 1 - Novo Jogo -> Mapa Random");
-        System.out.println("| 2 - Novo Jogo -> Crie o seu Mapa");
-        System.out.println("| 3 - Novo Jogo -> Escolha o Mapa");
-        System.out.println("| 4 - Ver resultado de jogos terminados");
-        System.out.println("| 0 - Sair");
-        System.out.println("|----------------------------------------------------------------");
+    /**
+     * Adds a newly generated map to the existing list and exports the entire updated
+     * collection back to the JSON storage file.
+     *
+     * @param newMap The newly created {@link Maze} to be saved.
+     * @param mapsList The current {@link UnorderedListADT} of all mazes, to which the new map is added.
+     */
+    private static void exportMapsToJson(Maze newMap, UnorderedListADT<Maze> mapsList) {
+        MapExporter exporter = new MapExporter();
+
+        mapsList.addToRear(newMap);
+
+        try {
+            exporter.exportListADTToJson(mapsList, MapExporter.FILEPATH);
+            System.out.println("Mapa adicionado ao json");
+        } catch (Exception e) {
+            System.out.println("Erro ao guardar mapa" + e.getMessage());
+        }
     }
 
-    private static void firstMenu() {
+    /**
+     * Displays the main menu loop, allowing the user to choose between starting a
+     * new game, viewing history, or exiting.
+     */
+    public static void Menu() {
         int option;
         do {
             System.out.println("|----------------------------------------------------------------");
@@ -139,7 +94,7 @@ public class StartMenu {
             System.out.println("| 0 - Sair");
             System.out.println("|----------------------------------------------------------------");
 
-            option = Reader.readInt(0, 2, "Escolha uma opcao");
+            option = Reader.readInt(0, 2, "Escolha uma opcao: ");
 
             switch (option) {
                 case 1:
@@ -154,43 +109,21 @@ public class StartMenu {
         } while (option != 0);
     }
 
-    private static void displayMazes(UnorderedListADT<Maze> mazesList) {
-        Iterator<Maze> iterator = mazesList.iterator();
-
-        System.out.println("===Mapas disponíveis===");
-
-        int index = 1;
-        while (iterator.hasNext()) {
-            System.out.printf("%d. %s", index++, iterator.next().getName());
-        }
-    }
-
+    /**
+     * Displays the secondary menu loop for map selection.
+     * Options include generating a random map, creating a custom-sized map,
+     * or loading a saved map from the list.
+     */
     private static void secondMenu() {
         int option;
         int mapSize;
 
-        UnorderedListADT<Maze> mapsList = new DoubleLinkedUnorderedList<>();
-        Maze[] loadedMaps;
-
-        MapImporter importer = new MapImporter();
-
+        UnorderedListADT<Maze> mapsList;
         GameManager game;
 
-        try {
-            loadedMaps = importer.importArrayFromJson(MapExporter.FILEPATH);
-
-            for (int i = 0; i < loadedMaps.length; i++) {
-                mapsList.addToRear(loadedMaps[i]);
-            }
-            System.out.println(mapsList.size() + " mapas carregados");
-        } catch (Exception e) {
-            System.out.println("Erro ao carregar mapas guardados, a iniciar um conjunto vazio");
-            mapsList = new DoubleLinkedUnorderedList<>();
-        }
+        mapsList = importMazesFromJson();
 
         do {
-            System.out.println("|----------------------------------------------------------------");
-            System.out.println("|- Bem vindo ao Jogo do Labirinto!");
             System.out.println("|----------------------------------------------------------------");
             System.out.println("| 1 - Mapa Random");
             System.out.println("| 2 - Criar um Mapa");
@@ -224,17 +157,9 @@ public class StartMenu {
 
                     displayMazes(mapsList);
 
-                    int mapChoice = Reader.readInt(1, mapsList.size(), "Escolha o labirinto que deseja: ") - 1;
-                    Maze chosenMap = null;
+                    int mapChoice = Reader.readInt(1, mapsList.size(), "Escolha o labirinto que deseja: ");
+                    Maze chosenMap = Utils.getListADTObject(mapChoice - 1, mapsList);
 
-                    int index = 0;
-                    for (Maze map : mapsList) {
-                        if (index == mapChoice) {
-                            chosenMap = map;
-                        }
-
-                        index++;
-                    }
 
                     System.out.println("A iniciar jogo com " + chosenMap.getName());
                     game.startGame(chosenMap);
@@ -249,18 +174,5 @@ public class StartMenu {
             }
 
         } while (option != 0);
-    }
-
-    private static void exportMapsToJson(Maze newMap, UnorderedListADT<Maze> mapsList) {
-        MapExporter exporter = new MapExporter();
-
-        mapsList.addToRear(newMap);
-
-        try {
-            exporter.exportListADTToJson(mapsList, MapExporter.FILEPATH);
-            System.out.println("Mapa adicionado ao json");
-        } catch (Exception e) {
-            System.out.println("Erro ao guardar mapa" + e.getMessage());
-        }
     }
 }
