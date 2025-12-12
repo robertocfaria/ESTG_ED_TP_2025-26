@@ -19,13 +19,6 @@ public class MapImporter {
         mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
     }
 
-    /**
-     * Importa o mapa a partir de um arquivo JSON.
-     */
-    public Map importFromJson(String filePath) throws Exception {
-        return mapper.readValue(new File(filePath), Map.class);
-    }
-
     public Map[] importArrayFromJson(String filePath) throws IOException {
         return mapper.readValue(new File(filePath), Map[].class);
     }

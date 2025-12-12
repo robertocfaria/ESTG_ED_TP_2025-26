@@ -20,13 +20,6 @@ public class MapExporter {
         mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
     }
 
-    /**
-     * Exporta o mapa para um arquivo JSON.
-     */
-    public void exportToJson(Map map, String filePath) throws Exception {
-        mapper.writeValue(new File(filePath), map);
-    }
-
     public void exportArrayToJson(Map[] map, String filePath) throws Exception {
         mapper.writeValue(new File(filePath), map);
     }
