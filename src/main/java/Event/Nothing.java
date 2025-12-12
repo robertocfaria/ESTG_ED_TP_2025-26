@@ -5,12 +5,10 @@ import Exceptions.InvalidPlayersCountException;
 import Interfaces.IEvent;
 import Menus.GameVisuals;
 
-public class ExtraPlays implements IEvent {
-    public static final int EXTRA_PLAYS = 2;
+public class Nothing implements IEvent {
 
     @Override
     public void apply(IPlayer player, boolean isRealPlayer) throws InvalidPlayersCountException {
-        player.setExtraRound(EXTRA_PLAYS);
-        System.out.println("Encontras-te um homem generoso. Ele deu-te mais " + EXTRA_PLAYS + " jogadas extra!");
+        System.out.println("Uma pessoa muito cordial desejou-te BOA VIAGEM!");
     }
 }

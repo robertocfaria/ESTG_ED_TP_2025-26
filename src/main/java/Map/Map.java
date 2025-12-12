@@ -23,11 +23,13 @@ import com.fasterxml.jackson.annotation.*;
 @JsonIdentityInfo(generator = ObjectIdGenerators.IntSequenceGenerator.class, property = "@id")
 public class Map implements IMap {
     public static final int INCREASE_FACTOR = 2;
+
+    private Random rand = new Random();
     private String name;
+    private IHallway hallway;
+
     private IHallway[][] adjMatrix;
     private IDivision[] vertices;
-    private Random rand = new Random();
-    private IHallway hallway;
     private int count;
 
     public Map() {

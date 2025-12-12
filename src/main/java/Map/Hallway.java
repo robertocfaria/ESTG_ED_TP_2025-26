@@ -6,9 +6,6 @@ import Interfaces.IHallway;
 import Interfaces.IPlayer;
 import Structures.Interfaces.ListADT;
 
-import com.fasterxml.jackson.annotation.*;
-
-
 public class Hallway implements IHallway {
     private static EventManager EVENTS = new EventManager();
     private ListADT<IPlayer> players;

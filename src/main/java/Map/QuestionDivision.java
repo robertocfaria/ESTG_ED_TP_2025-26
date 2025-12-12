@@ -8,8 +8,6 @@ import Structures.Interfaces.UnorderedListADT;
 import java.util.Iterator;
 import java.util.Random;
 
-import com.fasterxml.jackson.annotation.*;
-
 public class QuestionDivision extends Division {
 
     private static QuestionManager questions;

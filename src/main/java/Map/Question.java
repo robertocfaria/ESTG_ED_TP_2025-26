@@ -1,7 +1,5 @@
 package Map;
 
-import com.fasterxml.jackson.annotation.*;
-
 public class Question {
     private String question;
     private String[] options;

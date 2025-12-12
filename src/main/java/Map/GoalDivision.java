@@ -4,8 +4,6 @@ import Interfaces.IDivision;
 import Interfaces.IMap;
 import Interfaces.IPlayer;
 
-import com.fasterxml.jackson.annotation.*;
-
 public class GoalDivision extends Division{
 
     public GoalDivision() {
@@ -13,7 +11,7 @@ public class GoalDivision extends Division{
     }
 
     public GoalDivision(String name) {
-        super(name);
+        super("DIVISAO FINAL");
     }
 
     @Override

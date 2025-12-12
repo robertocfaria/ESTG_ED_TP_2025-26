@@ -24,6 +24,7 @@ public class GameManager {
         this.finished = false;
     }
 
+    //TODO SAVE GAME HISTORY
     public void startGame(Map maze) {
         this.maze = maze;
         addPlayers();
@@ -37,6 +38,7 @@ public class GameManager {
                 gameRunning = false;
             }
         }
+
         System.out.println("\n++++++++++++++++++++++++++++++++++++++++++++++++++");
         System.out.println("+++ JOGO TERMINADO - VITORIA DE " + winnerPlayer.getName().toUpperCase());
         System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++\n");
@@ -49,7 +51,6 @@ public class GameManager {
         ExportGameHistory.exportToJson(players);
         System.out.println("O resumo do jogo foi guardado. Consulte quiser!");
         System.out.println("\n");
-
     }
 
     private void turn() {

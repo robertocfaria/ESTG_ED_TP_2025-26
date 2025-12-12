@@ -12,22 +12,22 @@ public class EventManager {
 
 
     // --- DISTRIBUIÇÃO DAS PROBABILIDADES (Total = 100%) ---
-    // 35% - ExtraPlays (Muito Comum)
+    // 10% - ExtraPlays (Muito Comum)
     // 35% - StunnedPlays (Comum)
     // 10% - RollBack (Pouco Comum)
-    // 10% - Nao acontecer nada!
+    // 35% - Nao acontecer nada!
     //  5% - ShuffleAllPlayers (Raro)
     //  5% - RollBack (Muito Raro)
     public IEvent getRandomEvent (ListADT<IPlayer> players) {
         int chance = this.rand.nextInt(100);
         if (chance < 35) {
-            return new ExtraPlays();
+            return new Nothing();
         } else if (chance < 70) {
             return new StunnedPlays();
         } else if (chance < 80) {
             return new RollBack();
         }else if (chance < 90) {
-            return null;
+            return new ExtraPlays();
         } else if (chance < 95) {
             return new ShuffleAllPlayers(players);
         } else {
