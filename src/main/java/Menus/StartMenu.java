@@ -42,7 +42,7 @@ public class StartMenu {
                 case 3:
 
                 default:
-
+                    new SelectGameHistory();
             }
 
         } while (opcao != 0);

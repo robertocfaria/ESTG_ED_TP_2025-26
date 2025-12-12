@@ -1,5 +1,6 @@
 package CoreGame;
 
+import Exporters.ExportGameHistory;
 import Interfaces.IHallway;
 import Map.*;
 import Interfaces.IPlayer;
@@ -47,7 +48,7 @@ public class GameManager {
             player.printFullHistory();
         }
 
-        //saveGameHisotory
+        ExportGameHistory.exportToJson(players);
         System.out.println("O resumo do jogo foi guardado. Consulte quiser!");
         System.out.println("\n");
     }
@@ -68,13 +69,28 @@ public class GameManager {
         turn++;
     }
 
-
-    //TODO Verficar se tem mais de um jogo
     private void addPlayers() {
-        String nameTemp;
+        int realPlayers = 0;
+        int botPlayers = 0;
 
-        GameVisuals.showPlayerConfigHeader();
-        int realPlayers = Reader.readInt(0, 10, "Quantos jogadores reais (0 a 10): ");
+        // 1. Validação: Repete as perguntas até a soma ser maior que 0
+        do {
+            GameVisuals.showPlayerConfigHeader();
+
+            realPlayers = Reader.readInt(0, 10, "Quantos jogadores reais (0 a 10): ");
+            botPlayers = Reader.readInt(0, 5, "Quantos BOTS (0 a 5): ");
+
+            if (realPlayers + botPlayers == 0) {
+                System.out.println();
+                System.out.println("Erro: O jogo precisa de pelo menos 1 jogador (Real ou Bot).");
+                System.out.println("Por favor, tente novamente.");
+                System.out.println();
+            }
+
+        } while (realPlayers + botPlayers == 0);
+
+
+        String nameTemp;
         for (int i = 0; i < realPlayers; i++) {
             nameTemp = Reader.readString("Nome do Jogador " + (i + 1) + ": ");
             players.addToRear(new Player(nameTemp));
@@ -83,15 +99,13 @@ public class GameManager {
             GameVisuals.showNextPlayerSeparator();
         }
 
-        int botPlayers = Reader.readInt(0, 5, "Quantos BOTS (0 a 5): ");
         for (int i = 0; i < botPlayers; i++) {
             players.addToRear(new Player());
         }
+
         if (botPlayers > 0) {
             System.out.println("BOT(s) adicionados com sucesso!");
         }
-
-
     }
 
     private void setInitialPosition() {

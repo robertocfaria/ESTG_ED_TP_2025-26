@@ -8,8 +8,6 @@ public abstract class Division implements IDivision {
 
     private String name;
 
-    //lista de player que ja estiveram aqui!
-
     public Division (String name) {
         this.name = name;
     }

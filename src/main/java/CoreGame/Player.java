@@ -116,8 +116,9 @@ public class Player implements IPlayer {
     public void move(IMap maze) {
 
         if (getStunned() > 0) {
-            System.out.println(">>> Estas atordoado e perdes esta vez! <<<");
+            System.out.println(">>> Estás atordoado e perdes esta vez! <<<");
             addStunnedRound(getStunned() - 1);
+            // Regista que perdeu a vez (opcional)
             addHistoryMove(this.division, "Perdeu a vez por estar atordoado.");
             if(isRealPlayer()) {
                 Utils.waitEnter();
@@ -143,55 +144,53 @@ public class Player implements IPlayer {
 
             IDivision currentPos = getDivision();
             IDivision nextPos = currentPos.getComportament(maze, this);
+
             if (nextPos != null && !nextPos.equals(currentPos)) {
                 try {
+                    if (!this.fullHistory.isEmpty() && this.fullHistory.peek().getTypeString().equals("MOVEMENT")) {
+                        this.fullHistory.peek().setNextDivision(nextPos.getName());
+                    }
+
                     IHallway hallway = maze.getEdge(currentPos, nextPos);
+                    IEvent event = hallway.getEvent(this);
+
                     divisionsHistory.push(currentPos);
                     setDivision(nextPos);
-
-                    IEvent event = hallway.getEvent(this);
+                    System.out.println(">>> SUCESSO! Avançaste para: " + nextPos.getName());
                     if (event != null) {
-                        System.out.println(">>> ATENCAO! -> Pelo caminho:");
+                        System.out.println("Encontraste um evento no corredor!");
                         event.apply(this, isRealPlayer());
-
                         addHistoryEvent(event);
-                        movementsHistory.push(event);
                     }
 
-                    if (getStunned() > 0) {
+                    if (nextPos instanceof Map.GoalDivision) {
+                        System.out.println("Chegaste ao destino final!");
+                        //adicionar ito ao historico
                         isTurnActive = false;
+                    } else if (getStunned() > 0) {
+                        System.out.println("!!! O evento deixou-te ATORDOADO! A tua vez acabou. !!!");
+                        isTurnActive = false;
+                    } else {
+                        System.out.println("Como acertaste, podes continuar a jogar!");
                     }
 
-                    movesInThisTurn++;
-                    totMoves++;
-                    divisionNames.addToRear(currentPos.getName());
-
-                    System.out.println(">>> SUCESSO! Avancaste para: " + nextPos.getName());
                 } catch (Exception e) {
                     System.out.println("Erro crítico ao mover: " + e.getMessage());
                     isTurnActive = false;
                 }
-            } else {
+            }
+            else {
                 System.out.println(">>> FALHASTE O DESAFIO! <<<");
                 if (getExtraRounds() > 0) {
                     System.out.println("MAS ESPERA! Tens " + getExtraRounds() + " Jogada(s) Extra!");
-                    System.out.println("(Gastaste uma para tentar novamente!)");
                     setExtraRound(getExtraRounds() - 1);
-                    addHistoryEvent(new ExtraPlays());
-                    if(isRealPlayer()) {
-                        Utils.waitEnter();
-                    }
                 } else {
-                    System.out.println("--- Infelizmente, a tua vez terminou. ---");
+                    System.out.println("A tua vez terminou.");
                     isTurnActive = false;
-                    if(isRealPlayer()) {
-                        Utils.waitEnter();
-                    }
                 }
             }
         }
     }
-
 
     @Override
     public void addHistoryMove(IDivision division, String log) {
@@ -207,33 +206,46 @@ public class Player implements IPlayer {
 
     @Override
     public void printFullHistory() {
-        System.out.println("\n--- HISTORICO:  " + this.name.toUpperCase() + " ---");
+        System.out.println("\n--- LOG do " + this.name.toUpperCase() + " ---");
+        Structures.Stack.ArrayStack<HistoryEntry> temp = new Structures.Stack.ArrayStack<>();
 
-        ArrayStack<HistoryEntry> temp = new ArrayStack<>();
-
+        // er e Esvaziar
         while (!this.fullHistory.isEmpty()) {
             try {
                 HistoryEntry entry = this.fullHistory.pop();
-
                 if (entry != null) {
                     System.out.println(entry.toString());
-                    temp.push(entry);
+                    temp.push(entry); // Guarda no temporário!
                 }
-
-
-            } catch (Exception e) {
-                break;
-            }
+            } catch (Exception e) { break; }
         }
 
+        //REPOR (CRUCIAL: Se isto falhar, o JSON sai vazio)
         while (!temp.isEmpty()) {
             try {
                 this.fullHistory.push(temp.pop());
-            } catch (Exception e) {
-                break;
-            }
+            } catch (Exception e) { break; }
         }
         System.out.println("-----------------------------------");
+    }
+
+    public ArrayStack<HistoryEntry> getHistoryCopy() {
+
+        ArrayStack<HistoryEntry> copy = new ArrayStack<>();
+        ArrayStack<HistoryEntry> temp = new ArrayStack<>();
+
+        while (!this.fullHistory.isEmpty()) {
+            temp.push(this.fullHistory.pop());
+        }
+
+        //Repor na original E encher a cópia
+        while (!temp.isEmpty()) {
+            HistoryEntry entry = temp.pop();
+            this.fullHistory.push(entry); // Devolve à original
+            copy.push(entry);             // Mete na cópia
+        }
+
+        return copy;
     }
 
 

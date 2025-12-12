@@ -1,5 +1,8 @@
 package Interfaces;
 
+import CoreGame.HistoryEntry;
+import Structures.Stack.ArrayStack;
+
 public interface IPlayer {
 
     void move(IMap maze);
@@ -29,4 +32,6 @@ public interface IPlayer {
     void addHistoryEvent(IEvent event);
 
     void printFullHistory();
+
+    ArrayStack<HistoryEntry> getHistoryCopy();
 }

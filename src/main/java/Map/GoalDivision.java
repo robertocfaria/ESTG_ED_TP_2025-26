@@ -7,7 +7,7 @@ import Interfaces.IPlayer;
 public class GoalDivision extends Division{
 
     public GoalDivision(String name) {
-        super(name);
+        super("DIVISAO FINAL");
     }
 
     @Override
