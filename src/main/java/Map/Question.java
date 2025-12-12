@@ -2,8 +2,6 @@ package Map;
 
 import com.fasterxml.jackson.annotation.*;
 
-
-@JsonIdentityInfo(generator = ObjectIdGenerators.IntSequenceGenerator.class, property = "@id")
 public class Question {
     private String question;
     private String[] options;

@@ -23,37 +23,14 @@ import com.fasterxml.jackson.annotation.*;
 @JsonIdentityInfo(generator = ObjectIdGenerators.IntSequenceGenerator.class, property = "@id")
 public class Map implements IMap {
     public static final int INCREASE_FACTOR = 2;
+    private String name;
     private IHallway[][] adjMatrix;
     private IDivision[] vertices;
-    private int count;
     private Random rand = new Random();
     private IHallway hallway;
+    private int count;
 
     public Map() {
-    }
-
-    public void setVertices(IDivision[] vertices) {
-        this.vertices = vertices;
-    }
-
-    public void setAdjMatrix(IHallway[][] matrix) {
-        this.adjMatrix = matrix;
-    }
-
-    public void setCount(int count) {
-        this.count = count;
-    }
-
-    public int getCount() {
-        return count;
-    }
-
-    public IDivision[] getVertices() {
-        return this.vertices;
-    }
-
-    public IHallway[][] getAdjMatrix() {
-        return this.adjMatrix;
     }
 
     public Map(int capacity) {
@@ -64,7 +41,39 @@ public class Map implements IMap {
 
         generateDivisions(capacity);
         generateConnections(this.hallway);
+        this.name = this.generateName();
+
         defineGoalDivision();
+    }
+
+    private int countConnections() {
+        if (this.adjMatrix == null) {
+            return 0;
+        }
+
+        int connections = 0;
+
+        for (int i = 0; i < this.count; i++) {
+            for (int j = 0; j < this.count; j++) {
+                if (this.adjMatrix[i][j] != null) {
+                    connections++;
+                }
+            }
+        }
+
+        return connections;
+    }
+
+    private String generateName() {
+        return String.format("Mapa [Divisoes: %d | Conexoes: %d]", this.count, this.countConnections());
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setHallwayPlayers(ListADT<IPlayer> players) {
@@ -297,53 +306,7 @@ public class Map implements IMap {
 
     @Override
     public double shortestPathWeight(IDivision startVertex, IDivision targetVertex) {
-        /** int start = getIndex(startVertex);
-         int target = getIndex(targetVertex);
-
-         if (start == -1 || target == -1) {
-         return -1;
-         }
-
-         int n = this.count;
-         double[] dist = new double[n];
-         boolean[] visited = new boolean[n];
-
-         for (int i = 0; i < n; i++) {
-         dist[i] = Double.POSITIVE_INFINITY;
-         }
-         dist[start] = 0.0;
-
-         for (int count = 0; count < n - 1; count++) {
-         int u = -1;
-         double minDist = Double.POSITIVE_INFINITY;
-
-         for (int v = 0; v < n; v++) {
-         if (!visited[v] && dist[v] < minDist) {
-         minDist = dist[v];
-         u = v;
-         }
-         }
-
-         if (u == -1) break;
-         if (u == target) break;
-
-         visited[u] = true;
-
-         for (int v = 0; v < n; v++) {
-         double weight = adjMatrix[u][v];
-
-         if (weight != -1 && !visited[v]) {
-         double newDist = dist[u] + weight;
-
-         if (newDist < dist[v]) {
-         dist[v] = newDist;
-         }
-         }
-         }
-         }
-
-         return dist[target] == Double.POSITIVE_INFINITY ? -1 : dist[target];*/
-        return 0;
+        throw new NotSupportedOperation("Sorry, we didn't have time to make this method");
     }
 
     @Override
@@ -550,6 +513,30 @@ public class Map implements IMap {
     @Override
     public int size() {
         return this.count;
+    }
+
+    public void setVertices(IDivision[] vertices) {
+        this.vertices = vertices;
+    }
+
+    public void setAdjMatrix(IHallway[][] matrix) {
+        this.adjMatrix = matrix;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public IDivision[] getVertices() {
+        return this.vertices;
+    }
+
+    public IHallway[][] getAdjMatrix() {
+        return this.adjMatrix;
     }
 
     @Override

@@ -10,7 +10,6 @@ import java.util.Random;
 
 import com.fasterxml.jackson.annotation.*;
 
-@JsonIdentityInfo(generator = ObjectIdGenerators.IntSequenceGenerator.class, property = "@id")
 public class QuestionDivision extends Division {
 
     private static QuestionManager questions;

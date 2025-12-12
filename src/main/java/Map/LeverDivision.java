@@ -13,7 +13,6 @@ import java.util.Random;
 import com.fasterxml.jackson.annotation.*;
 
 
-@JsonIdentityInfo(generator = ObjectIdGenerators.IntSequenceGenerator.class, property = "@id")
 public class LeverDivision extends Division {
     private Random rand = new Random();
     private ILever[] myLevers; // Persistência das alavancas

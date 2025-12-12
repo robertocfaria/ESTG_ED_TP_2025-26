@@ -6,7 +6,6 @@ import Interfaces.IPlayer;
 
 import com.fasterxml.jackson.annotation.*;
 
-@JsonIdentityInfo(generator = ObjectIdGenerators.IntSequenceGenerator.class, property = "@id")
 public class GoalDivision extends Division{
 
     public GoalDivision() {

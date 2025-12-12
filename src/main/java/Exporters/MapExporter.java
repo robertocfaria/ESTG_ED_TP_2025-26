@@ -26,6 +26,10 @@ public class MapExporter {
     public void exportToJson(Map map, String filePath) throws Exception {
         mapper.writeValue(new File(filePath), map);
     }
+
+    public void exportArrayToJson(Map[] map, String filePath) throws Exception {
+        mapper.writeValue(new File(filePath), map);
+    }
 }
 
 

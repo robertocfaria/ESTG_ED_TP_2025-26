@@ -9,7 +9,6 @@ import Structures.Interfaces.ListADT;
 import com.fasterxml.jackson.annotation.*;
 
 
-@JsonIdentityInfo(generator = ObjectIdGenerators.IntSequenceGenerator.class, property = "@id")
 public class Hallway implements IHallway {
     private static EventManager EVENTS = new EventManager();
     private ListADT<IPlayer> players;

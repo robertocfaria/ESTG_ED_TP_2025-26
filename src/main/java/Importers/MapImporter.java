@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
 import java.io.File;
+import java.io.IOException;
 
 public class MapImporter {
 
@@ -23,6 +24,10 @@ public class MapImporter {
      */
     public Map importFromJson(String filePath) throws Exception {
         return mapper.readValue(new File(filePath), Map.class);
+    }
+
+    public Map[] importArrayFromJson(String filePath) throws IOException {
+        return mapper.readValue(new File(filePath), Map[].class);
     }
 }
 

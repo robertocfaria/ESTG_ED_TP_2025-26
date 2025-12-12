@@ -10,7 +10,6 @@ import java.util.Iterator;
 import java.util.Random;
 import com.fasterxml.jackson.annotation.*;
 
-@JsonIdentityInfo(generator = ObjectIdGenerators.IntSequenceGenerator.class, property = "@id")
 public class QuestionManager {
     private ArrayUnorderedList<Question> questions;
     private LinkedQueue<Question> queueQuestions;
